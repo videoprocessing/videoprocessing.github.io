@@ -5,7 +5,6 @@ preview_img: /assets/img/benchmarks/deinterlacer/deinterlacing_preview480x270.pn
 subprojects:
 ---
 
-<link rel="stylesheet" href="/assets/css/benchmarks/deinterlacer/style.css">
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
