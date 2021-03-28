@@ -45,18 +45,11 @@ subprojects:
     }
 </style>
 
-<div class="subproject-links">
-    <a href="/benchmarks/deinterlacer.html" class="button">Home</a>
-    <a href="/benchmarks/deinterlacer-participants.html" class="button">Participants</a>
-    <a href="#methodology" class="button">Evaluation methodology</a>
-    <a href="#participate" class="button">How to participate</a>
-    <a href="#contacts" class="button">Contact us</a>
-</div>
 
-{:.center}
-# MSU Deinterlacer Benchmark — selecting the best deinterlacing filter
 
-## Key features of the Benchmark
+<h2 style="text-align: center; font-weight: bold;">MSU Deinterlacer Benchmark — selecting the best deinterlacing filter</h2>
+
+### Key features of the Benchmark
 
 
 *   **For Deinterlacing methods' users**
@@ -74,25 +67,25 @@ We appreciate new ideas. Please, write us an e-mail to <deinterlacer-benchmark@v
 
 
 
-## <span id="leaderboard"></span> Leaderboard
+### <span id="leaderboard"></span> Leaderboard
 
 The table below shows a comparison of deinterlacers by PSNR, SSIM metrics and by speed.
 <a href="https://videoprocessing.ml/benchmarks/deinterlacer.html"><img src="/assets/img/benchmarks/deinterlacer/leaderboard.png"></a>
 
 
 
-## Charts
+### Charts
 
 <a href="https://videoprocessing.ml/benchmarks/deinterlacer.html"><img src="/assets/img/benchmarks/deinterlacer/chart.png"></a>
 
 
 
-## <span id="participate"></span> Deinterlacer Submission
+### <span id="participate"></span> Deinterlacer Submission
 
 {% include html/deinterlacer/submission.html %}
 
-If you would like to participate read the full submission rules [here](https://videoprocessing.ml/benchmarks/deinterlacer.html#participate).
+**If you would like to participate read the full submission rules [here](https://videoprocessing.ml/benchmarks/deinterlacer.html#participate).**
 
-## <span id="contacts"></span>Contacts
+### <span id="contacts"></span>Contacts
 
 For questions and propositions, please contact us: <deinterlacer-benchmark@videoprocessing.ml>
