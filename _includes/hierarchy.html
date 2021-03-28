@@ -1,0 +1,20 @@
+<span class="title">Site structure</span>
+<ul>
+    {% assign projects = site.projects | sort: 'order' %}
+    {% for project in projects %}
+    <li>
+        <a href="{% if project.external_url %}
+                    {{ project.external_url }}" target="_blank
+                 {% else %}
+                    {{ project.url }}
+                 {% endif %}">{{ project.title }}</a>
+        <ul>
+            {% for subproject in site.subprojects %}
+            {% if subproject.project == project.project %}
+            <li><a href="{{ subproject.url }}">{{ subproject.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </li>
+    {% endfor %}
+</ul>

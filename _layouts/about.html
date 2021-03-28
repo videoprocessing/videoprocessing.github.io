@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<link href="/assets/css/post.css" rel="stylesheet" type="text/css">
+<div class="tiles-width nav-current">
+    <a href="{% link index.html %}">Main page</a> &mdash;
+    <a href="{{ page.url }}">{{ page.title }}</a>
+</div>
+<div class="tiles-width markdown">
+    {{ content }}
+</div>
+<div class="tiles-width separator"></div>
+
