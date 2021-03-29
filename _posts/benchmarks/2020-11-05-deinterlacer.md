@@ -2,7 +2,7 @@
 title: MSU Deinterlacer Benchmark
 description:
 preview_img: /assets/img/benchmarks/deinterlacer/deinterlacing_preview480x270.png
-subprojects:
+subprojects: /deinterlacer
 ---
 
 <script src="https://code.highcharts.com/highcharts.js"></script>
