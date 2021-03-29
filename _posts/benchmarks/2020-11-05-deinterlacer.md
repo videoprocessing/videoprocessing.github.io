@@ -70,13 +70,13 @@ We appreciate new ideas. Please, write us an e-mail to <deinterlacer-benchmark@v
 ### <span id="leaderboard"></span> Leaderboard
 
 The table below shows a comparison of deinterlacers by PSNR, SSIM metrics and by speed.
-<a href="https://videoprocessing.ml/benchmarks/deinterlacer.html"><img src="/assets/img/benchmarks/deinterlacer/leaderboard.png"></a>
+<a href="https://videoprocessing.ai/benchmarks/deinterlacer.html"><img src="/assets/img/benchmarks/deinterlacer/leaderboard.png"></a>
 
 
 
 ### Charts
 
-<a href="https://videoprocessing.ml/benchmarks/deinterlacer.html"><img src="/assets/img/benchmarks/deinterlacer/chart.png"></a>
+<a href="https://videoprocessing.ai/benchmarks/deinterlacer.html"><img src="/assets/img/benchmarks/deinterlacer/chart.png"></a>
 
 
 
@@ -84,7 +84,7 @@ The table below shows a comparison of deinterlacers by PSNR, SSIM metrics and by
 
 {% include html/deinterlacer/submission.html %}
 
-**If you would like to participate read the full submission rules [here](https://videoprocessing.ml/benchmarks/deinterlacer.html#participate).**
+**If you would like to participate read the full submission rules [here](https://videoprocessing.ai/benchmarks/deinterlacer.html#participate).**
 
 ### <span id="contacts"></span>Contacts
 
