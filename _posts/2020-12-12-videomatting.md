@@ -79,3 +79,5 @@ Fill in this form to provide information about your method
 
 Contact us by email with any questions or suggestions at <questions@videomatting.com>
 
+
+## [Learn more](https://videomatting.com)

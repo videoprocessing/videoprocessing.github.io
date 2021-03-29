@@ -49,6 +49,7 @@ subprojects:
 
 <h2 style="text-align: center; font-weight: bold;">MSU Deinterlacer Benchmark — selecting the best deinterlacing filter</h2>
 
+
 ### Key features of the Benchmark
 
 
@@ -89,3 +90,5 @@ The table below shows a comparison of deinterlacers by PSNR, SSIM metrics and by
 ### <span id="contacts"></span>Contacts
 
 For questions and propositions, please contact us: <deinterlacer-benchmark@videoprocessing.ml>
+
+## [Learn more](https://videoprocessing.ai/benchmarks/deinterlacer.html)
