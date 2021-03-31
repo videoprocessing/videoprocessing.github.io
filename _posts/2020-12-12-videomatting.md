@@ -50,7 +50,7 @@ permalink:
     }
 </style>
 
-<h2 style="text-align: center; font-weight: bold;">MSU Video Matting Benchmark</h2>
+<h1 style="text-align: center; font-weight: bold;">MSU Video Matting Benchmark</h1>
 
 ### Introduction
 The VideoMatting project is the first public objective benchmark for video-matting methods. It contains scatter plots and rating tables for different quality metrics. In addition, results for participating methods are available for viewing on a player equipped with a movable zoom region. We believe our work will help rank existing methods and aid developers of new methods in improving their results.

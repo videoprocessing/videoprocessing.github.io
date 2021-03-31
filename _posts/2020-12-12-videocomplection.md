@@ -37,7 +37,7 @@ permalink: /compection
     }
 </style>
 
-<h2 style="text-align: center; font-weight: bold;">MSU Video Complection Benchmark</h2>
+<h1 style="text-align: center; font-weight: bold;">MSU Video Complection Benchmark</h1>
 
 ### Introduction
 The VideoCompletion project introduces the first benchmark for video-completion methods. We present results for different methods on a range of diverse test sequences which are available for viewing on a player equipped with a movable zoom region. Additionally, we provide the results of an objective analysis using quality metrics that were carefully selected in our study on video-completion perceptual quality. We believe that our work can help rank existing methods and assist developers of new general-purpose video-completion methods.
