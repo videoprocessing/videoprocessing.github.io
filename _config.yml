@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Video Processing
+name: Video Processing Benchmarks and Research
 
 # Short bio or description (displayed in the header)
 description: "MSU Graphics & Media Laboratory, Video Group"
@@ -14,6 +14,25 @@ avatar: https://avatars.githubusercontent.com/u/30421074?s=200&v=4
 #
 # Flags below are optional
 #
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      tag: visible
+      see_also: []
+  - scope:
+      path: "_posts/benchmarks"
+    values:
+      permalink: /benchmarks/:categories/:title:output_ext
+      project: benchmarks
+  - scope:
+      path: "about"
+    values:
+      layout: "about"
+
 
 # Includes an icon in the footer for each username you enter
 footer-links:
