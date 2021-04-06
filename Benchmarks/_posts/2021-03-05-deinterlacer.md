@@ -3,6 +3,7 @@ title: MSU Deinterlacer Benchmark — selecting the best deinterlacing filter
 description:
 preview_img: /assets/img/benchmarks/deinterlacer/deinterlacing_preview480x270.png
 subprojects: /deinterlacer
+excerpt: ""
 ---
 
 <script src="https://code.highcharts.com/highcharts.js"></script>

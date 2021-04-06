@@ -4,6 +4,8 @@ description:
 preview_img:
 subprojects:
 permalink: 
+excerpt: "The VideoMatting project is the first public objective benchmark for video-matting methods."
+
 ---
 
 
