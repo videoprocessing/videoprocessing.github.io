@@ -26,22 +26,3 @@ Here is a list of companies we collaborated with:
 
 
 
-
-<!-- ### #1 video codecs analysis
-The companies send us the codecs, and we find out, which one is better.
-
-Here is a list of companies we collaborated with:
-
-{% include companies_list.html %}
-
-Some of our [reports](/codecs/) are publically available.
-
-### #1 video quality estimation tool
-We have [VQMT](/vqmt/) for monoscopic and [VQMT3D](/stereo_quality/) for stereoscopic video. We can predict in advance whether you will have a headache after watching the 3D movie. The tools have more quality assessment metrics than any concurrent ones declared. Take a look at our assessment reports on the projects' pages. Our stats by 2019:
-
-
-### #1 video matting benchmark
-The [VideoMatting](https://videomatting.com/) project is the first public objective benchmark for video-matting methods. Our work ranks existing methods and aids developers of new methods in improving their results. Previous cases of estimation:
-
-### #1 subjective quality estimation
-The [Subjectify](http://subjectify.us) project provides a crowd-sourced algorithms evaluation platform. It is designed for the subjective comparison of images, video, and sound processing methods.  -->
