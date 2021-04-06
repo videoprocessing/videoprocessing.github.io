@@ -3,7 +3,7 @@ title: MSU Deinterlacer Benchmark — selecting the best deinterlacing filter
 description:
 preview_img: /assets/img/benchmarks/deinterlacer/deinterlacing_preview480x270.png
 subprojects: /deinterlacer
-excerpt: ""
+excerpt: "Latest benchmark in this area with more than 20 methods and 40 video sequences. Total length of the sequences is 834 frames"
 ---
 
 <script src="https://code.highcharts.com/highcharts.js"></script>
