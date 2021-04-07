@@ -22,7 +22,7 @@ Here is a list of companies we collaborated with:
 
 # Contact us
 
-[dmitriy@graphics.cs.msu.ru](mailto:dmitriy@graphics.cs.msu.ru)
+[contact@videoprocessing.ai](mailto:contact@videoprocessing.ai)
 
 
 
