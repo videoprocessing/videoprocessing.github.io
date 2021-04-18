@@ -21,17 +21,16 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      tag: visible
-      see_also: []
-  - scope:
-      path: "_posts/benchmarks"
-    values:
-      permalink: /benchmarks/:categories/:title:output_ext
-      project: benchmarks
   - scope:
       path: "about"
     values:
       layout: "about"
+
+ordered_categories:
+  - key: Benchmarks
+    title: "Benchmarks"
+  - key: Datasets
+    title: "Datasets"
 
 
 # Includes an icon in the footer for each username you enter
