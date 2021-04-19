@@ -27,10 +27,15 @@ defaults:
       layout: "about"
 
 ordered_categories:
-  - key: Benchmarks
+  - type: categories
+    key: Benchmarks
     title: "Benchmarks"
-  - key: Datasets
+  - type: categories
+    key: Datasets
     title: "Datasets"
+  - type: data
+    key: codecs
+    title: "Codec Comparisons"
 
 
 # Includes an icon in the footer for each username you enter

@@ -1,0 +1,6 @@
+- title: "MSU Video Codecs Comparison 2020 Part 1: FullHD, objective"
+  external_url: "https://compression.ru/video/codec_comparison/hevc_2020/main_report.html"
+  features:
+    - "50 sequences"
+    - "20 video encoders"
+    - "1 fps & 30 fps"

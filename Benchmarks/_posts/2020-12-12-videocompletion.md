@@ -1,9 +1,6 @@
 ---
 title: MSU Video Completion Benchmark
-description:
-preview_img:
-subprojects:
-permalink: /compection
+permalink: /video-completion
 excerpt: "The Video Completion project introduces the first benchmark for video-completion methods. We provide the results of an objective analysis using quality metrics that were carefully selected in our study on video-completion perceptual quality."
 ---
 

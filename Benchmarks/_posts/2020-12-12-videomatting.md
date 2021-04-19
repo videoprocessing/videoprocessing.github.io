@@ -1,9 +1,6 @@
 ---
 title: MSU Video Matting Benchmark
-description:
-preview_img:
-subprojects:
-permalink: 
+permalink: /video-matting
 excerpt: "The VideoMatting project is the first public objective benchmark for video-matting methods."
 ---
 

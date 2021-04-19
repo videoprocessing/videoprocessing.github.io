@@ -8,9 +8,20 @@ layout: default
 {% for category in site.ordered_categories %}
     <h2 style="text-align: center;">{{ category.title }}</h2>
     <ul>
-    {% for post in site.categories[category.key] %}
+    {% for post in site[category.type][category.key] %}
         <li>
-            <b><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></b>
+            <b><a href="
+            {% if post.external_url %}
+                {{ post.external_url }}
+            {% else %}
+                {{ site.baseurl }}{{ post.url }}
+            {% endif %}">
+            {% if post.short_title %}
+                {{ post.short_title }}
+            {% else %}
+                {{ post.title }}
+            {% endif %}
+            </a></b>
             <ul>
             {% for feature in post.features %}
                 <li>{{ feature }}</li>
