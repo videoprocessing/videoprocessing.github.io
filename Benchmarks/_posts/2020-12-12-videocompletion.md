@@ -1,6 +1,10 @@
 ---
 title: MSU Video Completion Benchmark
 permalink: /video-completion
+features:
+  - "7 video sequences"
+  - "4 quality metrics"  
+  - "6 participants"
 ---
 
 ### Introduction

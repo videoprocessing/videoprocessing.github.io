@@ -1,6 +1,10 @@
 ---
 title: MSU Video Matting Benchmark
 permalink: /video-matting
+features:
+  - "Five moving objects captured in front of a green plate and seven captured using the stop-motion procedure"
+  - "3 quality metrics"  
+  - "6 participants"
 ---
 
 ### Introduction

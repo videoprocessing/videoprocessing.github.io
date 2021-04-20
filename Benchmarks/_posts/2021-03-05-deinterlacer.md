@@ -2,6 +2,10 @@
 title: MSU Deinterlacer Benchmark — selecting the best deinterlacing filter
 short_title: MSU Deinterlacer Benchmark
 permalink: /deinterlacer
+features:
+  - "40 video sequences"
+  - "PSNR and SSIM metrcis"  
+  - "21 participants"
 ---
 
 
