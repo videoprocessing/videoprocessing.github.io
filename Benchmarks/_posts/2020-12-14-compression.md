@@ -3,7 +3,7 @@ title: Global Data Compression Competition
 permalink: /compression
 features:
   - "12 compression areas for research"
-  - "50 000 EUR prize fund"
+  - "41 participants"
 ---
 
 ### About competition
@@ -18,7 +18,8 @@ This competition focuses on the advantages of algorithms and their implementatio
   * We use small blocks of textual and mixed data to evaluate how compressors behave when the data size is severely limited, such as in block-storage systems.
 
 ### Leaderboard
-<a href="https://globalcompetition.compression.ru/#leaderboards"><img src="/assets/img/benchmarks/compression/compression_leaderboard.png"></a>
+<a href="https://globalcompetition.compression.ru/#leaderboards"><img src="/assets/img/benchmarks/compression/compression_leaderstantin Zaborskikh		Test 3, hcr	Context mixing+Deduplication+Delta Coding
+TBCM	Uwe Bboard.png"></a>
 Full leaderboard you find see [here](https://globalcompetition.compression.ru/#leaderboards)
 
 

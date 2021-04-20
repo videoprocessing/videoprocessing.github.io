@@ -4,3 +4,102 @@
     - "50 sequences"
     - "20 video encoders"
     - "1 fps & 30 fps"
+
+- title: "MSU Video Codecs Comparison 2020 Part 2: Subjective report"
+  external_url: "https://compression.ru/video/codec_comparison/hevc_2020/subjective_report.html"
+  features:
+    - "8 video sequences"
+    - "6,100+ unique observers"
+    - "11 codecs of HEVC/AV1/AVC"
+    - "1 fps & 30 fps"
+
+
+- title: "MSU Video Codecs Comparison 2020 Part 3: 4K report"
+  external_url: "https://compression.ru/video/codec_comparison/hevc_2020/4k_report.html"
+  features:
+    - "12 UHD videos"
+    - "Section with comparison on 10-bit videos"
+    - "1 fps & 30 fps"
+
+
+- title: "MSU Hardware Video Codecs Express Comparison 2020"
+  external_url: "https://compression.ru/video/codec_comparison/hevc_2020/fpga_express_report.html"
+  features:
+    - "4 hardware-accelerated and 4 software encoders"
+    - "50 FullHD video sequences in objective comparison"
+    - "60 fps encoding"
+
+
+- title: "MSU UGC Subjective Express Comparison 2020"
+  external_url: "https://compression.ru/video/codec_comparison/hevc_2020/ugc_express_report.html"
+  features:
+    - "8 encoders"
+    - "10 FullHD video sequences from YouTube UGC"
+    - "1 fps encoding"
+
+
+
+- title: "MSU Video Codecs Comparison 2019 Part 1: Main report"
+  external_url: "https://compression.ru/video/codec_comparison/hevc_2019/#main_report"
+  features:
+    - "100 FullHD video sequences"
+    - "Three encoding use cases"
+
+
+- title: "MSU Video Codecs Comparison 2019 Part 2: Subjective report"
+  external_url: "https://compression.ru/video/codec_comparison/hevc_2019/#subjective_report"
+  features:
+    - "11 codecs"
+    - "732 unique observers"
+    - "5 video sequences"
+
+- title: "MSU Video Codecs Comparison 2019 Part 3: 4K report"
+  external_url: "https://compression.ru/video/codec_comparison/hevc_2019/#4k_report"
+  features:
+    - "12 codecs"
+    - "11 4K video sequences"
+    - "Two Encoding Use Cases"
+    - "9 metrics"
+
+- title: "MSU Video Codecs Comparison 2019 Part 4: High-quality encoding report"
+  external_url: "https://compression.ru/video/codec_comparison/hevc_2019/#hq_report"
+  features:
+    - "7 codecs"
+    - "6 FullHD video sequences"
+    - "Special Encoding Use Case"
+    - "9 metrics"
+
+
+
+- title: "MSU Video Codecs Comparison 2018 Part 1: Main report"
+  external_url: "https://compression.ru/video/codec_comparison/hevc_2018/#main_report"
+  features:
+    - "28 video sequences"
+    - "14 codecs"
+
+
+- title: "MSU Video Codecs Comparison 2018 Part 2: Subjective report"
+  external_url: "https://compression.ru/video/codec_comparison/hevc_2018/#subjective_report"
+  features:
+    - "10 codecs"
+    - "473 unique observers"
+    - "5 video sequences"
+    - "6 metrics"
+
+- title: "MSU Video Codecs Comparison 2018 Part 3: 4K report"
+  external_url: "https://compression.ru/video/codec_comparison/hevc_2018/#4k_report"
+  features:
+    - "6 codecs"
+    - "10 4K video sequences"
+    - "Special Use Case"
+    - "5 objective metrics"
+
+- title: "MSU Video Codecs Comparison 2018 Part 4: High-quality encoding report"
+  external_url: "https://compression.ru/video/codec_comparison/hevc_2018  /#hq_report"
+  features:
+    - "7 codecs"
+    - "5 FullHD video sequences"
+    - "Special Use Case"
+    - "10 objective metrics"
+
+

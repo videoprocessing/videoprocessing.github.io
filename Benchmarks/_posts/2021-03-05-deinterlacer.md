@@ -4,7 +4,7 @@ short_title: MSU Deinterlacer Benchmark
 permalink: /deinterlacer
 features:
   - "40 video sequences"
-  - "PSNR and SSIM metrcis"  
+  - "PSNR and SSIM metrics"  
   - "21 participants"
 ---
 
@@ -19,7 +19,7 @@ features:
     *   **Check the performance** of your deinterlacing method on the complex cases
 
 
-To submit deinterlacing method, please, follow 3 simple steps in the the [Deinterlacer Submission](#participate) section
+To submit deinterlacing method, please, follow 3 simple steps in the [Deinterlacer Submission](#participate) section
 
 We appreciate new ideas. Please, write us an e-mail to <deinterlacer-benchmark@videoprocessing.ai>
 
