@@ -9,10 +9,7 @@ features:
 ---
 
 
-
 ### Key features of the Benchmark
-
-
 *   **For Deinterlacing methods' users**
     *   Choose deinterlacing method that is **the best for your speed and quality requirements**
     *   Discover **the newest deinterlacing methods’ achievements**
@@ -25,7 +22,6 @@ features:
 To submit deinterlacing method, please, follow 3 simple steps in the the [Deinterlacer Submission](#participate) section
 
 We appreciate new ideas. Please, write us an e-mail to <deinterlacer-benchmark@videoprocessing.ai>
-
 
 
 ### <span id="leaderboard"></span> Leaderboard
