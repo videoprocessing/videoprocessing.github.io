@@ -2,54 +2,14 @@
 title: MSU Deinterlacer Benchmark — selecting the best deinterlacing filter
 short_title: MSU Deinterlacer Benchmark
 permalink: /deinterlacer
-excerpt: "Latest benchmark in this area with more than 20 methods and 40 video sequences. Total length of the sequences is 834 frames"
+features:
+  - "40 video sequences"
+  - "PSNR and SSIM metrics"  
+  - "21 participants"
 ---
-
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/export-data.js"></script>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script src="https://code.highcharts.com/highcharts-more.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
-<script type="text/javascript" charset="utf8"
-   src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
-
-<style>
-    .subproject-links {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 20px;
-    }
-
-    .subproject-links a {
-        background-color: #f0f0f0;
-        color: black;
-        font-size: 16px;
-        padding: 10px 15px;
-
-        text-align: center;
-        text-decoration: none;
-
-        margin: 4px 8px;
-        border-radius: 10px;
-    }
-
-    .subproject-links a:hover {
-        background-color: #e0e0e0;
-        text-decoration: none;
-    }
-
-    table.deint {
-        display: table;
-    }
-</style>
-
 
 
 ### Key features of the Benchmark
-
-
 *   **For Deinterlacing methods' users**
     *   Choose deinterlacing method that is **the best for your speed and quality requirements**
     *   Discover **the newest deinterlacing methods’ achievements**
@@ -59,10 +19,9 @@ excerpt: "Latest benchmark in this area with more than 20 methods and 40 video s
     *   **Check the performance** of your deinterlacing method on the complex cases
 
 
-To submit deinterlacing method, please, follow 3 simple steps in the the [Deinterlacer Submission](#participate) section
+To submit deinterlacing method, please, follow 3 simple steps in the [Deinterlacer Submission](#participate) section
 
 We appreciate new ideas. Please, write us an e-mail to <deinterlacer-benchmark@videoprocessing.ai>
-
 
 
 ### <span id="leaderboard"></span> Leaderboard
