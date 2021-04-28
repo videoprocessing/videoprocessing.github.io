@@ -1,0 +1,34 @@
+- title: "MSU VQMT"
+  external_url: "https://www.compression.ru/video/quality_measure/video_measurement_tool.html"
+  features:
+    - "Quickest metrics"
+    - "Contributors such as Netflix, Walt Disney, Intel etc."
+    - "Flexible Functionality"
+    - "HDR metrics"
+    - "Objective Metrics Support"
+    - "Metrics Visualization"
+    - "Professional Bit Depth Support"
+
+- title: "MSU PVQT"
+  external_url: "https://www.compression.ru/video/quality_measure/perceptual_video_quality_tool.html"
+  features:
+    - "Easy subjective video testing organization for companies and universities"
+    - "300+ Video and all Main Image Formats"
+    - "Real-Time result observation"
+    - "Bradley-Terry model"
+    - "Training questions"
+    - "Fast debug"
+
+- title: "Subjectify.us"
+  external_url: "http://www.subjectify.us/"
+  features:
+    - "Crowd-sourced subjective comparisons for the comparison of images, video, and sound processing methods"
+    - "Automatic filtering cheaters and bots"
+    - "Easy to use platform with detailed analysys of the results"
+
+
+- title: "Hacking VMAF"
+  external_url: "https://www.researchgate.net/publication/334388692_Hacking_VMAF_with_Video_Color_and_Contrast_Distortion"
+  features:
+    - "We consider different color corrections of compressed videos which increase the values of full-reference metric VMAF and almost don’t decrease other widely-used metric SSIM"
+    - "The proposed video approach shows the metric in-applicability in some cases for video codecs comparisons, as it may be used for cheating in the comparisons via tuning to improve this metric values."

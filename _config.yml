@@ -34,8 +34,11 @@ ordered_categories:
     key: Datasets
     title: "Datasets"
   - type: data
+    key: quality
+    title: "Video Quality"
+  - type: data
     key: codecs
-    title: "Codec Comparisons"
+    title: "#1 Codec Comparisons"
 
 
 # Includes an icon in the footer for each username you enter
