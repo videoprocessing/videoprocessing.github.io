@@ -2,8 +2,9 @@
 title: Global Data Compression Competition 
 permalink: /compression
 features:
+  - "#1 prize fund"
   - "12 compression areas for research"
-  - "41 participants"
+  - "41 algorithms"
 ---
 
 ### About competition

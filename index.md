@@ -4,6 +4,8 @@ layout: default
 
 <link rel="stylesheet" href="/assets/css/style.css">
 
+<h3 style="align-self: center;">Our plan is to develop #1 benchmark collection in Video Processing area</h3>
+
 <div class="posts">
 {% for category in site.ordered_categories %}
     <h2 style="text-align: center;">{{ category.title }}</h2>
