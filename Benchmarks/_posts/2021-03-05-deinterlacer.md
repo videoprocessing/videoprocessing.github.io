@@ -39,7 +39,7 @@ The table below shows a comparison of deinterlacers by PSNR, SSIM metrics and by
 
 ### <span id="participate"></span> Deinterlacer Submission
 
-{% include html/deinterlacer/submission.html %}
+{% include benchmarks/deinterlacer/submission.html %}
 
 **If you would like to participate read the full submission rules [here](https://videoprocessing.ai/benchmarks/deinterlacer.html#participate).**
 
