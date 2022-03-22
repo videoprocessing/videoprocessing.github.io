@@ -13,7 +13,7 @@ features:
 
 ---
 
-<style>
+<style method="text/css">
     .container1 {
         box-shadow: 0 5px 10px 1px grey;
         background: rgba(255, 255, 255, 0.90);
@@ -60,30 +60,6 @@ features:
             font-size: 4.5vw;
         }
     }
-</style>
-
-<style method="text/css">
-  .textcols {
-    white-space: nowrap;
-  }
-  .textcols-item {
-    white-space: normal;  
-    display: inline-block;
-    width: 31%;
-    vertical-align: top;
-    /*background: #fff2e1;*/
-  }
-  .textcols-item1 {
-    white-space: normal;  
-    display: inline-block;
-    width: 48%;
-    vertical-align: top;
-    /*background: #fff2e1;*/
-  }
-  .textcols .textcols-item:first-child {
-    margin-right: 4%;
-  }
-
 
     .subproject-links {
         display: flex;
@@ -206,7 +182,7 @@ Send us an email to <vqa@videoprocessing.ai>   with the file of .exe extension w
           </ul>
         </p>
     </div>
-    <div class="product-details">
+    <div class="product-details" style="margin-left: 5%;">
         <h1>For No-reference metrics:</h1>
         <br>
         <div class="information">
@@ -229,3 +205,5 @@ If you have any suggestions or ideas how to improve our benchmark, please write 
 ## <span id="contacts"></span>Contacts
 
 For questions and propositions, please contact us: <vqa@videoprocessing.ai>
+
+## [Learn more](https://videoprocessing.ai/benchmarks/video-quality-metrics.html)
