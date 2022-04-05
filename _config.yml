@@ -31,6 +31,9 @@ ordered_categories:
     key: Benchmarks
     title: "Benchmarks"
   - type: categories
+    key: Papers
+    title: "Papers"
+  - type: categories
     key: Datasets
     title: "Datasets"
   - type: data
