@@ -8,7 +8,18 @@ features:
   - "13 considered video physical features"
 ---
 
-### Roman Kazantsev, Sergey Zvezdakov, Dmitriy Vatolin
+### R. Kazantsev, S. Zvezdakov, and D. Vatolin
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8"
+   src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
     .subproject-links {
@@ -43,6 +54,7 @@ features:
     <a href="#method" class="button">Proposed method</a>
     <a href="#results" class="button">Results</a>
     <a href="#comparison" class="button">Comparison</a>
+    <a href="#cite" class="button">Citation</a>
 </div>
 
 
@@ -51,12 +63,13 @@ Modern video codecs have many compression-tuning parameters from which numerous 
 
 **Read full text of the paper [here](https://www.researchgate.net/publication/341835992_Machine-Learning-Based_Method_for_Finding_Optimal_Video-Codec_Configurations_Using_Physical_Input-Video_Features).** <!-- Link to the paper -->
 
+
 ## Key Features
-*  Machine-learning-based method is proposed that is capable of finding preset that
-    * provides **9-20%** bitrate savings against x264 standard presets
-    * is faster than other existing solutions by **10** times 
-* Developed dataset contains more than **350** videos and **1300** presets of x264 codec
-* **13** video physical features are compared during the research
+*  Proposed machine-learning-based method is capable of finding the preset that
+    * provides **9-20% bitrate savings** against x264 standard presets
+    * is faster than other existing solutions by **10 times**
+* Developed dataset contains more than **350 videos** and **1300 presets** of x264 codec
+* **13 video physical features** are compared during the research
     * *Lap Blur* (acutance metric) and *TI ME* (temporal complexity) are the most relevant
 
 
@@ -70,6 +83,7 @@ The scatter plot below demonstrates inefficiency of standard presets and Pareto-
 
 <img src="/assets/img/papers/codec-configuration/dataset.png">
 
+
 ## <span id="method"></span> Proposed method
 * **Training**
     1. Cluster videos according to similarity of Pareto-frontier structures. Four clusters were obtained
@@ -79,15 +93,17 @@ The scatter plot below demonstrates inefficiency of standard presets and Pareto-
     1. Compute the physical features for input video
     2. Predict a cluster using the model and output Pareto- optimal set assigned to the predicted cluster
 
+
 ## <span id="results"></span> Results
 
 The chart below shows the importance of physical video features in trained model.
 
-<img src="/assets/img/papers/codec-configuration/features.png">
+{% include papers/codec_config/plots.html %}
 
 Below you can see average bitrates delivered using optimal, predicted, and standard presets over all train videos in each cluster.
 
 <img src="/assets/img/papers/codec-configuration/bitrates.png">
+
 
 ## <span id="comparison"></span> Comparison
 
@@ -123,7 +139,10 @@ The second table shows bitrate savings [%] obtained using the predicted presets 
 | **Average** | 11.4 | 19.2 | 23.3 | 23.4 | 20.8 | 8.7 | 16.4 | 
 {: .tablelines}
 
+
 ## <span id="cite"></span> Cite us
+
+{% highlight BibTeX %}
 @inproceedings{inproceedings,
 author = {Kazantsev, Roman and Zvezdakov, Sergey and Vatolin, Dmitriy},
 year = {2020},
@@ -132,3 +151,4 @@ pages = {374-374},
 title = {Machine-Learning-Based Method for Finding Optimal Video-Codec Configurations Using Physical Input-Video Features},
 doi = {10.1109/DCC47342.2020.00079}
 }
+{% endhighlight %}
