@@ -1,0 +1,115 @@
+<!-- To use this button, first add to the top of the file -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+.download-button {
+    appearance: button;
+    background-color: #779ce5;
+    border: solid transparent;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 5px;
+    text-align: center;
+    /*  text-transform: uppercase;*/
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.download-button:main,
+.download-button:focus {
+    user-select: auto;
+}
+
+.download-button:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+.download-button:disabled {
+    cursor: auto;
+}
+
+.download-button-caption {
+    color: #666;
+    font-size: medium;
+    margin-top: 5px;
+}
+</style>
+
+<div class="center">
+    
+    <table style="background-color: #ffffff;width: 100%;table-layout:fixed;border: 2px solid black;border-collapse: collapse;overflow: hidden">
+    <tbody>
+    <tr>
+    <td rowspan="4" style = "width:35%;border: 2px solid black;border-collapse: collapse;padding: 10px;word-wrap:break-word;text-align:center">
+            <b> Download the report</b>
+
+            <br>
+            <b>(free download)</b> 
+            <br>
+            <br>
+            <br>
+            <div>
+                <button class="download-button" role="button" onclick="location.href = 'http://storage.videoprocessing.ai/benchmarks/sr-codecs/Super-Resolution_for_Video_Compression_benchmark.pdf'">
+                    <i class="fa fa-download"></i>
+                    Download Full Text
+                </button>
+                <p class="download-button-caption">(PDF,&nbsp;25,5&nbsp;MB)</p>
+            </div>
+            <br>
+            <br>
+            Released on October, 12
+        </td>
+        <td style = "border: 2px solid black;border-collapse: collapse;padding: 10px;word-wrap:break-word;">
+            <b style="font-size:20px">75 SR+codec pairs</b><br>
+            x264, x265, aomenc, VVenC, uavs3 codecs
+            </td>
+    </tr>
+    <tr>
+        <td style = "border: 2px solid black;border-collapse: collapse;padding: 10px;word-wrap:break-word;">
+            <b style="font-size:20px">3 Full HD video sequences</b>
+
+        </td>
+    </tr>
+    <tr>
+        <td style = "border: 2px solid black;border-collapse: collapse;padding: 10px;word-wrap:break-word;">
+            <b style="font-size:20px">6 different objective metrics and subjective comparison</b><br>
+            PSNR, MS-SSIM, VMAF, VMAF NEG, LPIPS, ERQA
+
+
+        </td>
+    </tr>
+    <tr>
+        <td style = "border: 2px solid black;border-collapse: collapse;padding: 10px;word-wrap:break-word;">
+
+            <b style="font-size:20px">80+ pages with plots</b>
+
+        </td>
+    </tr>
+
+    </tbody>
+    
+    </table>
+    
+            <script>$(document).ready(function () {
+                $('#roadmap_table').DataTable({
+                    lengthChange: false,
+                    paging: false,
+                    searching: false,
+                    ordering: false,
+                });
+            });</script>
+</div>
