@@ -62,16 +62,12 @@ Modern video codecs have many compression-tuning parameters from which numerous 
 
 <!-- And then use -->
 <div>
-    <button class="download-button" role="button" onclick="location.href = 'link/to/article.pdf'">
+    <button class="download-button" role="button" onclick="location.href = 'https://www.researchgate.net/publication/341835992_Machine-Learning-Based_Method_for_Finding_Optimal_Video-Codec_Configurations_Using_Physical_Input-Video_Features'">
         <i class="fa fa-download"></i>
         Download Full Text
     </button>
-    <p class="download-button-caption">(PDF,&nbsp;?&nbsp;MB)</p>
+    <p class="download-button-caption"></p>
 </div>
-
-
-
-**Read full text of the paper [here](https://www.researchgate.net/publication/341835992_Machine-Learning-Based_Method_for_Finding_Optimal_Video-Codec_Configurations_Using_Physical_Input-Video_Features).** <!-- Link to the paper -->
 
 
 ## Key Features
@@ -176,18 +172,18 @@ For questions and propositions, please contact us: <roman.kazantsev@graphics.cs.
 
 ## References
 
-1) V. Popov, “Automatic method of choosing pareto optimal video codec’s parameters,” M.S. thesis, Lomonosov Moscow State University, 2009. [2]
+1) V. Popov, “Automatic method of choosing pareto optimal video codec’s parameters,” M.S. thesis, Lomonosov Moscow State University, 2009.
 
-2) K. Deb, A. Pratap, S. Agarwal, and T. Meyarivan, “A fast and elitist multiobjective genetic algorithm: NSGA-II,” IEEE Transactions on Evolutionary Computation, vol.6, no. 2, pp. 182–197, August 2002. [3]
+2) K. Deb, A. Pratap, S. Agarwal, and T. Meyarivan, “A fast and elitist multiobjective genetic algorithm: NSGA-II,” IEEE Transactions on Evolutionary Computation, vol.6, no. 2, pp. 182–197, August 2002.
 
-3) S. Zvezdakov and D. Vatolin, “Building a x264 video codec model,” in Innovative technologies in cinema and education: IV International Symposium, Moscow, Russia, 2017, pp. 56–65, VGIK Moscow. [4]
+3) S. Zvezdakov and D. Vatolin, “Building a x264 video codec model,” in Innovative technologies in cinema and education: IV International Symposium, Moscow, Russia, 2017, pp. 56–65, VGIK Moscow.
 
-4) Telecommunication Standardization Sector of ITU, “Subjective video quality assessment methods for multimedia applications,” in Series P. Telephone Transmission Quality, Telephone Installations, Local Line Networks, pp. 4–6. April 2008. [7]
+4) Telecommunication Standardization Sector of ITU, “Subjective video quality assessment methods for multimedia applications,” in Series P. Telephone Transmission Quality, Telephone Installations, Local Line Networks, pp. 4–6. April 2008.
 
-5) K. Simonyan, S. Grishin, D. Vatolin, and D. Popov, “Fast video super-resolution via classification,” in Proceedings of 15th IEEE International Conference on Image Processing, San Diego, CA, USA, October 2008, pp. 349–352. [9]
+5) K. Simonyan, S. Grishin, D. Vatolin, and D. Popov, “Fast video super-resolution via classification,” in Proceedings of 15th IEEE International Conference on Image Processing, San Diego, CA, USA, October 2008, pp. 349–352.
 
-6) F. Crete-Roffet, T. Dolmiere, P. Ladret, and M. Nicolas., “The blur effect: Perception and estimation with a new no-reference perceptual blur metric,” in SPIE Electronic Imaging Symposium Conf Human Vision and Electronic Imaging, San Jose, CA, USA, January 2007, pp. 6492–6516. [10]
+6) F. Crete-Roffet, T. Dolmiere, P. Ladret, and M. Nicolas., “The blur effect: Perception and estimation with a new no-reference perceptual blur metric,” in SPIE Electronic Imaging Symposium Conf Human Vision and Electronic Imaging, San Jose, CA, USA, January 2007, pp. 6492–6516. 
 
-7) R. Bansal, G. Raj, and T. Choudhury, “Blur image detection using laplacian operator and opencv,” in Proceedings of the SMART-2016, Moradabad, India, November 2016. [11]
+7) R. Bansal, G. Raj, and T. Choudhury, “Blur image detection using laplacian operator and opencv,” in Proceedings of the SMART-2016, Moradabad, India, November 2016. 
 
-8) N. Lakshmi, Y. Latha, A. Damodharam, and K. Prasanna, “Implementation of content based video classification using hidden markov model,” in Proceedings of 7th International Advance Computing Conference (IACC), Hyderabad, India, January 2017. [12]
+8) N. Lakshmi, Y. Latha, A. Damodharam, and K. Prasanna, “Implementation of content based video classification using hidden markov model,” in Proceedings of 7th International Advance Computing Conference (IACC), Hyderabad, India, January 2017. 
