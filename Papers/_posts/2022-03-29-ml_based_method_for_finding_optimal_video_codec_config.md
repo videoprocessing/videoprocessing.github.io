@@ -10,6 +10,13 @@ features:
 
 ### R. Kazantsev, S. Zvezdakov, and D. Vatolin
 
+Contact us: 
+* <roman.kazantsev@graphics.cs.msu.ru>
+* <sergey.zvezdakov@graphics.cs.msu.ru>
+* <dmitriy.vatolin@graphics.cs.msu.ru>
+* <video@compression.ru>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
@@ -48,18 +55,21 @@ features:
 
 </style>
 
-<div class="subproject-links">
-    <a href="/" class="button">Home</a>
-    <a href="#dataset" class="button">Dataset</a>
-    <a href="#method" class="button">Proposed method</a>
-    <a href="#results" class="button">Results</a>
-    <a href="#comparison" class="button">Comparison</a>
-    <a href="#cite" class="button">Citation</a>
+## Abstract
+Modern video codecs have many compression-tuning parameters from which numerous conﬁgurations (presets) can be constructed. The large number of presets complicates the search for one that delivers optimal encoding time, quality, and compressed-video size. This paper presents a machine-learning-based method that helps to solve this problem. We applied the method to the x264 video codec: it searches for optimal presets that demonstrate 9-20% bitrate savings relative to standard x264 presets with comparable compressed-video quality and encoding time. Our method is faster upto 10 times than existing solutions.
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- And then use -->
+<div>
+    <button class="download-button" role="button" onclick="location.href = 'link/to/article.pdf'">
+        <i class="fa fa-download"></i>
+        Download Full Text
+    </button>
+    <p class="download-button-caption">(PDF,&nbsp;?&nbsp;MB)</p>
 </div>
 
 
-## Abstract
-Modern video codecs have many compression-tuning parameters from which numerous conﬁgurations (presets) can be constructed. The large number of presets complicates the search for one that delivers optimal encoding time, quality, and compressed-video size. This paper presents a machine-learning-based method that helps to solve this problem. We applied the method to the x264 video codec: it searches for optimal presets that demonstrate 9-20% bitrate savings relative to standard x264 presets with comparable compressed-video quality and encoding time. Our method is faster upto 10 times than existing solutions.
 
 **Read full text of the paper [here](https://www.researchgate.net/publication/341835992_Machine-Learning-Based_Method_for_Finding_Optimal_Video-Codec_Configurations_Using_Physical_Input-Video_Features).** <!-- Link to the paper -->
 
@@ -116,7 +126,7 @@ Below you can see average bitrates delivered using optimal, predicted, and stand
 Below the average bitrate savings [%] of the predicted presets versus standard presets are proposed, as well as execution time obtained using different methods.
 
 |-----------------+-------------------+-----------------+----------------+----------------+----------------+----------------+----------------+----------------|
-| &nbsp; &nbsp; Sequence &nbsp; &nbsp; | &nbsp; Faster &nbsp; |  &nbsp; Fast &nbsp; | &nbsp; Medium &nbsp; | &nbsp; Slow &nbsp; | &nbsp; Slower &nbsp; | &nbsp; Veryslow &nbsp; | &nbsp; Placebo &nbsp; | Time,sec |
+| &nbsp; &nbsp; Sequence &nbsp; &nbsp;  | &nbsp; Faster &nbsp; |  &nbsp; Fast &nbsp; | &nbsp; Medium &nbsp; | &nbsp; Slow &nbsp; | &nbsp; Slower &nbsp; | &nbsp; Veryslow &nbsp; | &nbsp; Placebo &nbsp; | Time,sec |
 |:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
 | *NSGA-II* | 15.9 | 30.2 | 29.7 | 34.9 | 32.2 | 29.0 | 28.3 | 13684.4 |
 | *Popov's* | 8.0 | 29.0 | 28.4 | 34.9 | 32.2 | 28.3 | 29.0 | 10039.7 |
@@ -152,3 +162,32 @@ title = {Machine-Learning-Based Method for Finding Optimal Video-Codec Configura
 doi = {10.1109/DCC47342.2020.00079}
 }
 {% endhighlight %}
+
+## Contact us
+
+For questions and propositions, please contact us: <roman.kazantsev@graphics.cs.msu.ru>, <sergey.zvezdakov@graphics.cs.msu.ru>, <dmitriy.vatolin@graphics.cs.msu.ru>, and <video@compression.ru>
+
+## See also 
+* [Machine-Learning-Based Method for Content-Adaptive Video Encoding](https://www.researchgate.net/publication/353491818_Machine-Learning-Based_Method_for_Content-Adaptive_Video_Encoding)
+* [Power Consumption of Video-Decoders on Various Android Devices](https://ieeexplore.ieee.org/document/9477481)
+* [Video-Decoder Power Consumption on Android Devices: Power-Estimation Method, Dataset Creation, and Analysis Results](https://ieeexplore.ieee.org/document/9418729)
+* [MSU Mobile Video Codecs Benchmark](https://videoprocessing.ai/benchmarks/mobile-video-codec-benchmark.html)
+* [Our other benchmarks](https://videoprocessing.ai/benchmarks/)
+
+## References
+
+1) V. Popov, “Automatic method of choosing pareto optimal video codec’s parameters,” M.S. thesis, Lomonosov Moscow State University, 2009. [2]
+
+2) K. Deb, A. Pratap, S. Agarwal, and T. Meyarivan, “A fast and elitist multiobjective genetic algorithm: NSGA-II,” IEEE Transactions on Evolutionary Computation, vol.6, no. 2, pp. 182–197, August 2002. [3]
+
+3) S. Zvezdakov and D. Vatolin, “Building a x264 video codec model,” in Innovative technologies in cinema and education: IV International Symposium, Moscow, Russia, 2017, pp. 56–65, VGIK Moscow. [4]
+
+4) Telecommunication Standardization Sector of ITU, “Subjective video quality assessment methods for multimedia applications,” in Series P. Telephone Transmission Quality, Telephone Installations, Local Line Networks, pp. 4–6. April 2008. [7]
+
+5) K. Simonyan, S. Grishin, D. Vatolin, and D. Popov, “Fast video super-resolution via classification,” in Proceedings of 15th IEEE International Conference on Image Processing, San Diego, CA, USA, October 2008, pp. 349–352. [9]
+
+6) F. Crete-Roffet, T. Dolmiere, P. Ladret, and M. Nicolas., “The blur effect: Perception and estimation with a new no-reference perceptual blur metric,” in SPIE Electronic Imaging Symposium Conf Human Vision and Electronic Imaging, San Jose, CA, USA, January 2007, pp. 6492–6516. [10]
+
+7) R. Bansal, G. Raj, and T. Choudhury, “Blur image detection using laplacian operator and opencv,” in Proceedings of the SMART-2016, Moradabad, India, November 2016. [11]
+
+8) N. Lakshmi, Y. Latha, A. Damodharam, and K. Prasanna, “Implementation of content based video classification using hidden markov model,” in Proceedings of 7th International Advance Computing Conference (IACC), Hyderabad, India, January 2017. [12]
