@@ -1,0 +1,44 @@
+.download-button {
+  appearance: button;
+  background-color: #779ce5;
+  border: solid transparent;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 5px;
+  text-align: center;
+  /*  text-transform: uppercase;*/
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.download-button:main,
+.download-button:focus {
+  user-select: auto;
+}
+
+.download-button:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.download-button:disabled {
+  cursor: auto;
+}
+
+.download-button-caption {
+  color: $gray;
+  font-size: small;
+  margin-top: 5px;
+}
