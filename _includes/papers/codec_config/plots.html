@@ -1,0 +1,27 @@
+
+<div id="container" class="mobile-plots">
+
+<div id="leaderboard_plot" style="display: block" class="highcharts-figure">
+    <script async src="/assets/js/papers/codec_config/arrow.js"></script>
+</div>
+
+<script>
+    function onChangeHelper() {
+        let speed_plot = document.getElementById("leaderboard_plot");
+        let this_div = document.getElementById("container");
+
+        speed_plot.remove();
+        let new_plot = document.createElement('div');
+        new_plot.setAttribute("id", "leaderboard_plot");
+        new_plot.setAttribute("class", "highcharts-figure");
+        this_div.appendChild(new_plot);
+
+        let sc = document.createElement("script");
+        sc.src = '/assets/js/papers/codec_config/arrow.js';
+        new_plot.appendChild(sc);
+    }
+
+    document.getElementById("selector_codec").onchange = onChangeHelper;
+    document.getElementById("selector_correlation").onchange = onChangeHelper;
+</script>
+</div>

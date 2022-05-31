@@ -1,0 +1,110 @@
+{
+
+    "title": "",
+    "yAxis_title": "Average gain of tree split by feature",
+    "data": [
+        {
+            "name": "Mean",
+            "color": "#E7BC45",
+            "data": [
+                {
+                    "name": "Mean V",
+                    "x": 7,
+                    "y": 35,
+                    "color": "#E7BC45"
+                },
+                {
+                    "name": "Mean Y",
+                    "x": 10,
+                    "y": 20,
+                    "color": "#E7BC45"
+                }
+            ],
+            "visible": true
+        },
+        {
+            "name": "Std",
+            "color": "#DF804D",
+            "data": [
+                {
+                    "name": "Std U",
+                    "x": 6,
+                    "y": 36,
+                    "color": "#DF804D"
+                },
+                {
+                    "name": "Std Y",
+                    "x": 8,
+                    "y": 31,
+                    "color": "#DF804D"
+                }
+            ],
+            "visible": true
+        },
+        {
+            "name": "Hist",
+            "color": "#6F9AD5",
+            "data": [
+                {
+                    "name": "Col Hist",
+                    "x": 9,
+                    "y": 23.125,
+                    "color": "#6F9AD5"
+                },
+                {
+                    "name": "Mot Hist",
+                    "x": 5,
+                    "y": 38.84,
+                    "color": "#6F9AD5"
+                }
+            ],
+            "visible": true
+        },
+        {
+            "name": "ITU-T",
+            "color": "#6F9AD5",
+            "data": [
+                {
+                    "name": "ITU-T SI",
+                    "x": 3,
+                    "y": 68,
+                    "color": "#6F9AD5"
+                },
+                {
+                    "name": "ITU-T TI",
+                    "x": 4,
+                    "y": 46,
+                    "color": "#6F9AD5"
+                }
+            ],
+            "visible": true
+        },
+        {
+            "name": "Other",
+            "color": "#6FCDD5",
+            "data": [
+                {
+                    "name": "Lap Blur",
+                    "x": 0,
+                    "y": 326,
+                    "color": "#6FCDD5"
+                },
+                {
+                    "name": "Blur",
+                    "x": 2,
+                    "y": 70,
+                    "color": "#6FCDD5"
+                },
+                {
+                    "name": "TI ME",
+                    "x": 1,
+                    "y": 158,
+                    "color": "#6FCDD5"
+                }
+            ],
+            "visible": true
+        }
+    ],
+    "subtitle": ""
+
+}
