@@ -4,15 +4,16 @@ metrics'
 permalink: /stereoscopic-quality-assessment
 features:
   - "Analysis of stereoscopic quality for 1,000 VR180 YouTube videos"
-  - "Using eight objective metrics"
+  - "Estimation of eight stereoscopic parameters"
   - "Analysis of Common 3D-Shooting Artifacts"
 ---
 
-### S.Lavrushkin, I.Molodetskikh, K.Kozhemyakov, D.Vatolin
+### S. Lavrushkin, I. Molodetskikh, K. Kozhemyakov, and D. Vatolin
 
 Contact us: 
 * <sergey.lavrushkin@graphics.cs.msu.ru>
 * <ivan.molodetskikh@graphics.cs.msu.ru>
+* <3dmovietest@graphics.cs.msu.ru>
 * <dmitriy.vatolin@graphics.cs.msu.ru>
 * <video@compression.ru>
 
@@ -33,7 +34,15 @@ at least one of the stereoscopic artifacts, which shows a necessity for stereosc
 
 ## Key Features
 * Analysis of stereoscopic quality for 1,000 VR180 YouTube videos
-* Using eight objective metrics
+* Estimation of the following stereoscopic parameters:
+    1. Positive parallax;
+    2. Negative parallax;
+    3. Color mismatch;
+    4. Vertical parallax;
+    5. Rotation mismatch;
+    6. Scale mismatch;
+    7. Sharpness mismatch;
+    8. Channel mismatch.
 * Analysis of Common 3D-Shooting Artifacts
 <!-- 
 Main part of the page
@@ -43,14 +52,24 @@ Main part of the page
     .examples {
         display: flex;
         flex-wrap: wrap;
-        gap: 5px;
-        margin-bottom: 5px;
+        gap: 15px;
+        margin-bottom: 15px;
     }
 
     .small-example {
         text-align: center;
-        width:175px;
-        height: 175px;
+        width:230px;
+        height: 230px;
+    }
+    .color-example{
+        text-align: center;
+        width:470px;
+        height: 230px;
+    }
+    .sharp-example{
+        text-align: center;
+        width:230px;
+        height: 220px;
     }
     .example {
         text-align: center;
@@ -96,68 +115,34 @@ Here you can see breakdowns of scene depth budget for each video. The x-axis rep
 
 ## Common 3D-Shooting Artifacts
 For all 1,000 VR180 videos, we calculated scores for each
-geometric distortion: vertical shift, scale mismatch, rotation mismatch, color mismatch and sharpness mismatch. Some of them are presented below.
- <i> <br> <br>
-Results of vertical-parallax analysis for VR180 videos.</i>
+geometric distortion: vertical shift, scale mismatch, rotation mismatch, color mismatch and sharpness mismatch. Some examples are presented below.
 <div class="examples">
     <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic5.png" alt="(a) Overall results relative to number of YouTube views."/><br>
-        <i>(a) Overall results relative to number of YouTube views.</i>
+        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic17.png" alt="vertical-parallax"/><br>
+        <i>Vertical parallax</i>
     </div>
     <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic6.png" alt="(b) Overall results relative to video release date."/><br>
-        <i>(b) Overall results relative to video release date.</i>
+        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic18.png" alt="dcsle-mismatch"/><br>
+        <i>Scale mismatch</i>
     </div>
     <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic7.png" alt="(c) Overall results relative to video duration"/><br>
-        <i>(c) Overall results relative to video duration.</i>
-    </div>
-    <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic8.png" alt="(d) Average vertical parallax for each video."/><br>
-        <i>(d) Average vertical parallax for each video.</i>
+        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic19.png" alt="rotation-mismatch"/><br>
+        <i>Rotation mismatch</i>
     </div>
 </div>
- <i> <br>
-Results of scale-mismatch analysis for VR180 videos</i>
-<div class="examples">
-    <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic9.png" alt="(a) Overall results relative to number of YouTube views."/><br>
-        <i>(a) Overall results relative to number of YouTube views.</i>
-    </div>
-    <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic10.png" alt="(b) Overall results relative to video release date."/><br>
-        <i>(b) Overall results relative to video release date.</i>
-    </div>
-    <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic11.png" alt="(c) Overall results relative to video duration"/><br>
-        <i>(c) Overall results relative to video duration.</i>
-    </div>
-    <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic12.png" alt="(d) Average scale mismatch for each video."/><br>
-        <i>(d) Average scale mismatch for each video.</i>
-    </div>
-</div>
+ <br><br>
 
-<i> <br>
- Results of color-mismatch analysis for VR180 videos.</i>
 <div class="examples">
-    <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic13.png" alt="(a) Overall results relative to number of YouTube views."/><br>
-        <i>(a) Overall results relative to number of YouTube views.</i>
+    <div class="color-example">
+        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic20.png" alt="color-mismatch"/><br>
+        <i>Color mismatch</i>
     </div>
-    <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic14.png" alt="(b) Overall results relative to video release date."/><br>
-        <i>(b) Overall results relative to video release date.</i>
-    </div>
-    <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic15.png" alt="(c) Overall results relative to video duration"/><br>
-        <i>(c) Overall results relative to video duration.</i>
-    </div>
-    <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic16.png" alt="(d) Average scale mismatch for each video."/><br>
-        <i>(d) Average color mismatch for each video.</i>
+    <div class="sharp-example">
+        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic21.png" alt="(sharpness-mismatch"/><br>
+        <i>Sharpness mismatch</i>
     </div>
 </div>
+<br>
 ## Cite us
 {% highlight BibTeX %}
 @article{article,

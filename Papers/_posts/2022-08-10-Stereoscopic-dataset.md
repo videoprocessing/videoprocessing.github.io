@@ -7,7 +7,7 @@ features:
   - "4000 frames for the training set and 500 for the test set"
 ---
 
-### K.Malyshev, S.Lavrushkin, D.Vatolin
+### K. Malyshev, S. Lavrushkin, and D. Vatolin
 
 Contact us: 
 * <kirill.malyshev@graphics.cs.msu.ru>
@@ -32,7 +32,7 @@ This paper presents a method for generating stereoscopic or multi-angle video fr
 * Dataset with a synthetic set of frame sequences from GTA V video game
 * Suitable for stereoscopic video analysis and processing 
 * 4000 frames for the training set and 500 for the test set
-* Pearson correlation coefficient (PCC) was 0.956 for converged axes, and for perspective distortion, it was 0.859
+* Pearson correlation coefficient is **0.956** for converged axes and **0.859** for perspective distortion
 <!-- 
 Main part of the page
  -->
