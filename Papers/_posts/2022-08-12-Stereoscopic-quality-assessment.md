@@ -4,17 +4,14 @@ metrics'
 permalink: /stereoscopic-quality-assessment
 features:
   - "Analysis of stereoscopic quality for 1,000 VR180 YouTube videos"
-  - "Estimation of eight stereoscopic parameters"
   - "Analysis of Common 3D-Shooting Artifacts"
+  - "Estimation of eight stereoscopic parameters"
 ---
 
 ### S. Lavrushkin, I. Molodetskikh, K. Kozhemyakov, and D. Vatolin
 
 Contact us: 
-* <sergey.lavrushkin@graphics.cs.msu.ru>
-* <ivan.molodetskikh@graphics.cs.msu.ru>
 * <3dmovietest@graphics.cs.msu.ru>
-* <dmitriy.vatolin@graphics.cs.msu.ru>
 * <video@compression.ru>
 
 ## Abstract
@@ -34,6 +31,7 @@ at least one of the stereoscopic artifacts, which shows a necessity for stereosc
 
 ## Key Features
 * Analysis of stereoscopic quality for 1,000 VR180 YouTube videos
+* Analysis of Common 3D-Shooting Artifacts
 * Estimation of the following stereoscopic parameters:
     1. Positive parallax;
     2. Negative parallax;
@@ -43,7 +41,6 @@ at least one of the stereoscopic artifacts, which shows a necessity for stereosc
     6. Scale mismatch;
     7. Sharpness mismatch;
     8. Channel mismatch.
-* Analysis of Common 3D-Shooting Artifacts
 <!-- 
 Main part of the page
  -->
@@ -118,15 +115,15 @@ For all 1,000 VR180 videos, we calculated scores for each
 geometric distortion: vertical shift, scale mismatch, rotation mismatch, color mismatch and sharpness mismatch. Some examples are presented below.
 <div class="examples">
     <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic17.png" alt="vertical-parallax"/><br>
+        <img src="/assets/img/papers/stereoscopic-quality-assessment/vertical-parallax.gif" alt="vertical-parallax"/><br>
         <i>Vertical parallax</i>
     </div>
     <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic18.png" alt="dcsle-mismatch"/><br>
+        <img src="/assets/img/papers/stereoscopic-quality-assessment/scale_visual.gif" alt="dcsle-mismatch"/><br>
         <i>Scale mismatch</i>
     </div>
     <div class="small-example">
-        <img src="/assets/img/papers/stereoscopic-quality-assessment/pic19.png" alt="rotation-mismatch"/><br>
+        <img src="/assets/img/papers/stereoscopic-quality-assessment/rotation.gif" alt="rotation-mismatch"/><br>
         <i>Rotation mismatch</i>
     </div>
 </div>
@@ -143,6 +140,18 @@ geometric distortion: vertical shift, scale mismatch, rotation mismatch, color m
     </div>
 </div>
 <br>
+<br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div>
+<button class="download-button" role="button" onclick="location.href = 'https://storage.videoprocessing.ai/vqmt3d/pdf/VQMT3D-film-test-report12.pdf'"> <!-- Insert link here-->
+    <i class="fa fa-download"></i>
+    Download Report
+</button>
+<p class="download-button-caption">(PDF, 170 MB)</p>  <!-- Insert correct filesize here-->
+</div>
+
+[All MSU Stereo Quality Reports](https://videoprocessing.ai/stereo_quality/reports/)
+
 ## Cite us
 {% highlight BibTeX %}
 @article{article,
