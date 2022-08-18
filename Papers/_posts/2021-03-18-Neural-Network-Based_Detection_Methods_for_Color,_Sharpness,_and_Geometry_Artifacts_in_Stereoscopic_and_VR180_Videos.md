@@ -38,14 +38,21 @@ Shooting video in&nbsp;3D format can introduce stereoscopic arti-facts, potentia
 ## Method For Color- And Sharpness-mismatch Estimation
 
 ### Train Dataset
-Generation of the resulting stereopairs randomly employed one of the two models presented in the article. 
+The picture below shows an example with distortions added by the proposed distortion model.
 
-The picture below shows an example with distortions added.
+<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/ColorSharpPic1.jpg">
+A left view with generated color and sharpness distortions and an interpolated right view. The scene is from Captain
+America: The First Avenger.
 
-<img src="/assets/img/papers/codec-configuration/dataset.png">
 
+### Architecture
+Below is the General scheme of the proposed method for detecting color and sharpness mismatch between stereoscopic views. 
 
+<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/ColorSharpNet.jpg">
 
+Next, the neural network architecture itself, for which GridNet was chosen as the basis. 
+
+<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/GridNet.jpg">
 
 ## Cite&nbsp;us
 {% highlight BibTeX %}
