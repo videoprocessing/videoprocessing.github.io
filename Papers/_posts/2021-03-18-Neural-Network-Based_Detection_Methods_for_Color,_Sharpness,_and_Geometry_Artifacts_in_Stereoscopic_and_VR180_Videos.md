@@ -29,7 +29,7 @@ Shooting video in&nbsp;3D format can introduce stereoscopic arti-facts, potentia
 ## Key Features
 * **2 neural-network-based models** for estimating **3 types** of stereoscopic artifacts in VR180 videos
 * **Simultaneously** detecting color and sharpness mismatch between stereoscopic video views
-* Special distortion algorithm for building dataset from **9,488** source stereopairs of size **960 × 540** to train method for color- and sharpness-mismatch estimation. The frames were from 16 stereoscopic movies. 
+* Special distortion algorithm for building dataset from **9,488** source stereopairs of size **960 × 540** to train method for color- and sharpness-mismatch estimation. The frames were from **16** stereoscopic movies. 
 * 
 * Objective quality assessment of **100 VR180 videos** from YouTube using proposed methods
 * Powered by [Subjectify.us](https://www.subjectify.us/). 
@@ -50,9 +50,97 @@ Below is the General scheme of the proposed method for detecting color and sharp
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/ColorSharpNet.jpg">
 
-Next, the neural network architecture itself, for which GridNet was chosen as the basis. 
+Next the neural network architecture itself for which GridNet network was chosen as the basis. 
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/GridNet.jpg">
+
+### Training
+* Loss function for predicting both color- and sharpness-difference maps was the sum of squared differences between the predicted and groundtruth values, weighted by the disparity-map confidence
+* The neural-network training took place over **100** epochs
+
+### Results
+Test dataset contains 23 stereoscopic-video sequences with a resolution of 1024×436. Artificial distortions were added for each sequence based on the
+aforementioned general distortion model. 
+
+Table below presents the results. 
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Method </th>
+    <th class="tg-0pky">PCC</th>
+    <th class="tg-0pky">SROCC</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">Color mismatch</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">MAE</td>
+    <td class="tg-0pky">0.1254</td>
+    <td class="tg-0pky">0.1626</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">MAE with right view interpolation</td>
+    <td class="tg-0pky">0.1338</td>
+    <td class="tg-0pky">0.2039</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Winkler</td>
+    <td class="tg-0pky">-0.4430</td>
+    <td class="tg-0pky">-0.4093</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">VQMT3D</td>
+    <td class="tg-0pky">0.8136</td>
+    <td class="tg-0pky">0.8760</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Proposed method</td>
+    <td class="tg-0pky">0.9696</td>
+    <td class="tg-0pky">0.9602</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Sharpness mismatch</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">MAE</td>
+    <td class="tg-0pky">0.1482</td>
+    <td class="tg-0pky">0.2635</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">MAE with right view interpolation</td>
+    <td class="tg-0pky">0.2683</td>
+    <td class="tg-0pky">0.3505</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">VQMT3D</td>
+    <td class="tg-0pky">0.7686</td>
+    <td class="tg-0pky">0.6815</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Proposed method</td>
+    <td class="tg-0pky">0.9762</td>
+    <td class="tg-0pky">0.9078</td>
+  </tr>
+</tbody>
+</table>
+
+
 
 ## Cite&nbsp;us
 {% highlight BibTeX %}
