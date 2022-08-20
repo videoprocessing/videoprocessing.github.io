@@ -70,20 +70,21 @@ Table below presents the results.
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0pky">Method </th>
-    <th class="tg-0pky">PCC</th>
-    <th class="tg-0pky">SROCC</th>
+    <th class="tg-fymr">Method </th>
+    <th class="tg-fymr">PCC</th>
+    <th class="tg-fymr">SROCC</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-c3ow" colspan="3">Color mismatch</td>
+    <td class="tg-7btt" colspan="3">Color mismatch</td>
   </tr>
   <tr>
     <td class="tg-0pky">MAE</td>
@@ -107,11 +108,11 @@ Table below presents the results.
   </tr>
   <tr>
     <td class="tg-0pky">Proposed method</td>
-    <td class="tg-0pky">0.9696</td>
-    <td class="tg-0pky">0.9602</td>
+    <td class="tg-fymr">0.9696</td>
+    <td class="tg-fymr">0.9602</td>
   </tr>
   <tr>
-    <td class="tg-c3ow" colspan="3">Sharpness mismatch</td>
+    <td class="tg-7btt" colspan="3">Sharpness mismatch</td>
   </tr>
   <tr>
     <td class="tg-0pky">MAE</td>
@@ -130,8 +131,8 @@ Table below presents the results.
   </tr>
   <tr>
     <td class="tg-0pky">Proposed method</td>
-    <td class="tg-0pky">0.9762</td>
-    <td class="tg-0pky">0.9078</td>
+    <td class="tg-fymr">0.9762</td>
+    <td class="tg-fymr">0.9078</td>
   </tr>
 </tbody>
 </table>
