@@ -139,8 +139,10 @@ geometric distortion: vertical shift, scale mismatch, rotation mismatch, color m
         <i>Sharpness mismatch</i>
     </div>
 </div>
-<br>
-<br>
+<br><br>
+## Report
+Read full technical report based on our analysis. The report includes more than 300 pages with overall charts, S3D-artifact examples and video statistics.
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div>
 <button class="download-button" role="button" onclick="location.href = 'https://storage.videoprocessing.ai/vqmt3d/pdf/VQMT3D-film-test-report12.pdf'"> <!-- Insert link here-->
@@ -150,7 +152,7 @@ geometric distortion: vertical shift, scale mismatch, rotation mismatch, color m
 <p class="download-button-caption">(PDF, 170 MB)</p>  <!-- Insert correct filesize here-->
 </div>
 
-[All MSU Stereo Quality Reports](https://videoprocessing.ai/stereo_quality/reports/)
+Read all MSU Stereo Quality Reports on the [main VQMT3D project page](https://videoprocessing.ai/stereo_quality/reports/).
 
 ## Cite us
 {% highlight BibTeX %}
