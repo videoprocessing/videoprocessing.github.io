@@ -83,9 +83,7 @@ Table below presents the results.
 </thead>
 <tbody>
   <tr>
-    <td class="tg-c3ow">Color mismatch</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-c3ow" colspan="3">Color mismatch</td>
   </tr>
   <tr>
     <td class="tg-0pky">MAE</td>
@@ -113,9 +111,7 @@ Table below presents the results.
     <td class="tg-0pky">0.9602</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">Sharpness mismatch</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-c3ow" colspan="3">Sharpness mismatch</td>
   </tr>
   <tr>
     <td class="tg-0pky">MAE</td>
@@ -139,7 +135,6 @@ Table below presents the results.
   </tr>
 </tbody>
 </table>
-
 
 
 ## Cite&nbsp;us
