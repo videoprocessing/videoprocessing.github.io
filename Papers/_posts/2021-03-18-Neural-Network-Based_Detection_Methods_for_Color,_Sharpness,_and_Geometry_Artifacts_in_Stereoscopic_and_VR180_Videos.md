@@ -56,7 +56,7 @@ Next the neural network architecture itself for which GridNet network was chosen
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/GridNet.jpg">
 
 ### Training
-* Loss function for predicting both color- and sharpness-difference maps was the sum of squared differences between the predicted and groundtruth values, weighted by the disparity-map confidence and $L_{2}$-regularization
+* Loss function for predicting both color- and sharpness-difference maps was the sum of squared differences between the predicted and groundtruth values, weighted by the disparity-map confidence and \(L_{2}\)-regularization
 * The neural-network training took place over **100** epochs
 
 ### Results
@@ -143,7 +143,7 @@ Table below shows the absolute error for each geometric distortion. “No model�
 
 ### Train and Test Datasets
 Geometric distortions between stereoscopic views often occur in 3D shooting. The most common types include vertical shift, rotation, and scaling.
-The standard deviation for each distortion type was computed and gathered stereopairs for which all three of these parameters had absolute values less than $\frac{σ}{10}$.
+The standard deviation for each distortion type was computed and gathered stereopairs for which all three of these parameters had absolute values less than \(\frac{σ}{10}\).
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/STDGeometry.jpg">
 Distributions of and computed standard deviations for the geometric distortions for thirty-nine 3D movies.
