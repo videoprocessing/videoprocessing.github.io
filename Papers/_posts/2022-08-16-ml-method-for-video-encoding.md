@@ -184,7 +184,7 @@ guru/ml-preset-predictor/xiph-comparison.html).
 * [Machine-Learning-Based Method for Finding Optimal Video-Codec Conﬁgurations Using Physical Input-Video Features](https://videoprocessing.github.io/codec-configuration) 
 
 ## References
-[1] [D. Kulikov, M. Erofeev, A. Antsiferova, E. Sklyarov, A. Yakovenko, and N. Safonov. HEVC/AV1 Video Codecs Comparison 2020. Dec 07, 2020.](https://www.compression.ru/compression.ru/video/codec_comparison/hevc_2020/).<br>
+[1] [D. Kulikov, M. Erofeev, A. Antsiferova, E. Sklyarov, A. Yakovenko, and N. Safonov. HEVC/AV1 Video Codecs Comparison 2020. Dec 07, 2020.](https://www.compression.ru/compression.ru/video/codec_comparison/hevc_2020/)<br>
 [2] [D. Vatolin, D. Kulikov, M. Erofeev, S. Dolganov, and S. Zvezdakov. Eleventh MSU Video Codecs Comparison. Aug 22, 2016.](https://www.compression.ru/video/codec_comparison/hevc_2016/)<br>
 [3] R. Kazantsev, S. Zvezdakov, and D. Vatolin, “Machine-learning-based
 method for finding optimal video-codec configurations using physical
