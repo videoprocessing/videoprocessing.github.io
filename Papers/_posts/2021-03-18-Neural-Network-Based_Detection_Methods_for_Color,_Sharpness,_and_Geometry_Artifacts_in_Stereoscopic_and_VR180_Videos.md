@@ -47,7 +47,7 @@ A left view with generated color and sharpness distortions and an interpolated r
 America: The First Avenger.
 
 ### Architecture
-Below is the General scheme of the proposed method for detecting color and sharpness mismatch between stereoscopic views. 
+Below is the general scheme of the proposed method for detecting color and sharpness mismatch between stereoscopic views. 
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/ColorSharpNet.jpg">
 
