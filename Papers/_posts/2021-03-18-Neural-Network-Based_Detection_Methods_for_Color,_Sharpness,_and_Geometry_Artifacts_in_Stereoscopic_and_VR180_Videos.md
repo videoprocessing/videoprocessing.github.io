@@ -1,5 +1,5 @@
 ---
-title: Neural-Network-Based Detection Methods For Color, Sharpness, And Geometry Artifacts In Stereoscopic And VR180 Videos
+title: Neural-Network-Based Detection Methods For&nbsp;Color, Sharpness, And Geometry Artifacts In&nbsp;Stereoscopic And VR180 Videos
 permalink: /detection_methods_stereoscopic_VR180
 features:
   - "<b>2 neural-network-based models</b> for estimating <b>3 types</b> of stereoscopic artifacts in VR180 videos"
