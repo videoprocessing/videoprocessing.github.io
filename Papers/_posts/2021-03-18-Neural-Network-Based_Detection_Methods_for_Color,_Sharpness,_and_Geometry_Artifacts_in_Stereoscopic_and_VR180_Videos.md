@@ -2,9 +2,11 @@
 title: Neural-Network-Based Detection Methods For Color, Sharpness, And Geometry Artifacts In Stereoscopic And VR180 Videos
 permalink: /detection_methods_stereoscopic_VR180
 features:
-  - "These lines will be seen in the post preview"
-  - "Write some key features of the paper here"
-  - "Add some numerical parameters like 'More than 200 videos in the dataset'"
+  - **2 neural-network-based models** for estimating **3 types** of stereoscopic artifacts in VR180 videos
+  - **Simultaneously** detecting color and sharpness mismatch between stereoscopic video views
+  - Special distortion algorithm for building dataset from **9,488** source stereopairs of size **960 × 540** to train method for color- and sharpness-mismatch estimation. The frames were from **16** stereoscopic movies
+  - **22800** stereopairs were extracted from **39** 3D movies and processed by the distortion algorithm to enter the train dataset for geometry-mismatch estimation method
+  - Objective quality assessment of **100 VR180 videos** from YouTube using proposed methods
 ---
 
 ### S.&#x202F;Lavrushkin, K.&#x202F;Kozhemyakov and D.&#x202F;Vatolin
@@ -29,13 +31,13 @@ Shooting video in&nbsp;3D format can introduce stereoscopic arti-facts, potentia
 ## Key Features
 * **2 neural-network-based models** for estimating **3 types** of stereoscopic artifacts in VR180 videos
 * **Simultaneously** detecting color and sharpness mismatch between stereoscopic video views
-* Special distortion algorithm for building dataset from **9,488** source stereopairs of size **960 × 540** to train method for color- and sharpness-mismatch estimation. The frames were from **16** stereoscopic movies. 
-* 
+* Special distortion algorithm for building dataset from **9,488** source stereopairs of size **960 × 540** to train method for color- and sharpness-mismatch estimation. The frames were from **16** stereoscopic movies
+* **22800** stereopairs were extracted from **39** 3D movies and processed by the distortion algorithm to enter the train dataset for geometry-mismatch estimation method
 * Objective quality assessment of **100 VR180 videos** from YouTube using proposed methods
 * Powered by [Subjectify.us](https://www.subjectify.us/). 
 
 
-## Method For Color- And Sharpness-mismatch Estimation
+## Method For Color- And Sharpness-Mismatch Estimation
 
 ### Train Dataset
 The picture below shows an example with distortions added by the proposed distortion model.
@@ -43,7 +45,6 @@ The picture below shows an example with distortions added by the proposed distor
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/ColorSharpPic1.jpg">
 A left view with generated color and sharpness distortions and an interpolated right view. The scene is from Captain
 America: The First Avenger.
-
 
 ### Architecture
 Below is the General scheme of the proposed method for detecting color and sharpness mismatch between stereoscopic views. 
@@ -55,14 +56,14 @@ Next the neural network architecture itself for which GridNet network was chosen
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/GridNet.jpg">
 
 ### Training
-* Loss function for predicting both color- and sharpness-difference maps was the sum of squared differences between the predicted and groundtruth values, weighted by the disparity-map confidence
+* Loss function for predicting both color- and sharpness-difference maps was the sum of squared differences between the predicted and groundtruth values, weighted by the disparity-map confidence and $L_{2}$-regularization
 * The neural-network training took place over **100** epochs
 
 ### Results
 Test dataset contains 23 stereoscopic-video sequences with a resolution of 1024×436. Artificial distortions were added for each sequence based on the
 aforementioned general distortion model. 
 
-Table below presents the results. 
+Table below shows the absolute error for each geometric distortion. “No model” predicts zero for each geometric distortion.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -138,6 +139,88 @@ Table below presents the results.
 </table>
 
 
+## Method For Geometry-mismatch Estimation
+
+### Train and Test Datasets
+Geometric distortions between stereoscopic views often occur in 3D shooting. The most common types include vertical shift, rotation, and scaling.
+The standard deviation for each distortion type was computed and gathered stereopairs for which all three of these parameters had absolute values less than $\frac{σ}{10}$.
+
+<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/STDGeometry.jpg">
+Distributions of and computed standard deviations for the geometric distortions for thirty-nine 3D movies.
+
+### Architecture
+Below is the general scheme of proposed method for detecting geometry mismatch between stereoscopic views.
+
+<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/GeometryNet.jpg">
+
+To estimate the geometry-mismatch parameters we employ a neural-network architecture, similar to ResNet-18
+
+### Training
+* The proposed loss function includes three main terms
+  * Squared difference between the predicted and ground-truth distortion parameters 
+  * Loss between two grids transformed using the predicted and ground-truth affine transformations
+  * Measurement of the consistency between the neural network’s predictions of the disparity and confidence maps for the left and right views
+* The neural-network training took place over **120** epochs
+
+### Results
+
+Table below presents the results. 
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-1wig">Method</th>
+    <th class="tg-amwm">Rotation<br>angle</th>
+    <th class="tg-amwm">Scaling<br>coefficient</th>
+    <th class="tg-amwm">Vertical<br>shift</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">No model</td>
+    <td class="tg-0lax">0.63406</td>
+    <td class="tg-0lax">0.6507</td>
+    <td class="tg-0lax">0.57497</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Yi et al.</td>
+    <td class="tg-0lax">0.05115</td>
+    <td class="tg-0lax">0.10810</td>
+    <td class="tg-0lax">0.19109</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Rocco et al.</td>
+    <td class="tg-0lax">0.43735</td>
+    <td class="tg-0lax">1.23582</td>
+    <td class="tg-0lax">0.82534</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">VQMT3D</td>
+    <td class="tg-0lax">0.01158</td>
+    <td class="tg-0lax">0.02622</td>
+    <td class="tg-0lax">0.02004</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Proposed method</td>
+    <td class="tg-1wig">0.01029</td>
+    <td class="tg-1wig">0.02071</td>
+    <td class="tg-1wig">0.00947</td>
+  </tr>
+</tbody>
+</table>
+
+
+
 ## Cite&nbsp;us
 {% highlight BibTeX %}
 @INPROCEEDINGS{9376385,
@@ -153,7 +236,7 @@ Table below presents the results.
 
 ## Contact us
 
-For questions and propositions, please contact us: <first-author-email>, <second-author-email>, ..., <dmitriy.vatolin@graphics.cs.msu.ru>, and <video@compression.ru>
+For questions and propositions, please contact us: <sergey.lavrushkin@graphics.cs.msu.ru>, and <video@compression.ru>
 
 ## See also 
 * [Video Quality Measurement Tool 3D](https://videoprocessing.ai/stereo_quality/)
@@ -167,7 +250,7 @@ For questions and propositions, please contact us: <first-author-email>, <second
  
 2) A. Antsiferova and D. Vatolin, “The influence of 3D video artifacts on discomfort of 302 viewers,” in 2017 International Conference on 3D Immersion (IC3D), pp.&nbsp;1–8, IEEE, 2017.
 
-3) S. Winkler, “Efficient measurement of stereoscopic 3D video content issues,” in Image Quality and System Performance XI, vol.&nbsp;9016, p.&nbsp;90160Q, International Societyfor Optics and Photonics, 2014. 
+**3)** S. Winkler, “Efficient measurement of stereoscopic 3D video content issues,” in Image Quality and System Performance XI, vol.&nbsp;9016, p.&nbsp;90160Q, International Societyfor Optics and Photonics, 2014. 
   
 4) Q. Dong, T. Zhou, Z. Guo, and J. Xiao, “A stereo camera distortion detecting method for 3DTV video quality assessment,” in 2013 Asia-Pacific Signal and Information Processing Association Annual Summit and Conference, pp.&nbsp;1–4, IEEE, 2013.
   
@@ -183,21 +266,21 @@ For questions and propositions, please contact us: <first-author-email>, <second
   
 10) E. Brachmann and C. Rother, “Neural-guided RANSAC: learning where to sample model hypotheses,” in Proceedings of the IEEE International Conference on Computer Vision, pp.&nbsp;4322–4331, 2019.
   
-11) K. M. Yi, E. Trulls, Y. Ono, V. Lepetit, M. Salzmann, and P. Fua, “Learning to find good correspondences,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;2666–2674, 2018.
+**11)** K. M. Yi, E. Trulls, Y. Ono, V. Lepetit, M. Salzmann, and P. Fua, “Learning to find good correspondences,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;2666–2674, 2018.
   
 12) W. Sun, W. Jiang, E. Trulls, A. Tagliasacchi, and K. M. Yi, “Attentive context normalization for robust permutation-equivariant learning,” arXiv preprint arXiv:1907.02545, 2019.
   
-13) I. Rocco, R. Arandjelovic, and J. Sivic, “Convolutional neural network architecture for geometric matching,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;6148–6157, 2017.
+**13)** I. Rocco, R. Arandjelovic, and J. Sivic, “Convolutional neural network architecture for geometric matching,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;6148–6157, 2017.
   
 14) I. Rocco, R. Arandjelovic, and J. Sivic, “End-to-end weakly-supervised semantic alignment,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;6917–6925, 2018.
   
-15) D. Vatolin, A. Bokov, M. Erofeev, and V. Napadovsky, “Trends in S3D-movie quality evaluated on 105 films using 10 metrics,” Electronic Imaging, vol. 2016, no.&nbsp;5, pp.&nbsp;1–10, 2016.
+**15)** D. Vatolin, A. Bokov, M. Erofeev, and V. Napadovsky, “Trends in S3D-movie quality evaluated on 105 films using 10 metrics,” Electronic Imaging, vol. 2016, no.&nbsp;5, pp.&nbsp;1–10, 2016.
   
 16) K. Simonyan, S. Grishin, D. Vatolin, and D. Popov, “Fast video super-resolution via classification,” in 2008 15th IEEE International Conference on Image Processing, pp.&nbsp;349–352, IEEE, 2008.
   
 17) G. Egnal and R. P. Wildes, “Detecting binocular half-occlusions: Empirical comparisons of five approaches,”IEEE Transactions on Pattern Analysis and Machine Intelligence, vol.&nbsp;24, no.&nbsp;8, pp.&nbsp;1127–1133, 2002.
   
-18) D. Fourure, R. Emonet, E. Fromont, D. Muselet, A. Tremeau, and C. Wolf, “Residual conv-deconv grid network for semantic segmentation,” in 28th British Machine Vision Conference, 2017.
+**18)** D. Fourure, R. Emonet, E. Fromont, D. Muselet, A. Tremeau, and C. Wolf, “Residual conv-deconv grid network for semantic segmentation,” in 28th British Machine Vision Conference, 2017.
   
 19) X. Glorot and Y. Bengio, “Understanding the difficulty of training deep feedforward neural networks,” in Proceedings of the 13th International Conference on Artificial Intelligence and Statistics, pp.&nbsp;249–256, 2010.
   
@@ -205,7 +288,7 @@ For questions and propositions, please contact us: <first-author-email>, <second
   
 21) D. J. Butler, J. Wulff, G. B. Stanley, and M. J. Black, “A naturalistic open source movie for optical flow evaluation,” in European Conference on Computer Vision, pp.&nbsp;611–625, Springer, 2012.
   
-22) K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;770–778, 2016.
+**22)** K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;770–778, 2016.
   
 23) S. Ioffe and C. Szegedy, “Batch normalization: accelerating deep network training by reducing internal covariate shift,” in International Conference on Machine Learning, pp.&nbsp;448–456, 2015.
   
