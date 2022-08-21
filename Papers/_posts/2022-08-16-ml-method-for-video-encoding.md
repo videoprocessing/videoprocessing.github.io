@@ -64,6 +64,10 @@ Main part of the page
     .example {
         text-align: center;
     }
+    .form-example{
+        text-align: center;
+        width:  450px;
+    }
     .big-example {
         text-align: center;
         margin-bottom: 15px;
@@ -79,6 +83,8 @@ Main part of the page
 ## Dataset
 We create our dataset using the selection technique from “MSU Video Codecs Comparison 2016” [2], we have analyzed more than one million videos and downloaded 7,036 unique high bitrate videos from Vimeo.com and processed them further.
 Below you can see the bitrate distributions for our video dataset by year. 
+You can also see [SI/TI distribution of datasets]( https://papers.evt.guru/ml-preset-predictor/si-ti.html).
+
 
 <div class="examples">
     <div class="big-example">
@@ -87,7 +93,6 @@ Below you can see the bitrate distributions for our video dataset by year.
     </div>
 </div>
 
-[SI/TI distribution of datasets]( https://papers.evt.guru/ml-preset-predictor/si-ti.html)
 
 <style>
 .tablelines table, .tablelines td, .tablelines th {
@@ -98,13 +103,22 @@ Below you can see the bitrate distributions for our video dataset by year.
 The main idea of content-adaptive encoding (CAE) is to
 replace a reference preset (by which we encoded all
 previous video groups) with other presets that will more
-efficiently encode an input video. The problem is that encoding time
-always includes a little noise that is impossible to completely
-filter. To solve this we can replace
-the ground-truth values with predicted
-values, but this approach has drawbacks. Therefore, we decided to replace the regression
-problem with a classification problem.
+efficiently encode an input video. We can formulate CAE for video V
+using Eq. 1, where P is the set of all possible presets, S - the relative encoding speed, Q - the relative bitrate.
 
+<div class="form-example">
+    <img src="/assets/img/papers/ml-method-for-video-encoding/pic2.png" alt="formula 1"/><br>
+</div>
+
+
+Solving this problem is a time-consuming task. Therefore, we decided to replace the regression problem with a classification problem.
+Our proposed method aims to solve the classification problem for each video and reference preset: the model must select one of several presets. 
+We assume it is possible to improve on the reference preset
+by choosing from a few predefined presets. Formally, this problem requires finding presets p1, ..., pk for a
+set of videos H and for each k such that:
+<div class="form-example">
+    <img src="/assets/img/papers/ml-method-for-video-encoding/pic3.png" alt="formula 1"/><br>
+</div>
 ## Comparison of proposed method with the best possible improvement for x265 and x264 using created dataset.
 
 |:-----------------:|:------------:|:--------:|:-----------:|:--------:|:----:|:--------:|:------:|:-----:|:-----------:|:------------:|
@@ -170,12 +184,8 @@ guru/ml-preset-predictor/xiph-comparison.html).
 * [Machine-Learning-Based Method for Finding Optimal Video-Codec Conﬁgurations Using Physical Input-Video Features](https://videoprocessing.github.io/codec-configuration) 
 
 ## References
-[1] D. Kulikov, M. Erofeev, A. Antsiferova, E. Sklyarov, A. Yakovenko,
-and N. Safonov. [HEVC/AV1 Video Codecs Comparison 2020](https://www.compression.ru/compression.ru/video/codec_comparison/hevc_2020/).
-Dec 07, 2020. Accessed on: Jan. 15, 2021.<br>
-[2] D. Vatolin, D. Kulikov, M. Erofeev, S. Dolganov, and S. Zvezdakov.
-[Eleventh MSU Video Codecs Comparison](https://www.compression.ru/video/codec_comparison/hevc_2016/). Aug 22, 2016. Accessed on:
-Jan. 15, 2021. <br>
+[1] [D. Kulikov, M. Erofeev, A. Antsiferova, E. Sklyarov, A. Yakovenko, and N. Safonov. HEVC/AV1 Video Codecs Comparison 2020. Dec 07, 2020.](https://www.compression.ru/compression.ru/video/codec_comparison/hevc_2020/).<br>
+[2] [D. Vatolin, D. Kulikov, M. Erofeev, S. Dolganov, and S. Zvezdakov. Eleventh MSU Video Codecs Comparison. Aug 22, 2016.](https://www.compression.ru/video/codec_comparison/hevc_2016/)<br>
 [3] R. Kazantsev, S. Zvezdakov, and D. Vatolin, “Machine-learning-based
 method for finding optimal video-codec configurations using physical
 input-video features,” in 2020 Data Compression Conference (DCC).
