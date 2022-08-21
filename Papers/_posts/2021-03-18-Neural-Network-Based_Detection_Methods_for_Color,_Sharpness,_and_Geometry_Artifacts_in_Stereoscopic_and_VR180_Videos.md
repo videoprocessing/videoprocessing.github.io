@@ -63,7 +63,7 @@ Next the neural network architecture itself for which GridNet network was chosen
 Test dataset contains 23 stereoscopic-video sequences with a resolution of 1024×436. Artificial distortions were added for each sequence based on the
 aforementioned general distortion model. 
 
-Table below shows the absolute error for each geometric distortion. “No model” predicts zero for each geometric distortion.
+Table below presents the results.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -164,7 +164,7 @@ To estimate the geometry-mismatch parameters we employ a neural-network architec
 
 ### Results
 
-Table below presents the results. 
+Table below shows the absolute error for each geometric distortion. “No model” predicts zero for each geometric distortion. 
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
