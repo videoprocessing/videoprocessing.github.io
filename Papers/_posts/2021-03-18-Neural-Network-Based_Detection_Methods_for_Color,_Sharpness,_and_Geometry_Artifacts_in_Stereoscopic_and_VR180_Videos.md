@@ -2,11 +2,11 @@
 title: Neural-Network-Based Detection Methods For Color, Sharpness, And Geometry Artifacts In Stereoscopic And VR180 Videos
 permalink: /detection_methods_stereoscopic_VR180
 features:
-  - **2 neural-network-based models** for estimating **3 types** of stereoscopic artifacts in VR180 videos
-  - **Simultaneously** detecting color and sharpness mismatch between stereoscopic video views
-  - Special distortion algorithm for building dataset from **9,488** source stereopairs of size **960 × 540** to train method for color- and sharpness-mismatch estimation. The frames were from **16** stereoscopic movies
-  - **22800** stereopairs were extracted from **39** 3D movies and processed by the distortion algorithm to enter the train dataset for geometry-mismatch estimation method
-  - Objective quality assessment of **100 VR180 videos** from YouTube using proposed methods
+  - "**2 neural-network-based models** for estimating **3 types** of stereoscopic artifacts in VR180 videos"
+  - "**Simultaneously** detecting color and sharpness mismatch between stereoscopic video views"
+  - "Special distortion algorithm for building dataset from **9,488** source stereopairs of size **960 × 540** to train method for color- and sharpness-mismatch estimation. The frames were from **16** stereoscopic movies"
+  - "**22800** stereopairs were extracted from **39** 3D movies and processed by the distortion algorithm to enter the train dataset for geometry-mismatch estimation method"
+  - "Objective quality assessment of **100 VR180 videos** from YouTube using proposed methods"
 ---
 
 ### S.&#x202F;Lavrushkin, K.&#x202F;Kozhemyakov and D.&#x202F;Vatolin
