@@ -4,8 +4,8 @@ permalink: /detection_methods_stereoscopic_VR180
 features:
   - "<b>2 neural-network-based models</b> for estimating <b>3 types</b> of stereoscopic artifacts in VR180 videos"
   - "<b>Simultaneously</b> detecting color and sharpness mismatch between stereoscopic video views"
-  - "Special distortion algorithm for building dataset from <b>9,488 source stereopairs</b> of size <b>960 × 540</b> to train method for color- and sharpness-mismatch estimation"
-  - "<b>22800 stereopairs</b> were extracted from <b>39 3D movies</b> and processed by the distortion algorithm to enter the train dataset for geometry-mismatch estimation method"
+  - "<b>9,488 stereopairs</b> of size <b>960 × 540</b> from <b>16 stereoscopic movies</b> to train method for color- and sharpness-mismatch estimation
+  - "<b>22800 stereopairs</b> with artificial distortions from <b>39 3D movies</b> in the train dataset for geometry-mismatch estimation method"
   - "Objective quality assessment of <b>100 VR180 videos</b> from YouTube using proposed methods"
 ---
 
@@ -31,8 +31,8 @@ Shooting video in&nbsp;3D format can introduce stereoscopic arti-facts, potentia
 ## Key Features
 * **2 neural-network-based models** for estimating **3 types** of stereoscopic artifacts in VR180 videos
 * **Simultaneously** detecting color and sharpness mismatch between stereoscopic video views
-* Special distortion algorithm for building dataset from **9,488** source stereopairs of size **960 × 540** to train method for color- and sharpness-mismatch estimation. The frames were from **16** stereoscopic movies
-* **22800** stereopairs were extracted from **39** 3D movies and processed by the distortion algorithm to enter the train dataset for geometry-mismatch estimation method
+* **9,488 stereopairs** of size **960 × 540** from **16 stereoscopic movies** to train method for color- and sharpness-mismatch estimation
+* **22800 stereopairs** with artificial distortions from **39 3D movies** in the train dataset for geometry-mismatch estimation method
 * Objective quality assessment of **100 VR180 videos** from YouTube using proposed methods
 * Powered by [Subjectify.us](https://www.subjectify.us/). 
 
