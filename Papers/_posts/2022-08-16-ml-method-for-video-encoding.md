@@ -5,7 +5,7 @@ features:
   - "A new approach to predicting
 video codec presets"
   - "Bitrate decreases compared to the x264
-and x265 codecs "
+and x265 codecs while maintaining quality and speed"
 ---
 
 ### S. Zvezdakov, D. Kondranin, and D. Vatolin
@@ -47,7 +47,7 @@ codec-developer presets from MSU Codec Comparison 2020 [1].
 * A new approach to predicting
 video codec presets to increase compression efficiency
 * Bitrate decreases of **17.8%** and **7.9%** compared to the x264
-and x265 codecs 
+and x265 codecs while maintaining quality and speed
 * Method is independent of the video
 codec’s architecture and implementation 
 <!-- 
@@ -160,7 +160,7 @@ each method using dataset from [3] (351 video, x264).
 |&nbsp;slower&nbsp;|&nbsp;32.2%&nbsp;|&nbsp;32.2%&nbsp;|&nbsp;32.2%&nbsp;|&nbsp;24.9%&nbsp;|&nbsp;**32.7%**&nbsp;|
 |&nbsp;veryslow|&nbsp;28.3%&nbsp;|&nbsp;**29.0%**&nbsp;|&nbsp;28.7%&nbsp;|&nbsp;9.7%&nbsp;|&nbsp;28.9%&nbsp;|
 |&nbsp;placebo&nbsp;|&nbsp;29.0%&nbsp;|&nbsp;28.3%&nbsp;|&nbsp;29.4%&nbsp; |&nbsp;10.5%&nbsp; |&nbsp;**29.5%**&nbsp;|
-|&nbsp;Time&nbsp; |&nbsp;2.78 h.&nbsp; |&nbsp;3.8 h.&nbsp;|&nbsp;2.14 h.&nbsp;|&nbsp;735.5 s.&nbsp;|&nbsp;**468.4** s.&nbsp;|
+|&nbsp;Time&nbsp; |&nbsp;2.78 h.&nbsp; |&nbsp;3.8 h.&nbsp;|&nbsp;2.14 h.&nbsp;|&nbsp;735.5 s.&nbsp;|&nbsp;**468.4 s.**&nbsp;|
 {: .tablelines}
  More detailed comparison results: [comparison results on JCT-VC and xiph.org datasets](https://papers.evt.
 guru/ml-preset-predictor/xiph-comparison.html).
