@@ -4,8 +4,8 @@ permalink: /ml-method-for-video-encoding
 features:
   - "A new approach to predicting
 video codec presets"
-  - "Bitrate decreases compared to the x264
-and x265 codecs while maintaining quality and speed"
+  - "Our presets  decrease bitrate compared to the x264
+and x265 codecs with standart options"
 ---
 
 ### S. Zvezdakov, D. Kondranin, and D. Vatolin
@@ -46,8 +46,8 @@ codec-developer presets from MSU Codec Comparison 2020 [1].
 ## Key Features
 * A new approach to predicting
 video codec presets to increase compression efficiency
-* Bitrate decreases of **17.8%** and **7.9%** compared to the x264
-and x265 codecs while maintaining quality and speed
+* Our presets  decrease bitrate of **17.8%** and **7.9%** compared to the x264
+and x265 codecs with standart options
 * Method is independent of the video
 codec’s architecture and implementation 
 <!-- 
