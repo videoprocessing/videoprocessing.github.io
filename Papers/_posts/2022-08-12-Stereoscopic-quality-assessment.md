@@ -4,8 +4,7 @@ metrics'
 permalink: /stereoscopic-quality-assessment
 features:
   - "Analysis of stereoscopic quality for 1,000 VR180 YouTube videos"
-  - "Analysis of Common 3D-Shooting Artifacts"
-  - "Estimation of stereoscopic distortions and artifacts"
+  - "Detection and analysis of common 3D-Shooting artifacts"
 ---
 
 ### S. Lavrushkin, I. Molodetskikh, K. Kozhemyakov, and D. Vatolin
