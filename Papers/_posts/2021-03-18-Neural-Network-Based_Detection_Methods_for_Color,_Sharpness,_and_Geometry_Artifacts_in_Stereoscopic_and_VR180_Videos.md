@@ -246,50 +246,14 @@ For questions and propositions, please contact us: <sergey.lavrushkin@graphics.c
 
 ## References <!-- Other papers that were mentioned in the main part of the page -->
   
-1) “VR180.” available online: <https://arvr.google.com/vr180/>.
- 
-2) A. Antsiferova and D. Vatolin, “The influence of 3D video artifacts on discomfort of 302 viewers,” in 2017 International Conference on 3D Immersion (IC3D), pp.&nbsp;1–8, IEEE, 2017.
-
-**3)** S. Winkler, “Efficient measurement of stereoscopic 3D video content issues,” in Image Quality and System Performance XI, vol.&nbsp;9016, p.&nbsp;90160Q, International Societyfor Optics and Photonics, 2014. 
+1) S. Winkler, “Efficient measurement of stereoscopic 3D video content issues,” in Image Quality and System Performance XI, vol.&nbsp;9016, p.&nbsp;90160Q, International Societyfor Optics and Photonics, 2014. 
   
-4) Q. Dong, T. Zhou, Z. Guo, and J. Xiao, “A stereo camera distortion detecting method for 3DTV video quality assessment,” in 2013 Asia-Pacific Signal and Information Processing Association Annual Summit and Conference, pp.&nbsp;1–4, IEEE, 2013.
+2) K. M. Yi, E. Trulls, Y. Ono, V. Lepetit, M. Salzmann, and P. Fua, “Learning to find good correspondences,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;2666–2674, 2018.
   
-5) D. G. Lowe, “Object recognition from local scale-invariant features,” in Proceedings of the Seventh IEEE International Conference on Computer Vision, vol.&nbsp;2, pp.&nbsp;1150–1157, IEEE, 1999.
+3) I. Rocco, R. Arandjelovic, and J. Sivic, “Convolutional neural network architecture for geometric matching,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;6148–6157, 2017.
   
-6) F. Devernay and S. Pujades, “Focus mismatch detection in stereoscopic content,” in Stereoscopic Displays and Applications XXIII, vol.&nbsp;8288, p.&nbsp;82880E, International Society for Optics and Photonics, 2012.
+4) D. Vatolin, A. Bokov, M. Erofeev, and V. Napadovsky, “Trends in S3D-movie quality evaluated on 105 films using 10 metrics,” Electronic Imaging, vol. 2016, no.&nbsp;5, pp.&nbsp;1–10, 2016.
   
-7) M. Liu and K. Muller, “Automatic analysis of sharpness mismatch between stereoscopic views for stereo 3D videos,” in 2014 International Conference on 3D Imaging (IC3D), pp.&nbsp;1–6, IEEE, 2014.
+5) D. Fourure, R. Emonet, E. Fromont, D. Muselet, A. Tremeau, and C. Wolf, “Residual conv-deconv grid network for semantic segmentation,” in 28th British Machine Vision Conference, 2017.
   
-8) M. A. Fischler and R. C. Bolles, “Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography,” Communications of the ACM, vol.&nbsp;24, no.&nbsp;6, pp.&nbsp;381–395, 1981.
-  
-9) E. Brachmann, A. Krull, S. Nowozin, J. Shotton, F. Michel, S. Gumhold, and C. Rother, “DSAC-differentiable RANSAC for camera localization,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;6684–6692, 2017.
-  
-10) E. Brachmann and C. Rother, “Neural-guided RANSAC: learning where to sample model hypotheses,” in Proceedings of the IEEE International Conference on Computer Vision, pp.&nbsp;4322–4331, 2019.
-  
-**11)** K. M. Yi, E. Trulls, Y. Ono, V. Lepetit, M. Salzmann, and P. Fua, “Learning to find good correspondences,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;2666–2674, 2018.
-  
-12) W. Sun, W. Jiang, E. Trulls, A. Tagliasacchi, and K. M. Yi, “Attentive context normalization for robust permutation-equivariant learning,” arXiv preprint arXiv:1907.02545, 2019.
-  
-**13)** I. Rocco, R. Arandjelovic, and J. Sivic, “Convolutional neural network architecture for geometric matching,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;6148–6157, 2017.
-  
-14) I. Rocco, R. Arandjelovic, and J. Sivic, “End-to-end weakly-supervised semantic alignment,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;6917–6925, 2018.
-  
-**15)** D. Vatolin, A. Bokov, M. Erofeev, and V. Napadovsky, “Trends in S3D-movie quality evaluated on 105 films using 10 metrics,” Electronic Imaging, vol. 2016, no.&nbsp;5, pp.&nbsp;1–10, 2016.
-  
-16) K. Simonyan, S. Grishin, D. Vatolin, and D. Popov, “Fast video super-resolution via classification,” in 2008 15th IEEE International Conference on Image Processing, pp.&nbsp;349–352, IEEE, 2008.
-  
-17) G. Egnal and R. P. Wildes, “Detecting binocular half-occlusions: Empirical comparisons of five approaches,”IEEE Transactions on Pattern Analysis and Machine Intelligence, vol.&nbsp;24, no.&nbsp;8, pp.&nbsp;1127–1133, 2002.
-  
-**18)** D. Fourure, R. Emonet, E. Fromont, D. Muselet, A. Tremeau, and C. Wolf, “Residual conv-deconv grid network for semantic segmentation,” in 28th British Machine Vision Conference, 2017.
-  
-19) X. Glorot and Y. Bengio, “Understanding the difficulty of training deep feedforward neural networks,” in Proceedings of the 13th International Conference on Artificial Intelligence and Statistics, pp.&nbsp;249–256, 2010.
-  
-20) D. P. Kingma and J. Ba, “Adam: A method for stochastic optimization,” arXiv preprint arXiv:1412.6980, 2014.
-  
-21) D. J. Butler, J. Wulff, G. B. Stanley, and M. J. Black, “A naturalistic open source movie for optical flow evaluation,” in European Conference on Computer Vision, pp.&nbsp;611–625, Springer, 2012.
-  
-**22)** K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;770–778, 2016.
-  
-23) S. Ioffe and C. Szegedy, “Batch normalization: accelerating deep network training by reducing internal covariate shift,” in International Conference on Machine Learning, pp.&nbsp;448–456, 2015.
-  
-24) K. He, X. Zhang, S. Ren, and J. Sun, “Delving deep into rectifiers: surpassing human-level performance on imagenet classification,” in Proceedings of the IEEE International Conference on Computer Vision, pp.&nbsp;1026–1034, 2015.
+6) K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;770–778, 2016.
