@@ -4,7 +4,7 @@ permalink: /person-matting
 features:
   - "A novel U-Net-based deep-neural-network method with LSTM blocks and an attention module on skip connections" 
   - "More than 20.000 video-clips in the developed fake-motion dataset"
-  - "Comparation with 8 different matting methods"
+  - "Comparison with 8 different matting methods"
   - "Sufficient improvement of the output’s temporal stability by utilizing a motion-estimation-based method"
 ---
 
@@ -16,6 +16,8 @@ Contact us:
 * <andrey.moskalenko@graphics.cs.msu.ru>
 * <dmitriy.vatolin@graphics.cs.msu.ru>
 * <video@compression.ru>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 ## Abstract
 We propose a novel neural-network-based method to perform matting of videos depicting people that does not require additional user input such as trimaps. Our architecture achieves temporal stability of the resulting alpha mattes by using motion-estimation-based smoothing of image-segmentation algorithm outputs, combined with convolutional-LSTM modules on U-Net skip connections. We also propose a fake-motion algorithm that generates training clips for the video-matting network
@@ -34,7 +36,7 @@ given photos with ground-truth alpha mattes and background videos. We apply rand
 ## Key Features
 * A novel U-Net-based deep-neural-network method with LSTM blocks and an attention module on skip connections
 * More than **20.000 video-clips** in the developed fake-motion dataset
-* Comparation with 8 different matting methods
+* Comparison with 8 different matting methods
 * Sufficient improvement of the output’s temporal stability by utilizing a motion-estimation-based method
 * Powered by [Subjectify.us](https://www.subjectify.us/) 
 
@@ -42,18 +44,20 @@ given photos with ground-truth alpha mattes and background videos. We apply rand
 The figure below demonstrates the architecture. 
 ![architecture](/assets/img/papers/person-matting/architecture.JPG)
 Some additional details:
-* The outputs of the 2nd, 4th, 7th, 14th, and 18th encoder’s blocks of the TorchVision implementation used for skip connections
-* To generate the probability map used a pretrained DeepLabv3+ image-segmentation network from TorchVision
+* The outputs of the 2nd, 4th, 7th, 14th, and 18th encoder’s blocks of the TorchVision implementation are used for skip connections
+* To generate the probability map we used a pretrained DeepLabv3+ image-segmentation network from TorchVision
 
 ## Dataset
 We generated **fake-motion dataset** using annotated foreground images and background videos, fake-motion procedure:
 * We generate random optical-flow maps at three scales and use them to warp the input
-* We shift the person halfway out of a frame and back over the clip’s duration, with a probability of $\frac{1}{3}$  
+* We shift the person halfway out of a frame and back over the clip’s duration, with a probability of $$\frac{1}{3}$$  
 
 The figure below demonstrates examples of generated clips.  
-  
-![fake-motion](/assets/img/papers/person-matting/fake_motion.JPG)  
-> Top, middle, and bottom rows show final training clip, clip from the base fake-motion algorithm and fake-motion shift component’s effect respectively.
+
+<div>
+    <img src="/assets/img/papers/person-matting/fake_motion.JPG">
+    <i> Top, middle, and bottom rows show final training clip, clip from the base fake-motion algorithm and fake-motion shift component’s effect respectively. </i>
+</div>
 
 ## Comparison
 We conducted the **subjective evaluation** using [Subjectify.us](https://www.subjectify.us/). In total more than **32.000** pairwise selections were collected and used to fit a Bradley-Terry model.
@@ -62,16 +66,62 @@ We conducted the **subjective evaluation** using [Subjectify.us](https://www.sub
 
 Below you can see **objective evaluation** results on clips from [VideoMatting benchmark](http://videomatting.com). The best result is shown in **bold**, the second-best
 is underlined and the third-best is shown in _italics_.
+
+<style>
+.tablelines table, .tablelines td, .tablelines th {
+        border: 0.8px solid black;
+        }
+</style>
   
-![table1](/assets/img/papers/person-matting/comparison_1.JPG) 
+|-----------------+-----------------+-----------------+----------------+-----------------+----------------+----------------|
+| &nbsp; Method &nbsp; | &nbsp; SSDA &nbsp; | &nbsp; dtSSD &nbsp; | &nbsp; MESSDdt &nbsp; | &nbsp; SSDA &nbsp; | &nbsp; dtSSD &nbsp; | &nbsp; MESSDdt &nbsp; |
+|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
+|  | city |  |  | snow |  |  |
+| Ours | _69.651_ | **15.314** | **0.695** | 56.338 | 30.240 | _0.662_ |
+| Smoothed Prob. Maps | 91.577 | <ins>17.609</ins> | <ins>1.291</ins> | 65.772 | 35.133 | 1.264 |
+| FBA Matting | <ins>57.700</ins> | _30.825_ | _1.613_ | <ins>27.113</ins> | <ins>20.881</ins> | <ins>0.423</ins> |
+| Deep Image Matting | 97.506 | 47.107 | 3.258 | 59.648 | 41.463 | 2.128 |
+| CRGNN | 76.456 | 35.591 | 2.354 | _34.735_ | _27.183_ | 1.244 |
+| Sem. Human Matting | 108.393 | 53.086 | 5.696 | 71.844 | 43.689 | 2.595 |
+| Late Fusion Matting | **44.766** | 31.621 | 4.152 | **24.602** | **19.484** | **0.341** |
+| COSNet | 271.878 | 62.798 | 22.387 | 156.617 | 58.536 | 9.424 |
+| MMNet | 154.656 | 62.439 | 13.580 | 347.065 | 143.696 | 58.429 |
+|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
+{: .tablelines}
   
 The second table shows objective evaluation results on five **VideoMatte240K** test clips.  
   
-![table2](/assets/img/papers/person-matting/comparison_2.JPG)  
+|-----------------+-----------------+-----------------+----------------|
+| &nbsp; Method &nbsp; | &nbsp; SSDA &nbsp; | &nbsp; dtSSD &nbsp; | &nbsp; MESSDdt &nbsp; |
+|:---------------:|:---------------:|:---------------:|:---------------:|
+| Ours | _84.710_ | _46.792_ | <ins>2.080</ins> |
+| Smoothed Prob. Maps |  117.253 | 53.836 | 4.452 |
+| FBA Matting | <ins>62.679</ins> | <ins>40.996</ins> | _2.901_ |
+| Deep Image Matting | 165.094 | 100.595 | 15.039 |
+| CRGNN | 140.095 | 84.434 | 13.900 |
+| Sem. Human Matting | 166.325 | 113.648 | 22.300 |
+| Late Fusion Matting | **29.146** | **25.459** | **0.845** |
+| COSNet | 226.256 | 74.765 | 17.506 |
+| MMNet |  445.550 | 156.778 | 75.171 |
+|:---------------:|:---------------:|:---------------:|:---------------:|
+{: .tablelines}
   
 The third table shows objective evaluation results on 100 **fake-motion** clips.  
   
-![table3](/assets/img/papers/person-matting/comparison_3.JPG) 
+|-----------------+-----------------+-----------------+----------------|
+| &nbsp; Method &nbsp; | &nbsp; SSDA &nbsp; | &nbsp; dtSSD &nbsp; | &nbsp; MESSDdt &nbsp; |
+|:---------------:|:---------------:|:---------------:|:---------------:|
+| Ours | **102.371** | **72.880** | **1.818** |
+| Smoothed Prob. Maps |  <ins>113.019</ins> | <ins>79.253</ins> | <ins>3.955</ins> |
+| FBA Matting | _114.101_ | _92.686_ | _4.613_ |
+| Deep Image Matting | 128.205 | 113.675 | 7.693 |
+| CRGNN | 121.416 | 95.899 | 7.015 |
+| Sem. Human Matting |  186.980 | 145.235 | 9.685 |
+| Late Fusion Matting | 454.597 | 222.736 | 69.992 |
+| COSNet | 610.056 | 142.895 | 33.037 |
+| MMNet |  222.333 | 124.414 | 15.006 |
+|:---------------:|:---------------:|:---------------:|:---------------:|
+{: .tablelines}
 
 We believe that the subjective evaluation should play the deciding role in video-matting method evaluation because the existing objective metrics are likely limited in their ability to distinguish temporal coherence.
 
