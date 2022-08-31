@@ -48,16 +48,14 @@ Some additional details:
 * To generate the probability map we used a pretrained DeepLabv3+ image-segmentation network from TorchVision
 
 ## Dataset
-We generated **fake-motion dataset** using annotated foreground images and background videos, fake-motion procedure:
-* We generate random optical-flow maps at three scales and use them to warp the input
-* We shift the person halfway out of a frame and back over the clip’s duration, with a probability of $$\frac{1}{3}$$  
-
-The figure below demonstrates examples of generated clips.  
+We generated a **fake-motion dataset** using annotated foreground images and background videos. The fake-motion procedure generates random optical-flow maps at three scales and uses them to warp the input foreground image and alpha mask to produce the foreground clip with the desired frame count. The figure below shows examples of generated clips.  
 
 <div>
     <img src="/assets/img/papers/person-matting/fake_motion.JPG">
     <i> Top, middle, and bottom rows show final training clip, clip from the base fake-motion algorithm and fake-motion shift component’s effect respectively. </i>
 </div>
+
+To improve network resilience when a person partially leaves the video frame, we added to the optical flow a component that over the clip’s duration shifts the person halfway out of a frame and back, with a probability of $$\frac{1}{3}$$  
 
 ## Comparison
 We conducted the **subjective evaluation** using [Subjectify.us](https://www.subjectify.us/). In total more than **32.000** pairwise selections were collected and used to fit a Bradley-Terry model.
