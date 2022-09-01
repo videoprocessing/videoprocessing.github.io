@@ -152,7 +152,7 @@ Below is the general scheme of proposed method for detecting geometry mismatch b
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/GeometryNet.jpg">
 
-To estimate the geometry-mismatch parameters we employ a neural-network architecture, similar to ResNet-18
+To estimate the geometry-mismatch parameters we employ a neural-network architecture, similar to ResNet-18. 
 
 ### Training
 * The proposed loss function includes three main terms
