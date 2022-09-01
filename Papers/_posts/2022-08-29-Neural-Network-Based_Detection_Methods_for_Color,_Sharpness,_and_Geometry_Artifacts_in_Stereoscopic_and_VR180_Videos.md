@@ -4,7 +4,7 @@ permalink: /detection_methods_stereoscopic_VR180
 features:
   - "<b>2 neural-network-based models</b> for estimating <b>3 types</b> of stereoscopic artifacts in VR180 videos"
   - "<b>Simultaneously</b> detecting color and sharpness mismatch between stereoscopic video views"
-  - "<b>9,488 stereopairs</b> of size <b>960 × 540</b> from <b>16 stereoscopic movies</b> to train method for color- and sharpness-mismatch estimation"
+  - "<b>9,488 stereopairs</b> of size <b>960&#x202F;×&#x202F;540</b> from <b>16 stereoscopic movies</b> to train method for color- and sharpness-mismatch estimation"
   - "<b>22800 stereopairs</b> with artificial distortions from <b>39 3D movies</b> in the train dataset for geometry-mismatch estimation method"
   - "Objective quality assessment of <b>100 VR180 videos</b> from YouTube using proposed methods"
 ---
@@ -16,7 +16,7 @@ Contact&nbsp;us:
 * <video@compression.ru>
 
 ## Abstract
-Shooting video in&nbsp;3D format can introduce stereoscopic arti-facts, potentially causing viewers visual discomfort. In&nbsp;this work, we consider three common stereoscopic artifacts: color mismatch, sharpness mismatch, and geometric distortion. This&nbsp;paper introduces two neural-network-based methods for simultaneous color-&nbsp;and&nbsp;sharpness-mismatch estimation, as&nbsp;well&nbsp;as&nbsp;for estimating geometric distortions. To&nbsp;train these networks we prepared large datasets based&nbsp;on frames from full-length stereoscopic movies and compared the&nbsp;results with methods that previously served in&nbsp;analyses of&nbsp;full-length stereoscopic movies. We used our proposed methods to&nbsp;analyze 100 videos in&nbsp;VR180 format—a&nbsp;new format for stereoscopic videos in&nbsp;virtual reality (VR). This&nbsp;work presents overall results for these videos along&nbsp;with several examples of&nbsp;detected problems.
+Shooting video in&nbsp;3D format can introduce stereoscopic artifacts, potentially causing viewers visual discomfort. In&nbsp;this work, we consider three common stereoscopic artifacts: color mismatch, sharpness mismatch, and geometric distortion. This&nbsp;paper introduces two neural-network-based methods for simultaneous color-&nbsp;and&nbsp;sharpness-mismatch estimation, as&nbsp;well&nbsp;as&nbsp;for estimating geometric distortions. To&nbsp;train these networks we prepared large datasets based&nbsp;on frames from full-length stereoscopic movies and compared the&nbsp;results with methods that previously served in&nbsp;analyses of&nbsp;full-length stereoscopic movies. We used our proposed methods to&nbsp;analyze 100 videos in&nbsp;VR180 format—a&nbsp;new format for stereoscopic videos in&nbsp;virtual reality (VR). This&nbsp;work presents overall results for these videos along&nbsp;with several examples of&nbsp;detected problems.
 
 <!-- Add Download Full Text button-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,10 +31,9 @@ Shooting video in&nbsp;3D format can introduce stereoscopic arti-facts, potentia
 ## Key Features
 * **2 neural-network-based models** for estimating **3 types** of stereoscopic artifacts in VR180 videos
 * **Simultaneously** detecting color and sharpness mismatch between stereoscopic video views
-* **9,488 stereopairs** of size **960 × 540** from **16 stereoscopic movies** to train method for color- and sharpness-mismatch estimation
+* **9,488 stereopairs** of size **960&#x202F;×&#x202F;540** from **16 stereoscopic movies** to train method for color- and sharpness-mismatch estimation
 * **22800 stereopairs** with artificial distortions from **39 3D movies** in the train dataset for geometry-mismatch estimation method
-* Objective quality assessment of **100 VR180 videos** from YouTube using proposed methods
-* Powered by [Subjectify.us](https://www.subjectify.us/). 
+* Objective quality assessment of **100 VR180 videos** from YouTube using proposed methods 
 
 
 ## Method For Color- And Sharpness-Mismatch Estimation
