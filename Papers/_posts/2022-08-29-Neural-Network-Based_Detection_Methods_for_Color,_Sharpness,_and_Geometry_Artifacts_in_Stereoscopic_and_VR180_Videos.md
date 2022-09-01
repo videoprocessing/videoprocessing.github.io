@@ -59,7 +59,7 @@ Next the neural network architecture itself for which GridNet network was chosen
 * The neural-network training took place over **100** epochs
 
 ### Results
-Test dataset contains 23 stereoscopic-video sequences with a resolution of 1024×436. Artificial distortions were added for each sequence based on the
+Test dataset contains 23 stereoscopic-video sequences with a resolution of 1024&#x202F;×&#x202F;436. Artificial distortions were added for each sequence based on the
 aforementioned general distortion model. 
 
 Table below presents the results.
