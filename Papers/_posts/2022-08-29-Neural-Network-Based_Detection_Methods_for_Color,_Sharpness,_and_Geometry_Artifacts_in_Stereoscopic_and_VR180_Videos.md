@@ -155,7 +155,7 @@ Below is the general scheme of proposed method for detecting geometry mismatch b
 To estimate the geometry-mismatch parameters we employ a neural-network architecture, similar to ResNet-18. 
 
 ### Training
-* The proposed loss function includes three main terms
+* The proposed loss function includes three main terms:
   * Squared difference between the predicted and ground-truth distortion parameters 
   * Loss between two grids transformed using the predicted and ground-truth affine transformations
   * Measurement of the consistency between the neural network’s predictions of the disparity and confidence maps for the left and right views
