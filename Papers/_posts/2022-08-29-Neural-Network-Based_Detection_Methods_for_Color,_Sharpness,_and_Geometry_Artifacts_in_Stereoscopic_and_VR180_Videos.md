@@ -13,6 +13,7 @@ features:
 
 Contact&nbsp;us: 
 * <sergey.lavrushkin@graphics.cs.msu.ru>
+* <3dmovietest@graphics.cs.msu.ru>
 * <video@compression.ru>
 
 ## Abstract
@@ -235,13 +236,14 @@ Table below shows the absolute error for each geometric distortion. â€œNo modelâ
 
 ## Contact us
 
-For questions and propositions, please contact us: <sergey.lavrushkin@graphics.cs.msu.ru>, and <video@compression.ru>
+For questions and propositions, please contact us: <sergey.lavrushkin@graphics.cs.msu.ru>, <3dmovietest@graphics.cs.msu.ru>, and <video@compression.ru>
 
 ## See also 
 * [Video Quality Measurement Tool 3D](https://videoprocessing.ai/stereo_quality/)
 * [Stereoscopic Quality Assessment of 1,000 VR180 Videos Using 8 Metrics](https://library.imaging.org/ei/articles/33/2/art00011)
 * [Stereoscopic Dataset from A Video Game: Detecting Converged Axes and Perspective Distortions in S3D Videos](https://ieeexplore.ieee.org/document/9376375)
 * [MSU benchmarks](https://videoprocessing.ai/benchmarks/)
+* [All MSU Stereo Quality Reports](https://videoprocessing.ai/stereo_quality/reports/)
 
 ## References <!-- Other papers that were mentioned in the main part of the page -->
   
