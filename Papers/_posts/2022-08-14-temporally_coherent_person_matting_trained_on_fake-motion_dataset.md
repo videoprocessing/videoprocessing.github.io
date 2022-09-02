@@ -4,7 +4,7 @@ permalink: /person-matting
 features:
   - "A U-Net-based deep-neural-network method with LSTM blocks and an attention module on skip connections" 
   - "A novel fake-motion algorithm for generating neural-network training video clips from a dataset of images with ground-truth alpha mattes and background videos"
-  - "Better than 8 different matting methods according to subjective evaluation powered by [Subjectify.us](https://www.subjectify.us/)"
+  - "Better than 8 different matting methods according to subjective evaluation"
   - "A motion-estimation-based method for improving the output's temporal stability"
 ---
 
@@ -22,7 +22,7 @@ given photos with ground-truth alpha mattes and background videos. We apply rand
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div>
-<button class="download-button" role="button" onclick="location.href = 'https://arxiv.org/pdf/2109.04843.pdf'">
+<button class="download-button" role="button" onclick="window.open('https://arxiv.org/pdf/2109.04843.pdf')">
     <i class="fa fa-download"></i>
     Download Full Text
 </button>
