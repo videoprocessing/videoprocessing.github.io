@@ -22,7 +22,7 @@ given photos with ground-truth alpha mattes and background videos. We apply rand
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">                   
 <div>
- <button class="download-button" role="button" onclick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S10512004
+ <button class="download-button" role="button" onclick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S1051200422001385')"> 
      Read Paper
  </button>
  <p class="download-button-caption">The newest version</p>
