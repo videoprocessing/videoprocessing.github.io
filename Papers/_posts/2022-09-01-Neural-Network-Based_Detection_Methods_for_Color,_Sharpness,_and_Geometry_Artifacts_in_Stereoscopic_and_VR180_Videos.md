@@ -178,8 +178,8 @@ To estimate the geometry-mismatch parameters we employ a neural-network architec
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG1.png">
 
-where θ is the neural network’s prediciton based on the disparity and confidence maps for the left view, θgt is the vector
-of ground-truth distortion parameters, and θb is the neural network’s prediction based on the disparity and confidence maps
+where θ is the neural network’s prediciton based on the disparity and confidence maps for the left view, θ&#x202F;gt is the vector
+of ground-truth distortion parameters, and θ&#x202F;b is the neural network’s prediction based on the disparity and confidence maps
 for the right view.
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG2.png">
@@ -191,7 +191,8 @@ for the right view.
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG3.png">
 
 
-Where G ∈ R^[H×W×3] denote homogeneous coordinates of points on the plane, θα = [α 0 0], θk = [0 k 0], and θt = [0 0 t]. 
+Where G&nbsp;∈&nbsp;R&nbsp;^&nbsp;[&nbsp;H&#x202F;×&#x202F;W&#x202F;×&#x202F;3&nbsp;] denote homogeneous coordinates of points on the plane, 
+θ&#x202F;α&nbsp;=&nbsp;[α&nbsp;0&nbsp;0], θ&#x202F;k&nbsp;=&nbsp;[0&nbsp;k&nbsp;0], and θ&#x202F;t&nbsp;=&nbsp;[0&nbsp;0&nbsp;t]. 
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG5.png">
 
