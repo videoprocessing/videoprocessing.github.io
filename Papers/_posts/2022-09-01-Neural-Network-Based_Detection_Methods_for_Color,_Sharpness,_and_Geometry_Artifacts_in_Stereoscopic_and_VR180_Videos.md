@@ -60,6 +60,8 @@ Next the neural network architecture itself for which modified GridNet network w
 * The neural-network training took place over **100** epochs
 * Adam as an optimization method
 
+#### Loss Function
+
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossCS1.png">
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossCS2.png">
