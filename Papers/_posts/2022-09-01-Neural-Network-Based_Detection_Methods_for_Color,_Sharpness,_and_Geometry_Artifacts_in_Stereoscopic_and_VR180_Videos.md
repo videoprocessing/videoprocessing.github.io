@@ -186,7 +186,7 @@ for the right view.
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG4.png">
 
-<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG3.png"
+<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG3.png">
 
 
 
