@@ -60,8 +60,11 @@ Next the neural network architecture itself for which modified GridNet network w
 * The neural-network training took place over **100** epochs
 * Adam as an optimization method
 
-Below is the loss function 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossCS1.png">
+
+<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossCS2.png">
+
+where cˆ and c are the predicted and ground-truth color-difference maps, respectively, for each YUV color channel; ˆd and d are the predicted and ground-truth blur maps, respectively; conf is the input disparity confidence map for the neural network; and n is the number of pixels in the image.
 
 ### Results
 Test dataset contains 23 stereoscopic-video sequences with a resolution of 1024&#x202F;×&#x202F;436. Artificial distortions were added for each sequence based on the
