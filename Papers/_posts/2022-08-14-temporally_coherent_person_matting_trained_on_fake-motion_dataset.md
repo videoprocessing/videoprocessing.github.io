@@ -20,14 +20,19 @@ Contact us:
 We propose a novel neural-network-based method to perform matting of videos depicting people that does not require additional user input such as trimaps. Our architecture achieves temporal stability of the resulting alpha mattes by using motion-estimation-based smoothing of image-segmentation algorithm outputs, combined with convolutional-LSTM modules on U-Net skip connections. We also propose a fake-motion algorithm that generates training clips for the video-matting network
 given photos with ground-truth alpha mattes and background videos. We apply random motion to photos and their mattes to simulate movement one would find in real videos and composite the result with the background clips. It lets us train a deep neural network operating on videos in an absence of a large annotated video dataset and provides ground-truth training-clip foreground optical flow for use in loss functions.
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">                   
 <div>
+ <button class="download-button" role="button" onclick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S10512004
+     Read Paper
+ </button>
+ <p class="download-button-caption">The newest version</p>
 <button class="download-button" role="button" onclick="window.open('https://arxiv.org/pdf/2109.04843.pdf')">
     <i class="fa fa-download"></i>
     Download Full Text
 </button>
-<p class="download-button-caption">(PDF, 22.2 MB)</p>
+<p class="download-button-caption">The previous version (PDF, 22.2 MB)</p>
 </div>
+
 
 ## Key Features
 * A U-Net-based deep-neural-network method with LSTM blocks and an attention module on skip connections
