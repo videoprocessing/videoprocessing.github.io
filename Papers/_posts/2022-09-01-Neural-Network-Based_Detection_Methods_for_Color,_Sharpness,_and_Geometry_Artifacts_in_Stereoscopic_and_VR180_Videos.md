@@ -51,13 +51,16 @@ Below is the general scheme of the proposed method for detecting color and sharp
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/ColorSharpNet.jpg">
 
-Next the neural network architecture itself for which GridNet network was chosen as the basis. 
+Next the neural network architecture itself for which modified GridNet network was chosen as the basis. 
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/GridNet.jpg">
 
 ### Training
 * Loss function for predicting both color- and sharpness-difference maps was the sum of squared differences between the predicted and groundtruth values, weighted by the disparity-map confidence and L2-regularization
 * The neural-network training took place over **100** epochs
+* Adam as an optimization method
+
+$$L_{2}$$
 
 ### Results
 Test dataset contains 23 stereoscopic-video sequences with a resolution of 1024&#x202F;×&#x202F;436. Artificial distortions were added for each sequence based on the
@@ -258,3 +261,7 @@ For questions and propositions, please contact us: <sergey.lavrushkin@graphics.c
 5) D. Fourure, R. Emonet, E. Fromont, D. Muselet, A. Tremeau, and C. Wolf, “Residual conv-deconv grid network for semantic segmentation,” in 28th British Machine Vision Conference, 2017.
   
 6) K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;770–778, 2016.
+
+7) D. Fourure, R. Emonet, E. Fromont, D. Muselet, A. Tremeau, and C. Wolf, “Residual conv-deconv grid network for semantic segmentation,” in 28th British Machine Vision Conference, 2017.
+
+8) D. P. Kingma and J. Ba, “Adam: A method for stochastic optimization,” arXiv preprint arXiv:1412.6980, 2014.
