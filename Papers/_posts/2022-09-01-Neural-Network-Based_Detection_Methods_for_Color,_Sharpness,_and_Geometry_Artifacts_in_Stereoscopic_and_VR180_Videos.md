@@ -60,7 +60,8 @@ Next the neural network architecture itself for which modified GridNet network w
 * The neural-network training took place over **100** epochs
 * Adam as an optimization method
 
-$L_{2}$
+Below is the loss function 
+<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossCS1.png">
 
 ### Results
 Test dataset contains 23 stereoscopic-video sequences with a resolution of 1024&#x202F;×&#x202F;436. Artificial distortions were added for each sequence based on the
