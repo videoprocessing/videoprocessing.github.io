@@ -173,6 +173,8 @@ To estimate the geometry-mismatch parameters we employ a neural-network architec
   * Loss between two grids transformed using the predicted and ground-truth affine transformations
   * Measurement of the consistency between the neural network’s predictions of the disparity and confidence maps for the left and right views
 * The neural-network training took place over **120** epochs
+* Adam as an optimization method
+* Learning rate was **10−4**
 
 #### Loss Function
 
