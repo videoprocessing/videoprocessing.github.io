@@ -57,6 +57,8 @@ Next the neural network architecture itself for which modified GridNet network w
 
 ### Training
 * Loss function for predicting both color- and sharpness-difference maps was the sum of squared differences between the predicted and groundtruth values, weighted by the disparity-map confidence and L2-regularization
+* We set the learning rate to **10−4**, decreasing it by a factor of **10** every **40** epochs
+* The batch size was **8**, and the resolution of the training examples was **256&#x202F;×&#x202F;256**
 * The neural-network training took place over **100** epochs
 * Adam as an optimization method
 
@@ -66,7 +68,7 @@ Next the neural network architecture itself for which modified GridNet network w
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossCS2.png">
 
-where cˆ and c are the predicted and ground-truth color-difference maps, respectively, for each YUV color channel; ˆd and d are the predicted and ground-truth blur maps, respectively; conf is the input disparity confidence map for the neural network; and n is the number of pixels in the image.
+where cˆ and c are the predicted and ground-truth color-difference maps, respectively, for each YUV color channel; ˆd and d are the predicted and ground-truth blur maps, respectively; conf is the input disparity confidence map for the neural network; and n is the number of pixels in the image; θ is the vector of neural-network weights.
 
 ### Results
 Test dataset contains 23 stereoscopic-video sequences with a resolution of 1024&#x202F;×&#x202F;436. Artificial distortions were added for each sequence based on the
@@ -152,7 +154,8 @@ Table below presents the results.
 
 ### Train and Test Datasets
 Geometric distortions between stereoscopic views often occur in 3D shooting. The most common types include vertical shift, rotation, and scaling.
-The standard deviation for each distortion type was computed and gathered stereopairs for which all three of these parameters had absolute values less than σ/10.
+We evaluated the geometric distortions between views in a stereoscopic movie wtih the VQMT3D project’s geometric-distortion-detection, then
+we computed the standard deviation for each distortion type and gathered only those stereopairs for which all three of these parameters had absolute values less than σ/10.
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/STDGeometry.jpg">
 Distributions of and computed standard deviations for the geometric distortions for thirty-nine 3D movies.
@@ -170,6 +173,18 @@ To estimate the geometry-mismatch parameters we employ a neural-network architec
   * Loss between two grids transformed using the predicted and ground-truth affine transformations
   * Measurement of the consistency between the neural network’s predictions of the disparity and confidence maps for the left and right views
 * The neural-network training took place over **120** epochs
+
+#### Loss Function
+
+<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG1.png">
+
+where θ is the neural network’s prediciton based on the disparity and confidence maps for the left view, θgt is the vector
+of ground-truth distortion parameters, and θb is the neural network’s prediction based on the disparity and confidence maps
+for the right view.
+
+<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG2.png">
+
+
 
 ### Results
 
@@ -271,3 +286,5 @@ For questions and propositions, please contact us: <sergey.lavrushkin@graphics.c
 7) D. Fourure, R. Emonet, E. Fromont, D. Muselet, A. Tremeau, and C. Wolf, “Residual conv-deconv grid network for semantic segmentation,” in 28th British Machine Vision Conference, 2017.
 
 8) D. P. Kingma and J. Ba, “Adam: A method for stochastic optimization,” arXiv preprint arXiv:1412.6980, 2014.
+
+9) K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;770–778, 2016.
