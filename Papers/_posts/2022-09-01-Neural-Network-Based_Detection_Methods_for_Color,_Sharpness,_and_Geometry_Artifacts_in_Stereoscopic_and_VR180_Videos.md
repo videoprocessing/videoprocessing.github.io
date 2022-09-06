@@ -57,8 +57,8 @@ Next the neural network architecture itself for which modified GridNet network w
 
 ### Training
 * Loss function for predicting both color- and sharpness-difference maps was the sum of squared differences between the predicted and groundtruth values, weighted by the disparity-map confidence and L2-regularization
-* We set the learning rate to **10−4**, decreasing it by a factor of **10** every **40** epochs
-* The batch size was **8**, and the resolution of the training examples was **256&#x202F;×&#x202F;256**
+* We set the learning rate to 10^−4, decreasing it by a factor of 10 every 40 epochs
+* The batch size was 8, and the resolution of the training examples was 256&#x202F;×&#x202F;256
 * The neural-network training took place over **100** epochs
 * Adam as an optimization method
 
@@ -174,7 +174,7 @@ To estimate the geometry-mismatch parameters we employ a neural-network architec
   * Measurement of the consistency between the neural network’s predictions of the disparity and confidence maps for the left and right views
 * The neural-network training took place over **120** epochs
 * Adam as an optimization method
-* Learning rate was **10^−4**
+* Learning rate was 10^−4
 
 #### Loss Function
 
