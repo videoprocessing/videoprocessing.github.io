@@ -190,6 +190,7 @@ for the right view.
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG2.png">
 
+$$L_{SE}(θ,θ_{gt}) = \omega_{SE}^{\alpha}(\alpha - \alpha_{gt})^2 + \omega_{SE}^k(k - k_{gt})^2 + \omega_{SE}^t(t - t_{gt})^2 $$
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG4.png">
 
