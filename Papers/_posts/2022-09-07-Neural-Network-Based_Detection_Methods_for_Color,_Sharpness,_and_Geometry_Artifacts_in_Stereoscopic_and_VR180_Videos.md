@@ -64,7 +64,7 @@ Next the neural network architecture itself for which modified GridNet network [
 
 #### Loss Function
 
-$$L(\hat{c},c,\hat{d},d,θ) = L_{c}(\hat{c},c) + L_{d}(\hat{d},d) + L_{2}(\theta)$$,
+$$L(\hat{c},c,\hat{d},d,\theta) = L_{c}(\hat{c},c) + L_{d}(\hat{d},d) + L_{2}(\theta)$$,
 
 $$L_{c}(\hat{c},c) = \frac{ \displaystyle\sum_{i=1}^{n} conf_i × ((\hat{c}_i^Y - c_i^Y)^2 + (\hat{c}_i^U - c_i^U)^2 + (\hat{c}_i^V - c_i^V)^2) }{3\displaystyle\sum_{i=1}^n conf_{i}}$$,
 
