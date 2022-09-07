@@ -242,7 +242,7 @@ Table below shows the absolute error for each geometric distortion. â€œNo modelâ
     <td class="tg-0lax">0.82534</td>
   </tr>
   <tr>
-    <td class="tg-0lax">VQMT3D [4]</td>
+    <td class="tg-0lax">VQMT3D [4,10]</td>
     <td class="tg-0lax">0.01158</td>
     <td class="tg-0lax">0.02622</td>
     <td class="tg-0lax">0.02004</td>
