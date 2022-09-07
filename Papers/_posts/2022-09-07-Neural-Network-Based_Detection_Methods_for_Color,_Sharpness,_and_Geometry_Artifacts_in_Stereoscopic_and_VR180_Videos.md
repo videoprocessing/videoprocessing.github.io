@@ -1,5 +1,5 @@
 ---
-title: Neural-Network-Based Detection Methods For&nbsp;Color, Sharpness, And Geometry Artifacts In&nbsp;Stereoscopic And VR180 Videos
+title: Neural-Network-Based Detection Methods for&nbsp;Color, Sharpness, and Geometry Artifacts in&nbsp;Stereoscopic and VR180 Videos
 permalink: /detection_methods_stereoscopic_VR180
 features:
   - "<b>2 neural-network-based models</b> for estimating <b>3 types</b> of stereoscopic artifacts in VR180 videos"
@@ -37,7 +37,7 @@ Shooting video in&nbsp;3D format can introduce stereoscopic artifacts, potential
 * Objective quality assessment of **100 VR180 videos** from YouTube using proposed methods 
 
 
-## Method For Color- And Sharpness-Mismatch Estimation
+## Method for Color- and Sharpness-Mismatch Estimation
 
 ### Train Dataset
 The picture below shows an example with distortions added by the proposed distortion model.
@@ -68,7 +68,7 @@ Next the neural network architecture itself for which modified GridNet network [
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossCS2.png">
 
-where cˆ and c are the predicted and ground-truth color-difference maps, respectively, for each YUV color channel; ˆd and d are the predicted and ground-truth blur maps, respectively; conf is the input disparity confidence map for the neural network; and n is the number of pixels in the image; θ is the vector of neural-network weights.
+where $$\hat{c}$$ and c are the predicted and ground-truth color-difference maps, respectively, for each YUV color channel; $$\hat{d}$$ and d are the predicted and ground-truth blur maps, respectively; conf is the input disparity confidence map for the neural network; and n is the number of pixels in the image; θ is the vector of neural-network weights.
 
 ### Results
 Test dataset contains 23 stereoscopic-video sequences with a resolution of 1024&#x202F;×&#x202F;436. Artificial distortions were added for each sequence based on the
@@ -150,12 +150,12 @@ Table below presents the results.
 </table>
 
 
-## Method For Geometry-mismatch Estimation
+## Method for Geometry-mismatch Estimation
 
 ### Train and Test Datasets
 Geometric distortions between stereoscopic views often occur in 3D shooting. The most common types include vertical shift, rotation, and scaling.
 We evaluated the geometric distortions between views in a stereoscopic movie wtih the VQMT3D project’s geometric-distortion-detection, then
-we computed the standard deviation for each distortion type and gathered only those stereopairs for which all three of these parameters had absolute values less than $$σ/10$$.
+we computed the standard deviation for each distortion type and gathered only those stereopairs for which all three of these parameters had absolute values less than $$^σ/_10$$.
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/STDGeometry.jpg">
 Distributions of and computed standard deviations for the geometric distortions for thirty-nine 3D movies.
@@ -180,8 +180,8 @@ To estimate the geometry-mismatch parameters we employ a neural-network architec
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG1.png">
 
-where θ is the neural network’s prediciton based on the disparity and confidence maps for the left view, θ&#x202F;gt is the vector
-of ground-truth distortion parameters, and θ&#x202F;b is the neural network’s prediction based on the disparity and confidence maps
+where θ is the neural network’s prediciton based on the disparity and confidence maps for the left view, $$θ_{gt}$$ is the vector
+of ground-truth distortion parameters, and $$θ_{b}$$ is the neural network’s prediction based on the disparity and confidence maps
 for the right view.
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG2.png">
