@@ -57,7 +57,7 @@ Next the neural network architecture itself for which modified GridNet network [
 
 ### Training
 * Loss function for predicting both color- and sharpness-difference maps was the sum of squared differences between the predicted and groundtruth values, weighted by the disparity-map confidence and $$L_{2}$$-regularization
-* We set the learning rate to 10^−4, decreasing it by a factor of 10 every 40 epochs
+* We set the learning rate to $$10^{−4}$$, decreasing it by a factor of 10 every 40 epochs
 * The batch size was 8, and the resolution of the training examples was 256&#x202F;×&#x202F;256
 * The neural-network training took place over **100** epochs
 * Adam as an optimization method
@@ -155,7 +155,7 @@ Table below presents the results.
 ### Train and Test Datasets
 Geometric distortions between stereoscopic views often occur in 3D shooting. The most common types include vertical shift, rotation, and scaling.
 We evaluated the geometric distortions between views in a stereoscopic movie wtih the VQMT3D project’s geometric-distortion-detection, then
-we computed the standard deviation for each distortion type and gathered only those stereopairs for which all three of these parameters had absolute values less than σ/10.
+we computed the standard deviation for each distortion type and gathered only those stereopairs for which all three of these parameters had absolute values less than $$σ/10$$.
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/STDGeometry.jpg">
 Distributions of and computed standard deviations for the geometric distortions for thirty-nine 3D movies.
@@ -174,7 +174,7 @@ To estimate the geometry-mismatch parameters we employ a neural-network architec
   * Measurement of the consistency between the neural network’s predictions of the disparity and confidence maps for the left and right views
 * The neural-network training took place over **120** epochs
 * Adam as an optimization method
-* Learning rate was 10^−4
+* Learning rate was $$10^{−4}$$
 
 #### Loss Function
 
