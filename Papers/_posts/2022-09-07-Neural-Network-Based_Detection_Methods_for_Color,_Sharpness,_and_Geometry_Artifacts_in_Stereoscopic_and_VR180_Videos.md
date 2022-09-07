@@ -189,7 +189,6 @@ for the right view;
 
 $$L_{SE}(\theta,\theta_{gt}) = \omega_{SE}^{\alpha}(\alpha - \alpha_{gt})^2 + \omega_{SE}^k(k - k_{gt})^2 + \omega_{SE}^t(t - t_{gt})^2 $$;
 
-
 $$L_{Grid} = \omega_{Grid}^{\alpha}MSE(G^{\alpha},G_{gt}^{\alpha}) + \omega_{Grid}^{k}MSE(G^k,G_{gt}^k) + \omega_{Grid}^{t}MSE(G^t,G_{gt}^t) $$,
 
 $$G^\alpha = T(G,\theta^\alpha), G_{gt}^\alpha = T(G,\theta_{gt}^\alpha)$$,
@@ -199,7 +198,7 @@ $$G^k = T(G^\alpha,\theta^k), G_{gt}^k = T(G_{gt}^\alpha,\theta_{gt}^k)$$,
 $$G^t = T(G^k,\theta^t), G_{gt}^t = T(G_{gt}^k,\theta_{gt}^t)$$,
 
 where $$G \in R^{H×W×3}$$ denote homogeneous coordinates of points on the plane, 
-$$\theta_\alpha$$&nbsp;=&nbsp;[$$\alpha$$&nbsp;0&nbsp;0], $$\theta_k$$&nbsp;=&nbsp;[0&nbsp;k&nbsp;0], and $$\theta_t$$&nbsp;=&nbsp;[0&nbsp;0&nbsp;t]; 
+$$\theta_\alpha$$&nbsp;=&nbsp;[&nbsp;$$\alpha$$&nbsp;0&nbsp;0], $$\theta_k$$&nbsp;=&nbsp;[0&nbsp;k&nbsp;0], and $$\theta_t$$&nbsp;=&nbsp;[0&nbsp;0&nbsp;t]; 
 
 
 $$L_{Siam}(\theta,\theta_b) = L_{SE}(\theta, -1\cdot\theta_b)$$.
