@@ -64,13 +64,13 @@ Next the neural network architecture itself for which modified GridNet network [
 
 #### Loss Function
 
-$$L(\hat{c},c,\hat{d},d,θ) = L_{c}(\hat{c},c) + L_{d}(\hat{d},d) + L_{2}(θ)$$,
+$$L(\hat{c},c,\hat{d},d,θ) = L_{c}(\hat{c},c) + L_{d}(\hat{d},d) + L_{2}(\theta)$$,
 
 $$L_{c}(\hat{c},c) = \frac{ \sum_{i=1}^{n} conf_i × ((\hat{c}_i^Y - c_i^Y)^2 + (\hat{c}_i^U - c_i^U)^2 + (\hat{c}_i^V - c_i^V)^2) }{3\sum_{i=1}^n conf_{i}}$$,
 
 $$L_{d}(\hat{d},d) = \frac{ \sum_{i=1}^n conf_{i} × (\hat{d}_i - d_i)^2 }{\sum_{i=1}^n conf_{i}} $$,
 
-where $$\hat{c}$$ and c are the predicted and ground-truth color-difference maps, respectively, for each YUV color channel; $$\hat{d}$$ and d are the predicted and ground-truth blur maps, respectively; conf is the input disparity confidence map for the neural network; and n is the number of pixels in the image; θ is the vector of neural-network weights.
+where $$\hat{c}$$ and c are the predicted and ground-truth color-difference maps, respectively, for each YUV color channel; $$\hat{d}$$ and d are the predicted and ground-truth blur maps, respectively; conf is the input disparity confidence map for the neural network; and n is the number of pixels in the image; $$\theta$$ is the vector of neural-network weights.
 
 ### Results
 Test dataset contains 23 stereoscopic-video sequences with a resolution of 1024&#x202F;×&#x202F;436. Artificial distortions were added for each sequence based on the
@@ -180,23 +180,16 @@ To estimate the geometry-mismatch parameters we employ a neural-network architec
 
 #### Loss Function
 
-<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG1.png">
+$$L(\theta,\theta_{gt},θ_b) = L_{SE}(\theta,\theta_{gt}) + L_{Grid}(\theta,\theta_{gt}) + L_{Siam}(\theta,\theta_b)$$,
 
-$$L(θ,θ_{gt},θ_b) = L_{SE}(θ,θ_{gt}) + L_{Grid}(θ,θ_{gt}) + L_{Siam}(θ,θ_b)$$,
-
-where θ is the neural network’s prediciton based on the disparity and confidence maps for the left view, $$θ_{gt}$$ is the vector
-of ground-truth distortion parameters, and $$θ_{b}$$ is the neural network’s prediction based on the disparity and confidence maps
+where $$\theta$$ is the neural network’s prediciton based on the disparity and confidence maps for the left view, $$\theta_{gt}$$ is the vector
+of ground-truth distortion parameters, and $$\theta_b$$ is the neural network’s prediction based on the disparity and confidence maps
 for the right view;
 
-<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG2.png">
-
-$$L_{SE}(θ,θ_{gt}) = \omega_{SE}^{\alpha}(\alpha - \alpha_{gt})^2 + \omega_{SE}^k(k - k_{gt})^2 + \omega_{SE}^t(t - t_{gt})^2 $$;
-
-<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG4.png">
+$$L_{SE}(\theta,\theta_{gt}) = \omega_{SE}^{\alpha}(\alpha - \alpha_{gt})^2 + \omega_{SE}^k(k - k_{gt})^2 + \omega_{SE}^t(t - t_{gt})^2 $$;
 
 $$L_{Grid} = \omega_{Grid}^{\alpha}MSE(G^{\alpha},G_{gt}^{\alpha}) + \omega_{Grid}^{k}MSE(G^k,G_{gt}^k) + \omega_{Grid}^{t}MSE(G^t,G_{gt}^t) $$,
 
-<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG3.png">
 
 $$G^\alpha = T(G,\theta^\alpha), G_{gt}^\alpha = T(G,\theta_{gt}^\alpha)$$,
 
@@ -204,13 +197,10 @@ $$G^k = T(G^\alpha,\theta^k), G_{gt}^k = T(G_{gt}^\alpha,\theta_{gt}^k)$$,
 
 $$G^t = T(G^k,\theta^t), G_{gt}^t = T(G_{gt}^k,\theta_{gt}^t)$$,
 
-where $$G ∈ R^{H×W×3}$$ denote homogeneous coordinates of points on the plane, 
-$$θ_{α}$$&nbsp;=&nbsp;[&nbsp;α&nbsp;0&nbsp;0&nbsp;], $$θ_{k}$$&nbsp;=&nbsp;[&nbsp;0&nbsp;k&nbsp;0&nbsp;], and $$θ_{t}$$&nbsp;=&nbsp;[&nbsp;0&nbsp;0&nbsp;t&nbsp;]; 
-
-<img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG5.png">
+where $$G \in R^{H×W×3}$$ denote homogeneous coordinates of points on the plane, 
+$$\theta_\alpha = [\alpha 0 0], \theta_k = [0 k 0], and \theta_t = [0 0 t];$$ 
 
 $$L_{Siam}(\theta,\theta_b) = L_{SE}(\theta, -1\cdot\theta_b)$$.
-
 
 ### Results
 
