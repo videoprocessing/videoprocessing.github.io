@@ -182,6 +182,8 @@ To estimate the geometry-mismatch parameters we employ a neural-network architec
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG1.png">
 
+$$L(θ,θ_{gt},θ_b) = L_{SE}(θ,θ_{gt}) + L_{Grid}(θ,θ_{gt}) + L_{Siam}(θ,θ_b)$$
+
 where θ is the neural network’s prediciton based on the disparity and confidence maps for the left view, $$θ_{gt}$$ is the vector
 of ground-truth distortion parameters, and $$θ_{b}$$ is the neural network’s prediction based on the disparity and confidence maps
 for the right view.
