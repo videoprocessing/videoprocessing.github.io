@@ -66,15 +66,9 @@ Next the neural network architecture itself for which modified GridNet network [
 
 $$L(\hat{c},c,\hat{d},d,θ) = L_{c}(\hat{c},c) + L_{d}(\hat{d},d) + L_{2}(\theta)$$,
 
-
-
-
 $$L_{c}(\hat{c},c) = \frac{ \displaystyle\sum_{i=1}^{n} conf_i × ((\hat{c}_i^Y - c_i^Y)^2 + (\hat{c}_i^U - c_i^U)^2 + (\hat{c}_i^V - c_i^V)^2) }{3\displaystyle\sum_{i=1}^n conf_{i}}$$,
 
-
-
-
-$$L_{d}(\hat{d},d) = \frac{ \sum_{i=1}^n conf_{i} × (\hat{d}_i - d_i)^2 }{\sum_{i=1}^n conf_{i}} $$,
+$$L_{d}(\hat{d},d) = \frac{ \displaystyle\sum_{i=1}^n conf_{i} × (\hat{d}_i - d_i)^2 }{\displaystyle\sum_{i=1}^n conf_{i}} $$,
 
 where $$\hat{c}$$ and c are the predicted and ground-truth color-difference maps, respectively, for each YUV color channel; $$\hat{d}$$ and d are the predicted and ground-truth blur maps, respectively; conf is the input disparity confidence map for the neural network; and n is the number of pixels in the image; $$\theta$$ is the vector of neural-network weights.
 
