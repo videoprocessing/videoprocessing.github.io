@@ -51,7 +51,7 @@ Below is the general scheme of the proposed method for detecting color and sharp
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/ColorSharpNet.jpg">
 
-Next the neural network architecture itself for which modified GridNet network was chosen as the basis. 
+Next the neural network architecture itself for which modified GridNet network [7] was chosen as the basis. 
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/GridNet.jpg">
 
@@ -109,12 +109,12 @@ Table below presents the results.
     <td class="tg-0pky">0.2039</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Winkler</td>
+    <td class="tg-0pky">Winkler [1]</td>
     <td class="tg-0pky">-0.4430</td>
     <td class="tg-0pky">-0.4093</td>
   </tr>
   <tr>
-    <td class="tg-0pky">VQMT3D</td>
+    <td class="tg-0pky">VQMT3D [4,10]</td>
     <td class="tg-0pky">0.8136</td>
     <td class="tg-0pky">0.8760</td>
   </tr>
@@ -137,7 +137,7 @@ Table below presents the results.
     <td class="tg-0pky">0.3505</td>
   </tr>
   <tr>
-    <td class="tg-0pky">VQMT3D</td>
+    <td class="tg-0pky">VQMT3D [4,10]</td>
     <td class="tg-0pky">0.7686</td>
     <td class="tg-0pky">0.6815</td>
   </tr>
@@ -165,7 +165,7 @@ Below is the general scheme of proposed method for detecting geometry mismatch b
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/GeometryNet.jpg">
 
-To estimate the geometry-mismatch parameters we employ a neural-network architecture, similar to ResNet-18. 
+To estimate the geometry-mismatch parameters we employ a neural-network architecture, similar to ResNet-18 [6]. 
 
 ### Training
 * The proposed loss function includes three main terms:
@@ -230,19 +230,19 @@ Table below shows the absolute error for each geometric distortion. “No model�
     <td class="tg-0lax">0.57497</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Yi et al.</td>
+    <td class="tg-0lax">Yi et al. [2]</td>
     <td class="tg-0lax">0.05115</td>
     <td class="tg-0lax">0.10810</td>
     <td class="tg-0lax">0.19109</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Rocco et al.</td>
+    <td class="tg-0lax">Rocco et al. [3]</td>
     <td class="tg-0lax">0.43735</td>
     <td class="tg-0lax">1.23582</td>
     <td class="tg-0lax">0.82534</td>
   </tr>
   <tr>
-    <td class="tg-0lax">VQMT3D</td>
+    <td class="tg-0lax">VQMT3D [4]</td>
     <td class="tg-0lax">0.01158</td>
     <td class="tg-0lax">0.02622</td>
     <td class="tg-0lax">0.02004</td>
@@ -301,3 +301,5 @@ For questions and propositions, please contact us: <sergey.lavrushkin@graphics.c
 8) D. P. Kingma and J. Ba, “Adam: A method for stochastic optimization,” arXiv preprint arXiv:1412.6980, 2014.
 
 9) K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;770–778, 2016.
+
+10) [VQMT3D](http://www.compression.ru/video/quality_measure/video_measurement_tool.html)
