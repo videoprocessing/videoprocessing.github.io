@@ -193,7 +193,7 @@ for the right view.
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG3.png">
 
 
-Where G&nbsp;∈&nbsp;$$R^{[&nbsp;H&#x202F;×&#x202F;W&#x202F;×&#x202F;3&nbsp;]}$$ denote homogeneous coordinates of points on the plane, 
+Where G&nbsp;∈&nbsp;$$R^{H×W×3}$$ denote homogeneous coordinates of points on the plane, 
 $$θ_{α}$$&nbsp;=&nbsp;[&nbsp;α&nbsp;0&nbsp;0&nbsp;], $$θ_{k}$$&nbsp;=&nbsp;[&nbsp;0&nbsp;k&nbsp;0&nbsp;], and $$θ_{t}$$&nbsp;=&nbsp;[&nbsp;0&nbsp;0&nbsp;t&nbsp;]. 
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG5.png">
