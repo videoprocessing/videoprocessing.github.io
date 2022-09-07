@@ -302,4 +302,4 @@ For questions and propositions, please contact us: <sergey.lavrushkin@graphics.c
 
 9) K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;770–778, 2016.
 
-10) VQMT3D: <http://www.compression.ru/video/quality_measure/video_measurement_tool.html>
+10) VQMT3D available online: <http://www.compression.ru/video/quality_measure/video_measurement_tool.html>
