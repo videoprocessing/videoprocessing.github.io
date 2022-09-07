@@ -22,7 +22,7 @@ Shooting video in&nbsp;3D format can introduce stereoscopic artifacts, potential
 <!-- Add Download Full Text button-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div>
-<button class="download-button" role="button" onclick="location.href = 'https://ieeexplore.ieee.org/document/9376385'"> <!-- Insert link here-->
+<button class="download-button" role="button" onclick="window.open('https://ieeexplore.ieee.org/document/9376385')"> <!-- Insert link here-->
     <i class="fa fa-download"></i>
     Download Full Text
 </button>
