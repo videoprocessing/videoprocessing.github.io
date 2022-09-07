@@ -198,7 +198,7 @@ $$G^k = T(G^\alpha,\theta^k), G_{gt}^k = T(G_{gt}^\alpha,\theta_{gt}^k)$$,
 $$G^t = T(G^k,\theta^t), G_{gt}^t = T(G_{gt}^k,\theta_{gt}^t)$$,
 
 where $$G \in R^{H×W×3}$$ denote homogeneous coordinates of points on the plane, 
-$$\theta^\alpha = \left[\alpha\quad0\quad0\right]$$, $$\theta^k=\left[0\quad k\quad0\right]$$ and $$\theta^t=\left[0\quad0\quad t\right]$$. 
+$$\theta^\alpha = \left[\alpha\quad0\quad0\right]$$, $$\theta^k=\left[0\quad k\quad0\right]$$ and $$\theta^t=\left[0\quad0\quad t\right]$$; 
 
 
 $$L_{Siam}(\theta,\theta_b) = L_{SE}(\theta, -1\cdot\theta_b)$$.
