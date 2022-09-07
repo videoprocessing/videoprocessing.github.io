@@ -155,7 +155,7 @@ Table below presents the results.
 ### Train and Test Datasets
 Geometric distortions between stereoscopic views often occur in 3D shooting. The most common types include vertical shift, rotation, and scaling.
 We evaluated the geometric distortions between views in a stereoscopic movie wtih the VQMT3D project’s geometric-distortion-detection, then
-we computed the standard deviation for each distortion type and gathered only those stereopairs for which all three of these parameters had absolute values less than $$^σ/_10$$.
+we computed the standard deviation for each distortion type and gathered only those stereopairs for which all three of these parameters had absolute values less than $$^σ/_{10}$$.
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/STDGeometry.jpg">
 Distributions of and computed standard deviations for the geometric distortions for thirty-nine 3D movies.
