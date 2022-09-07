@@ -68,6 +68,8 @@ Next the neural network architecture itself for which modified GridNet network [
 
 $$L(\hat{c},c,\hat{d},d,θ) = L_{c}(\hat{c},c) + L_{d}(\hat{d},d) + L_{2}(θ)$$
 
+$$L_{c}(\hat{c},c) = \frac{ \sum_{i=1}^{n} conf_i × ((\hat{c}_i^Y }{0}$$
+
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossCS2.png">
 
 where $$\hat{c}$$ and c are the predicted and ground-truth color-difference maps, respectively, for each YUV color channel; $$\hat{d}$$ and d are the predicted and ground-truth blur maps, respectively; conf is the input disparity confidence map for the neural network; and n is the number of pixels in the image; θ is the vector of neural-network weights.
