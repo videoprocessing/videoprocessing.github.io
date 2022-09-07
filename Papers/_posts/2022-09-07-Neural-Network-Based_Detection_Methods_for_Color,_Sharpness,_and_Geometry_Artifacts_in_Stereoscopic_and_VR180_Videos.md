@@ -180,7 +180,7 @@ To estimate the geometry-mismatch parameters we employ a neural-network architec
 
 #### Loss Function
 
-$$L(\theta,\theta_{gt},θ_b) = L_{SE}(\theta,\theta_{gt}) + L_{Grid}(\theta,\theta_{gt}) + L_{Siam}(\theta,\theta_b)$$,
+$$L(\theta,\theta_{gt},\theta_b) = L_{SE}(\theta,\theta_{gt}) + L_{Grid}(\theta,\theta_{gt}) + L_{Siam}(\theta,\theta_b)$$,
 
 where $$\theta$$ is the neural network’s prediciton based on the disparity and confidence maps for the left view, $$\theta_{gt}$$ is the vector
 of ground-truth distortion parameters, and $$\theta_b$$ is the neural network’s prediction based on the disparity and confidence maps
@@ -198,7 +198,7 @@ $$G^k = T(G^\alpha,\theta^k), G_{gt}^k = T(G_{gt}^\alpha,\theta_{gt}^k)$$,
 $$G^t = T(G^k,\theta^t), G_{gt}^t = T(G_{gt}^k,\theta_{gt}^t)$$,
 
 where $$G \in R^{H×W×3}$$ denote homogeneous coordinates of points on the plane, 
-$$\theta_\alpha = [\alpha 0 0], \theta_k = [0 k 0], and \theta_t = [0 0 t];$$ 
+$$\theta_\alpha$$ = [$$\alpha$$ 0 0], $$\theta_k$$ = [0 k 0], and $$\theta_t$$ = [0 0 t]; 
 
 $$L_{Siam}(\theta,\theta_b) = L_{SE}(\theta, -1\cdot\theta_b)$$.
 
