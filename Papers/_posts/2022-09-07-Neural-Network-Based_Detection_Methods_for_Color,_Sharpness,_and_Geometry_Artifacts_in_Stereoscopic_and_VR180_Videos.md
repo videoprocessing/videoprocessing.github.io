@@ -194,7 +194,7 @@ $$L_{SE}(θ,θ_{gt}) = \omega_{SE}^{\alpha}(\alpha - \alpha_{gt})^2 + \omega_{SE
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG4.png">
 
-$$L_{Grid} = \omega_{Grid}^{\aplha}MSE(G^{\aplha},G_{gt}^{\alpha}) + \omega_{Grid}^{k}MSE(G^k,G_{gt}^k) + \omega_{Grid}^{t}MSE(G^t,G_{gt}^t)}$$
+$$L_{Grid} = \omega_{Grid}^{\aplha}MSE(G^{\aplha},G_{gt}^{\alpha}) + \omega_{Grid}^{k}MSE(G^k,G_{gt}^k) + \omega_{Grid}^{t}MSE(G^t,G_{gt}^t)} $$,
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG3.png">
 
