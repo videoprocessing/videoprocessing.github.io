@@ -198,7 +198,11 @@ $$L_{Grid} = \omega_{Grid}^{\alpha}MSE(G^{\alpha},G_{gt}^{\alpha}) + \omega_{Gri
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG3.png">
 
-$$G^{\alpha} = T(G,\theta^\alpha), G_{gt}^{\alpha} = T(G,\theta_{gt}^\alpha)$$
+$$G^\alpha = T(G,\theta^\alpha), G_{gt}^\alpha = T(G,\theta_{gt}^\alpha)$$,
+
+$$G^k = T(G^\alpha,\theta^k), G_{gt}^k = T(G_{gt}^\alpha,\theta_{gt}^k)$$,
+
+$$G^t = T(G^k,\theta^t), G_{gt}^t = T(G_{gt}^k,\theta_{gt}^t)$$.
 
 Where G&nbsp;∈&nbsp;$$R^{H×W×3}$$ denote homogeneous coordinates of points on the plane, 
 $$θ_{α}$$&nbsp;=&nbsp;[&nbsp;α&nbsp;0&nbsp;0&nbsp;], $$θ_{k}$$&nbsp;=&nbsp;[&nbsp;0&nbsp;k&nbsp;0&nbsp;], and $$θ_{t}$$&nbsp;=&nbsp;[&nbsp;0&nbsp;0&nbsp;t&nbsp;]. 
