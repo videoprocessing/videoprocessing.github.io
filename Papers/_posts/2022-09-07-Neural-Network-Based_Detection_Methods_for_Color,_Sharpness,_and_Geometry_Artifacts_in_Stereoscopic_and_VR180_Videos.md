@@ -8,7 +8,7 @@ features:
   - "<b>22800 stereopairs</b> with artificial distortions from <b>39 3D movies</b> in the train dataset for geometry-mismatch estimation method"
   - "Objective quality assessment of <b>100 VR180 videos</b> from YouTube using proposed methods"
 ---
-
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 ### S.&#x202F;Lavrushkin, K.&#x202F;Kozhemyakov and D.&#x202F;Vatolin
 
 Contact&nbsp;us: 
@@ -56,7 +56,7 @@ Next the neural network architecture itself for which modified GridNet network [
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/GridNet.jpg">
 
 ### Training
-* Loss function for predicting both color- and sharpness-difference maps was the sum of squared differences between the predicted and groundtruth values, weighted by the disparity-map confidence and L2-regularization
+* Loss function for predicting both color- and sharpness-difference maps was the sum of squared differences between the predicted and groundtruth values, weighted by the disparity-map confidence and $$\L_{2}$$-regularization
 * We set the learning rate to 10^−4, decreasing it by a factor of 10 every 40 epochs
 * The batch size was 8, and the resolution of the training examples was 256&#x202F;×&#x202F;256
 * The neural-network training took place over **100** epochs
@@ -302,4 +302,4 @@ For questions and propositions, please contact us: <sergey.lavrushkin@graphics.c
 
 9) K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp.&nbsp;770–778, 2016.
 
-10) [VQMT3D](http://www.compression.ru/video/quality_measure/video_measurement_tool.html)
+10) VQMT3D: <http://www.compression.ru/video/quality_measure/video_measurement_tool.html>
