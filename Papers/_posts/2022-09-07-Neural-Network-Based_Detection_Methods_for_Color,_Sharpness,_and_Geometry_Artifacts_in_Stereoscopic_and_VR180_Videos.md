@@ -56,7 +56,7 @@ Next the neural network architecture itself for which modified GridNet network [
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/GridNet.jpg">
 
 ### Training
-* Loss function for predicting both color- and sharpness-difference maps was the sum of squared differences between the predicted and groundtruth values, weighted by the disparity-map confidence and $$\L_{2}$$-regularization
+* Loss function for predicting both color- and sharpness-difference maps was the sum of squared differences between the predicted and groundtruth values, weighted by the disparity-map confidence and $$L_{2}$$-regularization
 * We set the learning rate to 10^−4, decreasing it by a factor of 10 every 40 epochs
 * The batch size was 8, and the resolution of the training examples was 256&#x202F;×&#x202F;256
 * The neural-network training took place over **100** epochs
