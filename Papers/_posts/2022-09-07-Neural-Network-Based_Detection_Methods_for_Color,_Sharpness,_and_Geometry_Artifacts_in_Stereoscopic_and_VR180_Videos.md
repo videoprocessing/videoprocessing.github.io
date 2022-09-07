@@ -186,11 +186,11 @@ $$L(θ,θ_{gt},θ_b) = L_{SE}(θ,θ_{gt}) + L_{Grid}(θ,θ_{gt}) + L_{Siam}(θ,�
 
 where θ is the neural network’s prediciton based on the disparity and confidence maps for the left view, $$θ_{gt}$$ is the vector
 of ground-truth distortion parameters, and $$θ_{b}$$ is the neural network’s prediction based on the disparity and confidence maps
-for the right view.
+for the right view;
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG2.png">
 
-$$L_{SE}(θ,θ_{gt}) = \omega_{SE}^{\alpha}(\alpha - \alpha_{gt})^2 + \omega_{SE}^k(k - k_{gt})^2 + \omega_{SE}^t(t - t_{gt})^2 $$,
+$$L_{SE}(θ,θ_{gt}) = \omega_{SE}^{\alpha}(\alpha - \alpha_{gt})^2 + \omega_{SE}^k(k - k_{gt})^2 + \omega_{SE}^t(t - t_{gt})^2 $$;
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG4.png">
 
@@ -202,12 +202,14 @@ $$G^\alpha = T(G,\theta^\alpha), G_{gt}^\alpha = T(G,\theta_{gt}^\alpha)$$,
 
 $$G^k = T(G^\alpha,\theta^k), G_{gt}^k = T(G_{gt}^\alpha,\theta_{gt}^k)$$,
 
-$$G^t = T(G^k,\theta^t), G_{gt}^t = T(G_{gt}^k,\theta_{gt}^t)$$.
+$$G^t = T(G^k,\theta^t), G_{gt}^t = T(G_{gt}^k,\theta_{gt}^t)$$,
 
-Where G&nbsp;∈&nbsp;$$R^{H×W×3}$$ denote homogeneous coordinates of points on the plane, 
-$$θ_{α}$$&nbsp;=&nbsp;[&nbsp;α&nbsp;0&nbsp;0&nbsp;], $$θ_{k}$$&nbsp;=&nbsp;[&nbsp;0&nbsp;k&nbsp;0&nbsp;], and $$θ_{t}$$&nbsp;=&nbsp;[&nbsp;0&nbsp;0&nbsp;t&nbsp;]. 
+where $$G ∈ R^{H×W×3}$$ denote homogeneous coordinates of points on the plane, 
+$$θ_{α}$$&nbsp;=&nbsp;[&nbsp;α&nbsp;0&nbsp;0&nbsp;], $$θ_{k}$$&nbsp;=&nbsp;[&nbsp;0&nbsp;k&nbsp;0&nbsp;], and $$θ_{t}$$&nbsp;=&nbsp;[&nbsp;0&nbsp;0&nbsp;t&nbsp;]; 
 
 <img src="/assets/img/papers/Neural-network-based_detection_methods_for_color,_sharpness,_and_geometry_artifacts_in_stereoscopic_and_VR180_videos/LossG5.png">
+
+$$L_{Siam}(\theta,\theta_b) = L_{SE}(\theta, -1\cdot\theta_b)$$.
 
 
 ### Results
