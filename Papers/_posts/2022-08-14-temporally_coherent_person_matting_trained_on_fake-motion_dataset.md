@@ -152,30 +152,30 @@ For questions and propositions, please contact us: <ivan.molodetskikh@graphics.c
 
 ## References
 
-1) M. Sandler, A. Howard, M. Zhu, A. Zhmoginov, and L.-C. Chen, “Mobilenetv2: inverted residuals and linear bottlenecks,” in: The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018.
+1) M. Sandler, A. Howard, M. Zhu, A. Zhmoginov, and L.-C. Chen, “Mobilenetv2: inverted residuals and linear bottlenecks,” in The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018.
 
 2) X. Shi, Z. Chen, H. Wang, D.-Y. Yeung, W.-k. Wong, and W.-c. Woo, “Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting,” Advances in Neural Information Processing Systems, vol. 28, Curran Associates, Inc., 2015, pp. 802–810.
 
-3) A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A.N. Gomez, Ł. Kaiser, and I. Polosukhin, “Attention is all you need,” in: Advances in Neural Information Processing Systems, 2017, pp. 5998–6008.
+3) A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A.N. Gomez, Ł. Kaiser, and I. Polosukhin, “Attention is all you need,” in Advances in Neural Information Processing Systems, 2017, pp. 5998–6008.
 
-4) L.-C. Chen, Y. Zhu, G. Papandreou, F. Schroff, and H. Adam, “Encoder-decoder with atrous separable convolution for semantic image segmentation,” in: Proceedings of the European Conference on Computer Vision (ECCV), 2018.
+4) L.-C. Chen, Y. Zhu, G. Papandreou, F. Schroff, and H. Adam, “Encoder-decoder with atrous separable convolution for semantic image segmentation,” in Proceedings of the European Conference on Computer Vision (ECCV), 2018.
 
-5) [AISegment dataset](https://github.com/aisegmentcn/matting_human_datasets/tree/1829b5f722024d29b780993f06b45ea3f47ba777), 2019.
+5) AISegment dataset, available: [https://github.com/aisegmentcn/matting_human_datasets/tree/1829b5f722024d29b780993f06b45ea3f47ba777](https://github.com/aisegmentcn/matting_human_datasets/tree/1829b5f722024d29b780993f06b45ea3f47ba777), 2019.
 
-6) X. Shen, X. Tao, H. Gao, C. Zhou, and J. Jia, “Deep automatic portrait matting,” in: European Conference on Computer Vision, Springer, 2016, pp. 92–107.
+6) X. Shen, X. Tao, H. Gao, C. Zhou, and J. Jia, “Deep automatic portrait matting,” in European Conference on Computer Vision, Springer, 2016, pp. 92–107.
 
-7) N. Xu, B. Price, S. Cohen, and T. Huang, “Deep image matting,” in: The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017.
+7) N. Xu, B. Price, S. Cohen, and T. Huang, “Deep image matting,” in The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017.
 
 8) M. Forte, F. Pitié, “F, B, alpha matting,” preprint, arXiv:2003.07711, 2020.
 
-9) X. Lu, W. Wang, C. Ma, J. Shen, L. Shao, and F. Porikli, “See more, know more: unsupervised video object segmentation with co-attention siamese networks,” in: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019.
+9) X. Lu, W. Wang, C. Ma, J. Shen, L. Shao, and F. Porikli, “See more, know more: unsupervised video object segmentation with co-attention siamese networks,” in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019.
 
 10) S. Seo, S. Choi, M. Kersner, B. Shin, H. Yoon, H. Byun, and S. Ha, “Towards realtime automatic portrait matting on mobile devices,” preprint, arXiv:1904.03816, 2019.
 
-11) Q. Chen, T. Ge, Y. Xu, Z. Zhang, X. Yang, and K. Gai, “Semantic human matting,” in: Proceedings of the 26th ACM International Conference on Multimedia, 2018, pp. 618-626.
+11) Q. Chen, T. Ge, Y. Xu, Z. Zhang, X. Yang, and K. Gai, “Semantic human matting,” in Proceedings of the 26th ACM International Conference on Multimedia, 2018, pp. 618-626.
 
-12) Y. Zhang, L. Gong, L. Fan, P. Ren, Q. Huang, H. Bao, and W. Xu, “A late fusion CNN for digital matting,” in: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019.
+12) Y. Zhang, L. Gong, L. Fan, P. Ren, Q. Huang, H. Bao, and W. Xu, “A late fusion CNN for digital matting,” in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019.
 
-13) T. Wang, S. Liu, Y. Tian, K. Li, and M.-H. Yang, “Video matting via consistency-regularized graph neural networks,” in: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2021, pp. 4902–4911.
+13) T. Wang, S. Liu, Y. Tian, K. Li, and M.-H. Yang, “Video matting via consistency-regularized graph neural networks,” in Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2021, pp. 4902–4911.
 
 14) R.A. Bradley, and M.E. Terry, “Rank analysis of incomplete block designs: I. The method of paired comparisons,” Biometrika 39 (3/4) (1952) 324–345.
