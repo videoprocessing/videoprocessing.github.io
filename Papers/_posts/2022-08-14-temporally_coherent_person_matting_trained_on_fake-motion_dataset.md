@@ -2,8 +2,8 @@
 title: Temporally coherent person matting trained on fake-motion dataset
 permalink: /person-matting
 features:
-  - "A U-Net-based deep neural network method with LSTM blocks and an attention module on skip connections" 
-  - "A novel fake-motion algorithm for generating neural-network training video clips from a dataset of images with ground-truth alpha mattes and background videos"
+  - "A U-Net based deep neural network method with LSTM blocks and an attention module on skip connections" 
+  - "A novel fake-motion algorithm for generating neural-network training video clips from a dataset of images with ground truth alpha mattes and background videos"
   - "Better than 8 different matting methods according to subjective evaluation"
   - "A motion estimation based method for improving the output's temporal stability"
 ---
@@ -17,8 +17,8 @@ Contact us:
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 ## Abstract
-We propose a novel neural-network-based method to perform matting of videos depicting people that does not require additional user input such as trimaps. Our architecture achieves temporal stability of the resulting alpha mattes by using motion estimation based smoothing of image-segmentation algorithm outputs, combined with convolutional-LSTM modules on U-Net skip connections. We also propose a fake-motion algorithm that generates training clips for the video-matting network
-given photos with ground-truth alpha mattes and background videos. We apply random motion to photos and their mattes to simulate movement one would find in real videos and composite the result with the background clips. It lets us train a deep neural network operating on videos in an absence of a large annotated video dataset and provides ground-truth training-clip foreground optical flow for use in loss functions.
+We propose a novel neural network based method to perform matting of videos depicting people that does not require additional user input such as trimaps. Our architecture achieves temporal stability of the resulting alpha mattes by using motion estimation based smoothing of image-segmentation algorithm outputs, combined with convolutional-LSTM modules on U-Net skip connections. We also propose a fake-motion algorithm that generates training clips for the video-matting network
+given photos with ground truth alpha mattes and background videos. We apply random motion to photos and their mattes to simulate movement one would find in real videos and composite the result with the background clips. It lets us train a deep neural network operating on videos in an absence of a large annotated video dataset and provides ground truth training clip foreground optical flow for use in loss functions.
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">                   
  <div  class="container-buttons">
@@ -36,7 +36,7 @@ given photos with ground-truth alpha mattes and background videos. We apply rand
 
 
 ## Key Features
-* A U-Net-based deep neural network method with LSTM blocks and an attention module on skip connections
+* A U-Net based deep neural network method with LSTM blocks and an attention module on skip connections
 * A novel fake-motion algorithm for generating neural-network training video clips from a dataset of images with ground truth alpha mattes and background videos
 * Better than 8 different matting methods according to subjective evaluation powered by [Subjectify.us](https://www.subjectify.us/)
 * A motion estimation based method for improving the output's temporal stability 
@@ -137,7 +137,7 @@ doi = {https://doi.org/10.1016/j.dsp.2022.103521},
 url = {https://www.sciencedirect.com/science/article/pii/S1051200422001385},
 author = {Ivan Molodetskikh and Mikhail Erofeev and Andrey Moskalenko and Dmitry Vatolin},
 keywords = {Video matting, Semantic person matting, Semantic segmentation, Data augmentation, Temporal smoothing, Deep learning},
-abstract = {We propose a novel neural-network-based method to perform matting of videos depicting people that does not require additional user input such as trimaps. Our architecture achieves temporal stability of the resulting alpha mattes by using motion-estimation-based smoothing of image-segmentation algorithm outputs, combined with convolutional-LSTM modules on U-Net skip connections. We also propose a fake-motion algorithm that generates training clips for the video-matting network given photos with ground-truth alpha mattes and background videos. We apply random motion to photos and their mattes to simulate movement one would find in real videos and composite the result with the background clips. It lets us train a deep neural network operating on videos in an absence of a large annotated video dataset and provides ground-truth training-clip foreground optical flow for use in loss functions.}
+abstract = {We propose a novel neural network based method to perform matting of videos depicting people that does not require additional user input such as trimaps. Our architecture achieves temporal stability of the resulting alpha mattes by using motion estimation based smoothing of image-segmentation algorithm outputs, combined with convolutional-LSTM modules on U-Net skip connections. We also propose a fake-motion algorithm that generates training clips for the video-matting network given photos with ground truth alpha mattes and background videos. We apply random motion to photos and their mattes to simulate movement one would find in real videos and composite the result with the background clips. It lets us train a deep neural network operating on videos in an absence of a large annotated video dataset and provides ground truth training clip foreground optical flow for use in loss functions.}
 }
 {% endhighlight %}
 
@@ -154,7 +154,7 @@ For questions and propositions, please contact us: <ivan.molodetskikh@graphics.c
 
 1) M. Sandler, A. Howard, M. Zhu, A. Zhmoginov, and L.-C. Chen, “Mobilenetv2: inverted residuals and linear bottlenecks,” in The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018.
 
-2) X. Shi, Z. Chen, H. Wang, D.-Y. Yeung, W.-k. Wong, and W.-c. Woo, “Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting,” Advances in Neural Information Processing Systems, vol. 28, Curran Associates, Inc., 2015, pp. 802–810.
+2) X. Shi, Z. Chen, H. Wang, D.-Y. Yeung, W.-k. Wong, and W.-c. Woo, “Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting,” in Advances in Neural Information Processing Systems, vol. 28, Curran Associates, Inc., 2015, pp. 802–810.
 
 3) A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A.N. Gomez, Ł. Kaiser, and I. Polosukhin, “Attention is all you need,” in Advances in Neural Information Processing Systems, 2017, pp. 5998–6008.
 
@@ -178,4 +178,4 @@ For questions and propositions, please contact us: <ivan.molodetskikh@graphics.c
 
 13) T. Wang, S. Liu, Y. Tian, K. Li, and M.-H. Yang, “Video matting via consistency-regularized graph neural networks,” in Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2021, pp. 4902–4911.
 
-14) R.A. Bradley, and M.E. Terry, “Rank analysis of incomplete block designs: I. The method of paired comparisons,” Biometrika 39 (3/4) (1952) 324–345.
+14) R.A. Bradley, and M.E. Terry, “Rank analysis of incomplete block designs: I. The method of paired comparisons,” in Biometrika 39 (3/4) (1952) 324–345.
