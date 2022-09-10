@@ -176,6 +176,6 @@ For questions and propositions, please contact us: <ivan.molodetskikh@graphics.c
 
 12) Y. Zhang, L. Gong, L. Fan, P. Ren, Q. Huang, H. Bao, and W. Xu, “A late fusion CNN for digital matting,” in: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019.
 
-13) T. Wang, S. Liu, Y. Tian, K. Li, and M.-H. Yang, “Video matting via consistencyregularized graph neural networks,” in: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2021, pp. 4902–4911.
+13) T. Wang, S. Liu, Y. Tian, K. Li, and M.-H. Yang, “Video matting via consistency-regularized graph neural networks,” in: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2021, pp. 4902–4911.
 
 14) R.A. Bradley, and M.E. Terry, “Rank analysis of incomplete block designs: I. The method of paired comparisons,” Biometrika 39 (3/4) (1952) 324–345.
