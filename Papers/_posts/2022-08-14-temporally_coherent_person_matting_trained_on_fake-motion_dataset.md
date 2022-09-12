@@ -2,10 +2,10 @@
 title: Temporally coherent person matting trained on fake-motion dataset
 permalink: /person-matting
 features:
-  - "A U-Net based deep neural network method with LSTM blocks and an attention module on skip connections" 
   - "A novel fake-motion algorithm for generating neural-network training video clips from a dataset of images with ground truth alpha mattes and background videos"
-  - "Better than 8 different matting methods according to subjective evaluation"
+  - "A U-Net based deep neural network method with LSTM blocks and an attention module on skip connections" 
   - "A motion estimation based method for improving the output's temporal stability"
+  - "Better than 8 different matting methods according to subjective evaluation"
 ---
 
 ### I. Molodetskikh, M. Erofeev, A. Moskalenko, and D. Vatolin
@@ -30,16 +30,16 @@ given photos with ground truth alpha mattes and background videos. We apply rand
      <i class="fa fa-download"></i>
      Download Full Text
  </button>
-  <p class="download-button-caption">The newest version  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The previous version (PDF, 22.2 MB)</p>                         
+  <p class="download-button-caption">&nbsp;&nbsp;&nbsp;Newest version  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Previous version (PDF, 22.2 MB)</p>                         
 </div>
 
 
 
 ## Key Features
-* A U-Net based deep neural network method with LSTM blocks and an attention module on skip connections
 * A novel fake-motion algorithm for generating neural-network training video clips from a dataset of images with ground truth alpha mattes and background videos
-* Better than 8 different matting methods according to subjective evaluation powered by [Subjectify.us](https://www.subjectify.us/)
+* A U-Net based deep neural network method with LSTM blocks and an attention module on skip connections
 * A motion estimation based method for improving the output's temporal stability 
+* Better than 8 different matting methods according to subjective evaluation powered by [Subjectify.us](https://www.subjectify.us/)
 
 ## Architecture of the proposed neural network
 The figure below demonstrates the architecture. 
@@ -77,14 +77,14 @@ is underlined and the third-best is shown in _italics_.
 |:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
 |  | city |  |  | snow |  |  |
 | Ours | _69.651_ | **15.314** | **0.695** | 56.338 | 30.240 | _0.662_ |
-| Smoothed Prob. Maps | 91.577 | <ins>17.609</ins> | <ins>1.291</ins> | 65.772 | 35.133 | 1.264 |
+| &nbsp; Smoothed Prob. Maps &nbsp; | 91.577 | <ins>17.609</ins> | <ins>1.291</ins> | 65.772 | 35.133 | 1.264 |
 | FBA Matting | <ins>57.700</ins> | _30.825_ | _1.613_ | <ins>27.113</ins> | <ins>20.881</ins> | <ins>0.423</ins> |
 | Deep Image Matting | 97.506 | 47.107 | 3.258 | 59.648 | 41.463 | 2.128 |
 | CRGNN | 76.456 | 35.591 | 2.354 | _34.735_ | _27.183_ | 1.244 |
-| Sem. Human Matting | 108.393 | 53.086 | 5.696 | 71.844 | 43.689 | 2.595 |
+| Sem. Human Matting | 108.393 |&nbsp; 53.086&nbsp; | 5.696 | 71.844 | 43.689 | 2.595 |
 | Late Fusion Matting | **44.766** | 31.621 | 4.152 | **24.602** | **19.484** | **0.341** |
-| COSNet | 271.878 | 62.798 | 22.387 | 156.617 | 58.536 | 9.424 |
-| MMNet | 154.656 | 62.439 | 13.580 | 347.065 | 143.696 | 58.429 |
+| COSNet | &nbsp;271.878 &nbsp;| 62.798 | 22.387 | 156.617 | 58.536 | 9.424 |
+| MMNet | 154.656 | 62.439 | 13.580 | &nbsp;347.065&nbsp; |&nbsp; 143.696&nbsp; | 58.429 |
 |:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
 {: .tablelines}
   
@@ -94,14 +94,14 @@ The second table shows objective evaluation results on five **VideoMatte240K** t
 | &nbsp; Method &nbsp; | &nbsp; SSDA &nbsp; | &nbsp; dtSSD &nbsp; | &nbsp; MESSDdt &nbsp; |
 |:---------------:|:---------------:|:---------------:|:---------------:|
 | Ours | _84.710_ | _46.792_ | <ins>2.080</ins> |
-| Smoothed Prob. Maps |  117.253 | 53.836 | 4.452 |
+|&nbsp; Smoothed Prob. Maps &nbsp;|  117.253 | 53.836 | 4.452 |
 | FBA Matting | <ins>62.679</ins> | <ins>40.996</ins> | _2.901_ |
 | Deep Image Matting | 165.094 | 100.595 | 15.039 |
 | CRGNN | 140.095 | 84.434 | 13.900 |
 | Sem. Human Matting | 166.325 | 113.648 | 22.300 |
 | Late Fusion Matting | **29.146** | **25.459** | **0.845** |
 | COSNet | 226.256 | 74.765 | 17.506 |
-| MMNet |  445.550 | 156.778 | 75.171 |
+| MMNet | &nbsp; 445.550 &nbsp; | &nbsp;156.778 &nbsp;| 75.171 |
 |:---------------:|:---------------:|:---------------:|:---------------:|
 {: .tablelines}
   
@@ -111,18 +111,18 @@ The third table shows objective evaluation results on 100 **fake-motion** clips.
 | &nbsp; Method &nbsp; | &nbsp; SSDA &nbsp; | &nbsp; dtSSD &nbsp; | &nbsp; MESSDdt &nbsp; |
 |:---------------:|:---------------:|:---------------:|:---------------:|
 | Ours | **102.371** | **72.880** | **1.818** |
-| Smoothed Prob. Maps |  <ins>113.019</ins> | <ins>79.253</ins> | <ins>3.955</ins> |
+| &nbsp; Smoothed Prob. Maps &nbsp; |  <ins>113.019</ins> | <ins>79.253</ins> | <ins>3.955</ins> |
 | FBA Matting | _114.101_ | _92.686_ | _4.613_ |
 | Deep Image Matting | 128.205 | 113.675 | 7.693 |
 | CRGNN | 121.416 | 95.899 | 7.015 |
 | Sem. Human Matting |  186.980 | 145.235 | 9.685 |
-| Late Fusion Matting | 454.597 | 222.736 | 69.992 |
+| Late Fusion Matting |&nbsp; 454.597&nbsp; | &nbsp; 222.736 &nbsp;| 69.992 |
 | COSNet | 610.056 | 142.895 | 33.037 |
 | MMNet |  222.333 | 124.414 | 15.006 |
 |:---------------:|:---------------:|:---------------:|:---------------:|
 {: .tablelines}
 
-We believe that the subjective evaluation should play the deciding role in video-matting method evaluation because the existing objective metrics are likely limited in their ability to distinguish temporal coherence.
+We believe the discrepancy between the subjective and the objective evaluation results can be attributed to the existing objective metrics' limited ability to distinguish temporal coherence
 
 ## Cite us
 {% highlight BibTeX %}
