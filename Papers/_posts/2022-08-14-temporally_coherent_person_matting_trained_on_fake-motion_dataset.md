@@ -22,11 +22,11 @@ given photos with ground truth alpha mattes and background videos. We apply rand
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">                   
  <div  class="container-buttons">
-  <button class="download-button" role="button" onclick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S1051200422001385')"> 
+  <button class="download-button" role="button" onauxclick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S1051200422001385')" onclick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S1051200422001385')"> 
       Read Full Text
   </button>
   &nbsp;&nbsp;&nbsp;
- <button class="download-button" role="button" onclick="window.open('https://arxiv.org/pdf/2109.04843.pdf')">
+ <button class="download-button" role="button" onauxclick="window.open('https://arxiv.org/pdf/2109.04843.pdf')" onclick="window.open('https://arxiv.org/pdf/2109.04843.pdf')">
      <i class="fa fa-download"></i>
      Download Full Text
  </button>
@@ -122,7 +122,7 @@ The third table shows objective evaluation results on 100 **fake-motion** clips.
 |:---------------:|:---------------:|:---------------:|:---------------:|
 {: .tablelines}
 
-We believe the discrepancy between the subjective and the objective evaluation results can be attributed to the existing objective metrics' limited ability to distinguish temporal coherence
+We believe the discrepancy between the subjective and the objective evaluation results can be attributed to the existing objective metrics' limited ability to distinguish temporal coherence.
 
 ## Cite us
 {% highlight BibTeX %}
