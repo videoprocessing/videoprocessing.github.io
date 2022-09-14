@@ -8,10 +8,12 @@ features:
   - "<b>22800 stereopairs</b> with artificial distortions from <b>39 3D movies</b> in the train dataset for geometry mismatch estimation method"
   - "Objective quality assessment of <b>100 VR180 videos</b> from YouTube using proposed methods"
 ---
+
 <script
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
   type="text/javascript">
 </script>
+
 ### S.&#x202F;Lavrushkin, K.&#x202F;Kozhemyakov and D.&#x202F;Vatolin
 
 Contact&nbsp;us: 
