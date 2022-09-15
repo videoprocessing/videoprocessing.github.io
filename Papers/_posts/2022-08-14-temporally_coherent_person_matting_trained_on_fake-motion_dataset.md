@@ -70,26 +70,112 @@ Below you can see **objective evaluation** results on clips from [VideoMatting b
 is underlined and the third-best is shown in _italics_.
 
 <style>
-.tablelines table, .tablelines td, .tablelines th {
-        border: 0.8px solid black;
-        }
+table, th, td {
+  border:0.8px solid black;
+}
+td {
+  text-align: center;
+  vertical-align: middle;
+}
 </style>
-  
-|-----------------+-----------------+-----------------+----------------+-----------------+----------------+----------------|
-| &nbsp; Method &nbsp; | &nbsp; SSDA &nbsp; | &nbsp; dtSSD &nbsp; | &nbsp; MESSDdt &nbsp; | &nbsp; SSDA &nbsp; | &nbsp; dtSSD &nbsp; | &nbsp; MESSDdt &nbsp; |
-|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
-|  | city |  |  | snow |  |  |
-| Ours | _69.651_ | **15.314** | **0.695** | 56.338 | 30.240 | _0.662_ |
-| &nbsp; Smoothed Prob. Maps &nbsp; | 91.577 | <ins>17.609</ins> | <ins>1.291</ins> | 65.772 | 35.133 | 1.264 |
-| FBA Matting | <ins>57.700</ins> | _30.825_ | _1.613_ | <ins>27.113</ins> | <ins>20.881</ins> | <ins>0.423</ins> |
-| Deep Image Matting | 97.506 | 47.107 | 3.258 | 59.648 | 41.463 | 2.128 |
-| CRGNN | 76.456 | 35.591 | 2.354 | _34.735_ | _27.183_ | 1.244 |
-| Sem. Human Matting | 108.393 |&nbsp; 53.086&nbsp; | 5.696 | 71.844 | 43.689 | 2.595 |
-| Late Fusion Matting | **44.766** | 31.621 | 4.152 | **24.602** | **19.484** | **0.341** |
-| COSNet | &nbsp;271.878 &nbsp;| 62.798 | 22.387 | 156.617 | 58.536 | 9.424 |
-| MMNet | 154.656 | 62.439 | 13.580 | &nbsp;347.065&nbsp; |&nbsp; 143.696&nbsp; | 58.429 |
-|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
-{: .tablelines}
+
+<table>  
+    <tr>
+        <th>Method </th>
+        <th>SSDA</th> 
+        <th>dtSSD</th>
+        <th>&nbsp; MESSDdt &nbsp;</th>
+        <th>SSDA</th>
+        <th>dtSSD</th>
+        <th>&nbsp; MESSDdt &nbsp;</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="3">city</td>
+        <td colspan="3">snow</td>
+    </tr>
+    <tr>
+        <td>Ours</td>
+        <td><i>69.651</i></td>
+        <td><b>15.314</b></td>
+        <td><b>0.695</b></td>
+        <td>56.338</td>
+        <td>30.240</td>
+        <td><i>0.662</i></td>
+    </tr>
+    <tr>
+        <td>&nbsp; Smoothed Prob. Maps &nbsp;</td>
+        <td>91.577</td>
+        <td><ins>17.609</ins></td>
+        <td><ins>1.291</ins></td>
+        <td>65.772</td>
+        <td>35.133</td>
+        <td>1.264</td>
+    </tr>
+    <tr>
+        <td>FBA Matting</td>
+        <td><ins>57.700</ins></td>
+        <td><i>30.825</i></td>
+        <td><i>1.613</i></td>
+        <td><ins>27.113</ins></td>
+        <td><ins>20.881</ins></td>
+        <td><ins>0.423</ins></td>
+    </tr>
+    <tr>
+        <td>Deep Image Matting</td>
+        <td>97.506</td>
+        <td>47.107</td>
+        <td>3.258</td>
+        <td>59.648</td>
+        <td>41.463</td>
+        <td>2.128</td>
+    </tr>
+    <tr>
+        <td>CRGNN</td>
+        <td>76.456</td>
+        <td>35.591</td>
+        <td>2.354</td>
+        <td><i>34.735</i></td>
+        <td><i>27.183</i></td>
+        <td>1.244</td>
+    </tr>
+    <tr>
+        <td>Sem. Human Matting</td>
+        <td>108.393</td>
+        <td>&nbsp; 53.086 &nbsp;</td>
+        <td>5.696</td>
+        <td>71.844</td>
+        <td>43.689</td>
+        <td>2.595</td>
+    </tr>
+    <tr>
+        <td>Late Fusion Matting</td>
+        <td><b>44.766</b></td>
+        <td>31.621</td>
+        <td>4.152</td>
+        <td><b>24.602</b></td>
+        <td><b>19.484</b></td>
+        <td><b>0.341</b></td>
+    </tr>
+    <tr>
+        <td>COSNet</td>
+        <td>&nbsp; 271.878 &nbsp;</td>
+        <td>62.798</td>
+        <td>22.387</td>
+        <td>156.617</td>
+        <td>58.536</td>
+        <td>9.424</td>
+    </tr>
+    <tr>
+        <td>MMNet</td>
+        <td>154.656</td>
+        <td>62.439</td>
+        <td>13.580</td>
+        <td>&nbsp;347.065&nbsp;</td>
+        <td>&nbsp;143.696&nbsp;</td>
+        <td>58.429</td>
+    </tr>
+</table>
   
 The second table shows objective evaluation results on five **VideoMatte240K** test clips.  
   
