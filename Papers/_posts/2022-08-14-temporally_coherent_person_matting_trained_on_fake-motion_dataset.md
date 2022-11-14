@@ -216,17 +216,17 @@ We believe the discrepancy between the subjective and the objective evaluation r
 ## Cite us
 {% highlight BibTeX %}
 @article{MOLODETSKIKH2022103521,
-title = {Temporally coherent person matting trained on fake-motion dataset},
-journal = {Digital Signal Processing},
-volume = {126},
-pages = {103521},
-year = {2022},
-issn = {1051-2004},
-doi = {https://doi.org/10.1016/j.dsp.2022.103521},
-url = {https://www.sciencedirect.com/science/article/pii/S1051200422001385},
-author = {Ivan Molodetskikh and Mikhail Erofeev and Andrey Moskalenko and Dmitry Vatolin},
-keywords = {Video matting, Semantic person matting, Semantic segmentation, Data augmentation, Temporal smoothing, Deep learning},
-abstract = {We propose a novel neural network based method to perform matting of videos depicting people that does not require additional user input such as trimaps. Our architecture achieves temporal stability of the resulting alpha mattes by using motion estimation based smoothing of image-segmentation algorithm outputs, combined with convolutional-LSTM modules on U-Net skip connections. We also propose a fake-motion algorithm that generates training clips for the video-matting network given photos with ground truth alpha mattes and background videos. We apply random motion to photos and their mattes to simulate movement one would find in real videos and composite the result with the background clips. It lets us train a deep neural network operating on videos in an absence of a large annotated video dataset and provides ground truth training clip foreground optical flow for use in loss functions.}
+    title = {Temporally coherent person matting trained on fake-motion dataset},
+    journal = {Digital Signal Processing},
+    volume = {126},
+    pages = {103521},
+    year = {2022},
+    issn = {1051-2004},
+    doi = {https://doi.org/10.1016/j.dsp.2022.103521},
+    url = {https://www.sciencedirect.com/science/article/pii/S1051200422001385},
+    author = {Ivan Molodetskikh and Mikhail Erofeev and Andrey Moskalenko and Dmitry Vatolin},
+    keywords = {Video matting, Semantic person matting, Semantic segmentation, Data augmentation, Temporal smoothing, Deep learning},
+    abstract = {We propose a novel neural network based method to perform matting of videos depicting people that does not require additional user input such as trimaps. Our architecture achieves temporal stability of the resulting alpha mattes by using motion estimation based smoothing of image-segmentation algorithm outputs, combined with convolutional-LSTM modules on U-Net skip connections. We also propose a fake-motion algorithm that generates training clips for the video-matting network given photos with ground truth alpha mattes and background videos. We apply random motion to photos and their mattes to simulate movement one would find in real videos and composite the result with the background clips. It lets us train a deep neural network operating on videos in an absence of a large annotated video dataset and provides ground truth training clip foreground optical flow for use in loss functions.}
 }
 {% endhighlight %}
 
