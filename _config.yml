@@ -66,10 +66,10 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: 'G-N0KJL8WPSM'
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
+# Used for Sitemap.xml and your :xRSS feed
 url: https://videoprocessing.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
