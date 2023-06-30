@@ -119,7 +119,7 @@ On our benchmark page you can find even more image and video quality metrics.
 <form action="https://download.compression.ru/mailer_savam/SAVAM_Request_Mail_sender.php" method="POST">
      <input type="text" name="name" placeholder="Name" required="">
      <input type="text" name="email" placeholder="Email" required="">
-     <input type="hidden" name="WorkName" value="Dataset">
+     <input type="text" name="WorkName" placeholder="How did you hear about us" required="">
      <input type="hidden" name="submit" value="VQA_submit">
      <button>Get Download Link</button>
 </form>
