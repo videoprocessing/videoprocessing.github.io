@@ -4,8 +4,8 @@ short_title: MSU Deinterlacer Benchmark
 permalink: /deinterlacer
 features:
   - "#1 deinterlacer benchmark"
-  - "40 video sequences"
-  - "21 algorithms"
+  - "28 video sequences"
+  - "31 algorithms"
 ---
 
 
@@ -26,7 +26,7 @@ We appreciate new ideas. Please, write us an e-mail to <deinterlacer-benchmark@v
 
 ### <span id="leaderboard"></span> Leaderboard
 
-The table below shows a comparison of deinterlacers by PSNR, SSIM metrics and by speed.
+The table below shows a comparison of deinterlacers by mean opinion score, PSNR, SSIM, VMAF metrics and by speed.
 <a href="https://videoprocessing.ai/benchmarks/deinterlacer.html"><img src="/assets/img/benchmarks/deinterlacer/leaderboard.png"></a>
 
 
@@ -48,3 +48,5 @@ The table below shows a comparison of deinterlacers by PSNR, SSIM metrics and by
 For questions and propositions, please contact us: <deinterlacer-benchmark@videoprocessing.ai>
 
 ## [Learn more](https://videoprocessing.ai/benchmarks/deinterlacer.html)
+
+*Last update on March 5, 2024* 
