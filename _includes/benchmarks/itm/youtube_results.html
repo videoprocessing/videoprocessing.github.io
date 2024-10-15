@@ -1,0 +1,65 @@
+<p>
+    In this section, you can quickly evaluate the quality of the algorithms yourself. The video player below show you
+    the HDR video if your device supports this technology. We recommend opening this video via Google Chrome or Safari.
+</p>
+
+<div id="arrow_selector" class="mobile-plots">
+    <p style="white-space: pre;">Method: <label for="selector_meth"></label><select id="selector_meth" name="values">
+        <option>Akyuz</option>
+        <option>HDRCNN</option>
+        <option>HDRTVNet</option>
+        <option>Maxon</option>
+        <option>SingleHDR</option>
+        <option>DeepHDR</option>
+        <option>ExpNet</option>
+        <option>Huo</option>
+        <option>HuoPhys</option>
+        <option>KovOliv</option>
+        <option>Kuo</option>
+        <option>HDRUNet</option>
+        <option>KUnet</option>
+        <option>twostageHDR</option>
+
+    </select>
+    </p>
+
+    <p align="center" id="video_div">
+        <iframe class="video-hdr-box" id="video" width="560" height="315"
+                src="https://www.youtube.com/embed/yjJSiBSqr8I" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen="true"></iframe>
+    </p>
+
+
+    <script>
+        function onChangeHelper() {
+            let video = document.getElementById("video");
+            video.remove()
+            var video_select = document.getElementById("selector_meth");
+            // Akyuz HDRCNN HDRTVNet Maxon SingleHDR DeepHDR ExpNet HuoPhys
+            var videoToId = ['yjJSiBSqr8I', '7Da7CM1rvKQ', 'IYzj_OrshJM', 'CMnPNTlYSV0', 'VrIrKWQWpEk', 'HSax--x7AHQ',
+                'tGeRBkGpZl0', 'Q3Vntdc-bkw', 'at-WIf3gWfk', 'Phep_XyyHv4', 'JV8R3tVFZrc', '3R20544-TRE', 'ICMYCgLOwIA',
+                'QRaujtLNDd4']
+            let new_url = "https://www.youtube.com/embed/" + videoToId[video_select.selectedIndex]
+            console.log(new_url)
+            let new_video = document.createElement('iframe');
+            new_video.setAttribute("id", "video")
+            new_video.setAttribute("width", "560")
+            new_video.setAttribute("height", "315")
+            new_video.setAttribute("src", new_url)
+            new_video.setAttribute("allowfullscreen", "true")
+
+            new_video.setAttribute("title", "YouTube video player")
+            new_video.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture")
+
+            let div = document.getElementById("video_div");
+            div.appendChild(new_video)
+
+        }
+
+        // document.getElementById("arrow_selector_video").onchange = onChangeHelper
+        // document.getElementById("arrow_selector_part").onchange = onChangeHelper
+        document.getElementById("selector_meth").onchange = onChangeHelper
+    </script>
+</div>
+
