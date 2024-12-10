@@ -1,5 +1,5 @@
 ---
-title: Multi-Screen Effects on Quality Assessment: Investigating Banding Metrics Inconsistencies
+title: Multi Screen Effects on Quality Assessment Investigating Banding Metrics Inconsistencies
 permalink: /banding-dataset
 features:
   - "Largest banding dataset in this area"
