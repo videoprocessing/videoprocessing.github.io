@@ -62,7 +62,7 @@ Banding, a common video quality artifact, it refers to the noticeable gradient s
 
 
 <video autoplay loop muted playsinline width="100%">
-    <source src="/assets/videos/papers/dataset_preview.webm" type='video/webm'>
+    <source src="/assets/videos/papers/banding_dataset.webm" type='video/webm'>
 </video>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -76,12 +76,13 @@ Banding, a common video quality artifact, it refers to the noticeable gradient s
 ## <span id="cite"></span> Cite us
 
 {% highlight BibTeX %}
-@inproceedings{
-    safonov2024multi,
-    title={Multi-Screen Effects on Quality Assessment: Investigating Banding Metrics Inconsistencies},
-    author={Nikolay I. Safonov, Dmitriy S. Vatolin and Dmitriy Kulikov},
-    booktitle={IEEE International Conference on Visual Communications and Image Processing},
-    year={2024}
+@inproceedings{safonov2024multi,
+  title={Multi-Screen Effects on Quality Assessment: Investigating Banding Metrics Inconsistencies},
+  author={Safonov, Nickolay and Kulikov, Dmitriy and Vatolin, Dmitriy},
+  booktitle={2024 IEEE International Conference on Visual Communications and Image Processing (VCIP)},
+  pages={1--4},
+  year={2024},
+  organization={IEEE}
 }
 {% endhighlight %}
 
