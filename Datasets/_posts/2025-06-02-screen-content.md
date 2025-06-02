@@ -1,6 +1,10 @@
 ---
 title: Screen content video dataset and benchmark
 permalink: /screen-content-dataset
+features:
+  - Real-world distortions from video conferencing apps
+  - 100 videos, 1600 sistorted versions
+  - 8,000+ assessors
 ---
 
 ### N. Safonov, M. Rakhmanov, D. Vatolin
