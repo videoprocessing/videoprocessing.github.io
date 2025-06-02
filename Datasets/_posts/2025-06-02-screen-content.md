@@ -1,11 +1,10 @@
 ---
 title: Screen content video dataset and benchmark
-permalink: /screencontent-dataset
+permalink: /screen-content-dataset
 ---
 
 ### N. Safonov, M. Rakhmanov, D. Vatolin
 
-### Publication name
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -68,10 +67,10 @@ https://videoprocessing.github.io/screen-content-dataset.
 </button>
 </div>
 
-## <span id="cite"></span> Cite us
+<!-- ## <span id="cite"></span> Cite us
 
 {% highlight BibTeX %}
-{% endhighlight %}
+{% endhighlight %} -->
 
 
 ## Contact us
