@@ -1330,7 +1330,7 @@ For questions, propositions please contact authors: <nikolay.safonov@graphics.cs
 ## Metrics
 
 <!-- Participants Table -->
-<div id="participants_id" style="width: 70%; margin: 2rem auto;">
+<div id="participants_id" style="width: 90%; margin: 2rem auto;">
   <table class="datatable display" id="participants_table" style="background-color: #d4d4d4">
     <thead>
       <tr style="font-size: large; background-color: #3d6f96">
@@ -1338,45 +1338,43 @@ For questions, propositions please contact authors: <nikolay.safonov@graphics.cs
         <th style="background-color: #3d6f96"> Iqa/Vqa</th>
         <th style="background-color: #3d6f96"> Type</th>
         <th style="background-color: #3d6f96"> Implementation</th>
-        <th style="background-color: #3d6f96"> Added By</th>
-        <th style="background-color: #3d6f96"> Year</th>
       </tr>
     </thead>
     <tbody>
-        <tr class='item'><td>ARNIQA [<a href="ARNIQA">3</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch/">Link</a></td><td>MSU (2024)</td><td>2023</td></tr>
-        <tr class='item'><td>BRISQUE [<a href="BRISQUE">5</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td><td>MSU (2024)</td><td>2012</td></tr>
-        <tr class='item'><td>CLIP IQA [<a href="CLIP IQA">7</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/IceClear/CLIP-IQA">Link</a></td><td>MSU (2024)</td><td>2022</td></tr>
-        <tr class='item'><td>CLIP-IQA+ [<a href="CLIP-IQA+">8</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td><td>MSU (2024)</td><td>2023</td></tr>
-        <tr class='item'><td>CONTRIQUE [<a href="CONTRIQUE">12</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/pavancm/CONTRIQUE">Link</a></td><td>MSU (2024)</td><td>2021</td></tr>
-        <tr class='item'><td>COVER [<a href="COVER">13</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/vztu/COVER">Link</a></td><td>MSU (2024)</td><td>2024</td></tr>
-        <tr class='item'><td>CVRKD [<a href="CVRKD">14</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/guanghaoyin/CVRKD-IQA">Link</a></td><td>MSU (2024)</td><td>2022</td></tr>
-        <tr class='item'><td>DBCNN [<a href="DBCNN">15</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/zwx8981/DBCNN-PyTorch">Link</a></td><td>Submit (2023)</td><td>2019</td></tr>
-        <tr class='item'><td>DISTS [<a href="DISTS">16</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/dingkeyan93/IQA-optimization">Link</a></td><td>MSU (2022)</td><td>2020</td></tr>
-        <tr class='item'><td>DOVER [<a href="DOVER">17</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/teowu/DOVER-Dev">Link</a></td><td>Submit (2023)</td><td>2022</td></tr>
-        <tr class='item'><td>EONSS [<a href="EONSS">21</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/icbcbicc/EONSS-demo">Link</a></td><td>MSU (2024)</td><td>2020</td></tr>
-        <tr class='item'><td>FSIM [<a href="FSIM">25</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/photosynthesis-team/piq">Link</a></td><td>MSU (2023)</td><td>2011</td></tr>
-        <tr class='item'><td>FasterVQA [<a href="FasterVQA">26</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/teowu/FAST-VQA-and-FasterVQA">Link</a></td><td>Submit (2023)</td><td>2022</td></tr>
-        <tr class='item'><td>HyperIQA [<a href="HyperIQA">32</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/SSL92/hyperIQA">Link</a></td><td>MSU (2024)</td><td>2020</td></tr>
-        <tr class='item'><td>IW-SSIM [<a href="IW-SSIM">33</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/photosynthesis-team/piq">Link</a></td><td>MSU (2024)</td><td>2011</td></tr>
-        <tr class='item'><td>KonCept512 [<a href="KonCept512">34</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/ZhengyuZhao/koniq-PyTorch">Link</a></td><td>MSU (2022)</td><td>2020</td></tr>
-        <tr class='item'><td>Koncept [<a href="Koncept">35</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/subpic/koniq">Link</a></td><td>MSU (2024)</td><td>2020</td></tr>
-        <tr class='item'><td>LINEARITY [<a href="LINEARITY">36</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/lidq92/LinearityIQA">Link</a></td><td>MSU (2022)</td><td>2020</td></tr>
-        <tr class='item'><td>LIQE [<a href="LIQE">37</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/zwx8981/LIQE">Link</a></td><td>MSU (2024)</td><td>2023</td></tr>
-        <tr class='item'><td>LPIPS [<a href="LPIPS">38</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/richzhang/PerceptualSimilarity">Link</a></td><td>MSU (2022)</td><td>2018</td></tr>
-        <tr class='item'><td>MANIQA [<a href="MANIQA">43</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/IIGROUP/MANIQA">Link</a></td><td>MSU (2024)</td><td>2022</td></tr>
-        <tr class='item'><td>MDTVSFA [<a href="MDTVSFA">45</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/lidq92/MDTVSFA">Link</a></td><td>MSU (2022)</td><td>2021</td></tr>
-        <tr class='item'><td>MEON [<a href="MEON">46</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td>–</td><td>MSU (2022)</td><td>2017</td></tr>
-        <tr class='item'><td>MUSIQ [<a href="MUSIQ">52</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td><td>MSU (2023)</td><td>2021</td></tr>
-        <tr class='item'><td>PAQ-2-PIQ [<a href="PAQ-2-PIQ">56</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/baidut/paq2piq">Link</a></td><td>MSU (2022)</td><td>2020</td></tr>
-        <tr class='item'><td>PIQE [<a href="PIQE">57</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch/">Link</a></td><td>MSU (2024)</td><td>2024</td></tr>
-        <tr class='item'><td>PSNR</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://videoprocessing.ai/vqmt/">MSU VQMT</a></td><td>MSU (2022)</td><td>–</td></tr>
-        <tr class='item'><td>RankIQA [<a href="RankIQA">60</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/YunanZhu/Pytorch-TestRankIQA">Link</a></td><td>MSU (2024)</td><td>2017</td></tr>
-        <tr class='item'><td>SPAQ [<a href="SPAQ">61</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/h4nwei/SPAQ">Link</a></td><td>MSU (2022)</td><td>2020</td></tr>
-        <tr class='item'><td>SSIM [<a href="SSIM">63</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://videoprocessing.ai/vqmt/">MSU VQMT</a></td><td>MSU (2022)</td><td>2003</td></tr>
-        <tr class='item'><td>TOPIQ [<a href="TOPIQ">70</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td><td>MSU (2024)</td><td>2023</td></tr>
-        <tr class='item'><td>TRES [<a href="TRES">71</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/isalirezag/TReS">Link</a></td><td>MSU (2024)</td><td>2022</td></tr>
-        <tr class='item'><td>VMAF [<a href="VMAF">75</a>]</td><td>VQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://videoprocessing.ai/vqmt/">MSU VQMT</a></td><td>MSU (2022)</td><td>2017</td></tr>
-        <tr class='item'><td>VQM</td><td>VQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://videoprocessing.ai/vqmt/">MSU VQMT</a></td><td>MSU (2022)</td><td>–</td></tr>
+        <tr class='item'><td>ARNIQA [<a href="ARNIQA">3</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch/">Link</a></td></tr>
+        <tr class='item'><td>BRISQUE [<a href="BRISQUE">5</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td></tr>
+        <tr class='item'><td>CLIP IQA [<a href="CLIP IQA">7</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/IceClear/CLIP-IQA">Link</a></td></tr>
+        <tr class='item'><td>CLIP-IQA+ [<a href="CLIP-IQA+">8</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td></tr>
+        <tr class='item'><td>CONTRIQUE [<a href="CONTRIQUE">12</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/pavancm/CONTRIQUE">Link</a></td></tr>
+        <tr class='item'><td>COVER [<a href="COVER">13</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/vztu/COVER">Link</a></td></tr>
+        <tr class='item'><td>CVRKD [<a href="CVRKD">14</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/guanghaoyin/CVRKD-IQA">Link</a></td><</tr>
+        <tr class='item'><td>DBCNN [<a href="DBCNN">15</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/zwx8981/DBCNN-PyTorch">Link</a></td></tr>
+        <tr class='item'><td>DISTS [<a href="DISTS">16</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/dingkeyan93/IQA-optimization">Link</a></td></tr>
+        <tr class='item'><td>DOVER [<a href="DOVER">17</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/teowu/DOVER-Dev">Link</a></td></tr>
+        <tr class='item'><td>EONSS [<a href="EONSS">21</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/icbcbicc/EONSS-demo">Link</a></td></tr>
+        <tr class='item'><td>FSIM [<a href="FSIM">25</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/photosynthesis-team/piq">Link</a></td></tr>
+        <tr class='item'><td>FasterVQA [<a href="FasterVQA">26</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/teowu/FAST-VQA-and-FasterVQA">Link</a></td></tr>
+        <tr class='item'><td>HyperIQA [<a href="HyperIQA">32</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/SSL92/hyperIQA">Link</a></td></tr>
+        <tr class='item'><td>IW-SSIM [<a href="IW-SSIM">33</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/photosynthesis-team/piq">Link</a></td></tr>
+        <tr class='item'><td>KonCept512 [<a href="KonCept512">34</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/ZhengyuZhao/koniq-PyTorch">Link</a></td></tr>
+        <tr class='item'><td>Koncept [<a href="Koncept">35</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/subpic/koniq">Link</a></td></tr>
+        <tr class='item'><td>LINEARITY [<a href="LINEARITY">36</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/lidq92/LinearityIQA">Link</a></td></tr>
+        <tr class='item'><td>LIQE [<a href="LIQE">37</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/zwx8981/LIQE">Link</a></td></tr>
+        <tr class='item'><td>LPIPS [<a href="LPIPS">38</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/richzhang/PerceptualSimilarity">Link</a></td></tr>
+        <tr class='item'><td>MANIQA [<a href="MANIQA">43</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/IIGROUP/MANIQA">Link</a></td></tr>
+        <tr class='item'><td>MDTVSFA [<a href="MDTVSFA">45</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/lidq92/MDTVSFA">Link</a></td></tr>
+        <tr class='item'><td>MEON [<a href="MEON">46</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td>–</td></tr>
+        <tr class='item'><td>MUSIQ [<a href="MUSIQ">52</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td></tr>
+        <tr class='item'><td>PAQ-2-PIQ [<a href="PAQ-2-PIQ">56</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/baidut/paq2piq">Link</a></td></tr>
+        <tr class='item'><td>PIQE [<a href="PIQE">57</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch/">Link</a></td></tr>
+        <tr class='item'><td>PSNR</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://videoprocessing.ai/vqmt/">MSU VQMT</a></td></tr>
+        <tr class='item'><td>RankIQA [<a href="RankIQA">60</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/YunanZhu/Pytorch-TestRankIQA">Link</a></td></tr>
+        <tr class='item'><td>SPAQ [<a href="SPAQ">61</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/h4nwei/SPAQ">Link</a></td></tr>
+        <tr class='item'><td>SSIM [<a href="SSIM">63</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://videoprocessing.ai/vqmt/">MSU VQMT</a></td></tr>
+        <tr class='item'><td>TOPIQ [<a href="TOPIQ">70</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td></tr>
+        <tr class='item'><td>TRES [<a href="TRES">71</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/isalirezag/TReS">Link</a></td></tr>
+        <tr class='item'><td>VMAF [<a href="VMAF">75</a>]</td><td>VQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://videoprocessing.ai/vqmt/">MSU VQMT</a></td></tr>
+        <tr class='item'><td>VQM</td><td>VQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://videoprocessing.ai/vqmt/">MSU VQMT</a></td></tr>
 
     </tbody>
   </table>
