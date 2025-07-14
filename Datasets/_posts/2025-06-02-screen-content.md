@@ -1262,7 +1262,21 @@ Comparison of metrics shift on natural videos on the images below. We compare me
   </tr>
 </table>
 
+## Data description
+The archive contains a set of numbered folders, each corresponding to a specific video.  
+Inside each folder, you will find several distorted versions of the video along with the original file, named `orig.mkv`.
+The file `Subjective_scores.csv` provides subjective quality scores for each method on each video, along with a brief description of the applied distortions.
 
+Due to the nature of video conferencing applications, which may drop frames under limited network conditions, some distorted video versions may not contain all frames from the original. To account for this, we include a mapping between frames in the distorted versions and the original video. To facilitate frame alignment between the original and distorted videos, a rectangular region displaying a timer was embedded into each frame. During preprocessing, this region was consistently cropped, and the embedded timestamps were extracted. These extracted time values were then used to accurately align frames by matching corresponding timestamps. Before the subjective tests area with the timer was cropped out. 
+
+The mapping is provided in the file `frames_mappings.json`, which links frame indices from the original videos to their corresponding frames in selected distorted versions. The file has following structure:
+
+
+``{
+ ...
+ <Original sequence> : <Method> : <Distorted frame index> : <Сorresponding original frame index>,
+ ...
+}``
 
 ## Methodology
 ### Video preparation
@@ -1323,21 +1337,17 @@ We have also measured the metrics speed performance, expressed in FPS (the execu
 * 64 CPUs cluster, Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz
 
 
-## Contact us
-
-For questions, propositions please contact authors: <nikolay.safonov@graphics.cs.msu.ru>, <mihail.rakhmanov@graphics.cs.msu.ru>, <dmitriy@graphics.cs.msu.ru> 
-
 ## Metrics
 
 <!-- Participants Table -->
-<div id="participants_id" style="width: 90%; margin: 2rem auto;">
+<div id="participants_id" style="width: 90%; margin: 4rem auto;">
   <table class="datatable display" id="participants_table" style="background-color: #d4d4d4">
     <thead>
       <tr style="font-size: large; background-color: #3d6f96">
-        <th style="background-color: #3d6f96"> Name</th>
-        <th style="background-color: #3d6f96"> Iqa/Vqa</th>
-        <th style="background-color: #3d6f96"> Type</th>
-        <th style="background-color: #3d6f96"> Implementation</th>
+        <th style="background-color: #3d6f96; padding: 20px;">Name</th>
+        <th style="background-color: #3d6f96; padding: 20px;">IQA/VQA</th>
+        <th style="background-color: #3d6f96; padding: 20px;">Type</th>
+        <th style="background-color: #3d6f96; padding: 20px;">Implementation</th>
       </tr>
     </thead>
     <tbody>
@@ -1347,7 +1357,7 @@ For questions, propositions please contact authors: <nikolay.safonov@graphics.cs
         <tr class='item'><td>CLIP-IQA+ [<a href="CLIP-IQA+">8</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td></tr>
         <tr class='item'><td>CONTRIQUE [<a href="CONTRIQUE">12</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/pavancm/CONTRIQUE">Link</a></td></tr>
         <tr class='item'><td>COVER [<a href="COVER">13</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/vztu/COVER">Link</a></td></tr>
-        <tr class='item'><td>CVRKD [<a href="CVRKD">14</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/guanghaoyin/CVRKD-IQA">Link</a></td><</tr>
+        <tr class='item'><td>CVRKD [<a href="CVRKD">14</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/guanghaoyin/CVRKD-IQA">Link</a></td></tr>
         <tr class='item'><td>DBCNN [<a href="DBCNN">15</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/zwx8981/DBCNN-PyTorch">Link</a></td></tr>
         <tr class='item'><td>DISTS [<a href="DISTS">16</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/dingkeyan93/IQA-optimization">Link</a></td></tr>
         <tr class='item'><td>DOVER [<a href="DOVER">17</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/teowu/DOVER-Dev">Link</a></td></tr>
@@ -1379,3 +1389,8 @@ For questions, propositions please contact authors: <nikolay.safonov@graphics.cs
     </tbody>
   </table>
 </div>
+
+
+## Contact us
+
+For questions, propositions please contact authors: <nikolay.safonov@graphics.cs.msu.ru>, <mihail.rakhmanov@graphics.cs.msu.ru>, <dmitriy@graphics.cs.msu.ru> 
