@@ -1269,14 +1269,10 @@ The file `Subjective_scores.csv` provides subjective quality scores for each met
 
 Due to the nature of video conferencing applications, which may drop frames under limited network conditions, some distorted video versions may not contain all frames from the original. To account for this, we include a mapping between frames in the distorted versions and the original video. To facilitate frame alignment between the original and distorted videos, a rectangular region displaying a timer was embedded into each frame. During preprocessing, this region was consistently cropped, and the embedded timestamps were extracted. These extracted time values were then used to accurately align frames by matching corresponding timestamps. Before the subjective tests area with the timer was cropped out. 
 
-The mapping is provided in the file `frames_mappings.json`, which links frame indices from the original videos to their corresponding frames in selected distorted versions. The file has following structure:
-
-
-``{
- ...
- <Original sequence> : <Method> : <Distorted frame index> : <Сorresponding original frame index>,
- ...
-}``
+The mapping is provided in the file `frames_mappings.json`, which links frame indices from the original videos to their corresponding frames in selected distorted versions. The file has following structure: 
+<code>
+ {[Original sequence] : [Method] : [Distorted frame index] : [Сorresponding original frame index]}
+</code>``
 
 ## Methodology
 ### Video preparation
