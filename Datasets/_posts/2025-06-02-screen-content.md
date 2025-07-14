@@ -204,17 +204,997 @@ Chart below shows Speed-Quality characteristics of metrics.
 <script>
 const data = {
   spearman: [
-    {"name":"TRES","data":[[11.25,0.06]],"color":"#a11dc8","marker":{"symbol":"circle"}},
-    {"name":"HyperIQA","data":[[47.48,0.03]],"color":"#e61673","marker":{"symbol":"square"}},
-    {"name":"EONSS","data":[[111.06,0.08]],"color":"#35c70e","marker":{"symbol":"diamond"}},
-    // ... add all spearman entries
-  ],
+  {
+    "name": "TRES",
+    "data": [
+      [
+        11.2484890052695,
+        0.06
+      ]
+    ],
+    "color": "#390062",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "HyperIQA",
+    "data": [
+      [
+        47.47899418830141,
+        0.03
+      ]
+    ],
+    "color": "#0cce35",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "EONSS",
+    "data": [
+      [
+        111.05693294674774,
+        0.08
+      ]
+    ],
+    "color": "#8cd0a4",
+    "marker": {
+      "symbol": "diamond"
+    }
+  },
+  {
+    "name": "KONIQ++",
+    "data": [
+      [
+        27.135049108272284,
+        0.03
+      ]
+    ],
+    "color": "#7d6277",
+    "marker": {
+      "symbol": "triangle"
+    }
+  },
+  {
+    "name": "BRISQUE",
+    "data": [
+      [
+        44.21913088323041,
+        0.17
+      ]
+    ],
+    "color": "#7248ad",
+    "marker": {
+      "symbol": "triangle-down"
+    }
+  },
+  {
+    "name": "RankIQA",
+    "data": [
+      [
+        113.33660919544384,
+        0.18
+      ]
+    ],
+    "color": "#477183",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "PaQ-2-PiQ",
+    "data": [
+      [
+        59.19867231086774,
+        0.17
+      ]
+    ],
+    "color": "#347a3f",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "PIQE",
+    "data": [
+      [
+        63.03386925227445,
+        0.22
+      ]
+    ],
+    "color": "#2c833f",
+    "marker": {
+      "symbol": "diamond"
+    }
+  },
+  {
+    "name": "CNNIQA",
+    "data": [
+      [
+        1.208639180501152,
+        0.25
+      ]
+    ],
+    "color": "#d80623",
+    "marker": {
+      "symbol": "triangle"
+    }
+  },
+  {
+    "name": "MANIQA",
+    "data": [
+      [
+        21.48054516337542,
+        0.63
+      ]
+    ],
+    "color": "#1045d1",
+    "marker": {
+      "symbol": "triangle-down"
+    }
+  },
+  {
+    "name": "META-IQA",
+    "data": [
+      [
+        58.065861839284594,
+        0.7
+      ]
+    ],
+    "color": "#0f4194",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "MDTVSFA",
+    "data": [
+      [
+        9.12,
+        0.67
+      ]
+    ],
+    "color": "#2ff8d2",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "DOVER",
+    "data": [
+      [
+        25.56,
+        0.67
+      ]
+    ],
+    "color": "#6ff151",
+    "marker": {
+      "symbol": "diamond"
+    }
+  },
+  {
+    "name": "CLIP-IQA+",
+    "data": [
+      [
+        17.79800126362327,
+        0.69
+      ]
+    ],
+    "color": "#771f54",
+    "marker": {
+      "symbol": "triangle"
+    }
+  },
+  {
+    "name": "ARNIQA",
+    "data": [
+      [
+        24.08929179664622,
+        0.77
+      ]
+    ],
+    "color": "#0d961f",
+    "marker": {
+      "symbol": "triangle-down"
+    }
+  },
+  {
+    "name": "Koncept",
+    "data": [
+      [
+        18.388584037864536,
+        0.7
+      ]
+    ],
+    "color": "#65ce0c",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "LINEARITY",
+    "data": [
+      [
+        7.792098722827141,
+        0.71
+      ]
+    ],
+    "color": "#d6cb4d",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "TOPIQ",
+    "data": [
+      [
+        16.17164888214512,
+        0.8
+      ]
+    ],
+    "color": "#70dd97",
+    "marker": {
+      "symbol": "diamond"
+    }
+  },
+  {
+    "name": "CONTRIQUE",
+    "data": [
+      [
+        11.057529237012124,
+        0.79
+      ]
+    ],
+    "color": "#e5feba",
+    "marker": {
+      "symbol": "triangle"
+    }
+  },
+  {
+    "name": "DBCNN",
+    "data": [
+      [
+        17.310069311946123,
+        0.84
+      ]
+    ],
+    "color": "#8e6f03",
+    "marker": {
+      "symbol": "triangle-down"
+    }
+  },
+  {
+    "name": "LIQE",
+    "data": [
+      [
+        29.255255435511987,
+        0.82
+      ]
+    ],
+    "color": "#0353ce",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "ASIQE",
+    "data": [
+      [
+        6.23,
+        0.83
+      ]
+    ],
+    "color": "#51bedd",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "SIQE",
+    "data": [
+      [
+        6.25,
+        0.82
+      ]
+    ],
+    "color": "#d860ea",
+    "marker": {
+      "symbol": "diamond"
+    }
+  },
+  {
+    "name": "FSIM",
+    "data": [
+      [
+        10.34,
+        0.15
+      ]
+    ],
+    "color": "#ae3550",
+    "marker": {
+      "symbol": "triangle"
+    }
+  },
+  {
+    "name": "IW-SSIM",
+    "data": [
+      [
+        26.488812,
+        0.25
+      ]
+    ],
+    "color": "#8e4527",
+    "marker": {
+      "symbol": "triangle-down"
+    }
+  },
+  {
+    "name": "SSIM",
+    "data": [
+      [
+        22.68546653678275,
+        0.29
+      ]
+    ],
+    "color": "#4f9b02",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "PSNR",
+    "data": [
+      [
+        371.959,
+        0.2
+      ]
+    ],
+    "color": "#6e3d9a",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "VMAF",
+    "data": [
+      [
+        56.622,
+        0.43
+      ]
+    ],
+    "color": "#ac561e",
+    "marker": {
+      "symbol": "diamond"
+    }
+  },
+  {
+    "name": "LPIPS",
+    "data": [
+      [
+        3.2,
+        0.76
+      ]
+    ],
+    "color": "#3454e7",
+    "marker": {
+      "symbol": "triangle"
+    }
+  },
+  {
+    "name": "DISTS",
+    "data": [
+      [
+        13.45630999038668,
+        0.83
+      ]
+    ],
+    "color": "#2f7c62",
+    "marker": {
+      "symbol": "triangle-down"
+    }
+  },
+  {
+    "name": "GFM",
+    "data": [
+      [
+        6.872701,
+        0.32
+      ]
+    ],
+    "color": "#c285d4",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "SIQM",
+    "data": [
+      [
+        9.753572,
+        0.3
+      ]
+    ],
+    "color": "#3184cf",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "ESIM",
+    "data": [
+      [
+        8.65997,
+        0.29
+      ]
+    ],
+    "color": "#b7cc25",
+    "marker": {
+      "symbol": "diamond"
+    }
+  },
+  {
+    "name": "MSEA",
+    "data": [
+      [
+        7.993292,
+        0.33
+      ]
+    ],
+    "color": "#b01af6",
+    "marker": {
+      "symbol": "triangle"
+    }
+  },
+  {
+    "name": "VSG",
+    "data": [
+      [
+        5.780093,
+        0.4
+      ]
+    ],
+    "color": "#876f47",
+    "marker": {
+      "symbol": "triangle-down"
+    }
+  },
+  {
+    "name": "SQMS",
+    "data": [
+      [
+        5.779973,
+        0.49
+      ]
+    ],
+    "color": "#163f22",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "RWQMS",
+    "data": [
+      [
+        5.290418,
+        0.59
+      ]
+    ],
+    "color": "#eb39bc",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "SVQI",
+    "data": [
+      [
+        9.330881,
+        0.55
+      ]
+    ],
+    "color": "#3fe936",
+    "marker": {
+      "symbol": "diamond"
+    }
+  }
+],
   pearson: [
-    {"name":"TRES","data":[[11.25,0.0]],"color":"#a11dc8","marker":{"symbol":"circle"}},
-    {"name":"HyperIQA","data":[[47.48,0.02]],"color":"#e61673","marker":{"symbol":"square"}},
-    {"name":"EONSS","data":[[111.06,0.02]],"color":"#35c70e","marker":{"symbol":"diamond"}},
-    // ... add all pearson entries
-  ]
+  {
+    "name": "TRES",
+    "data": [
+      [
+        11.2484890052695,
+        0.0
+      ]
+    ],
+    "color": "#390062",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "HyperIQA",
+    "data": [
+      [
+        47.47899418830141,
+        0.02
+      ]
+    ],
+    "color": "#0cce35",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "EONSS",
+    "data": [
+      [
+        111.05693294674774,
+        0.02
+      ]
+    ],
+    "color": "#8cd0a4",
+    "marker": {
+      "symbol": "diamond"
+    }
+  },
+  {
+    "name": "KONIQ++",
+    "data": [
+      [
+        27.135049108272284,
+        0.06
+      ]
+    ],
+    "color": "#7d6277",
+    "marker": {
+      "symbol": "triangle"
+    }
+  },
+  {
+    "name": "BRISQUE",
+    "data": [
+      [
+        44.21913088323041,
+        0.07
+      ]
+    ],
+    "color": "#7248ad",
+    "marker": {
+      "symbol": "triangle-down"
+    }
+  },
+  {
+    "name": "RankIQA",
+    "data": [
+      [
+        113.33660919544384,
+        0.13
+      ]
+    ],
+    "color": "#477183",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "PaQ-2-PiQ",
+    "data": [
+      [
+        59.19867231086774,
+        0.14
+      ]
+    ],
+    "color": "#347a3f",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "PIQE",
+    "data": [
+      [
+        63.03386925227445,
+        0.19
+      ]
+    ],
+    "color": "#2c833f",
+    "marker": {
+      "symbol": "diamond"
+    }
+  },
+  {
+    "name": "CNNIQA",
+    "data": [
+      [
+        1.208639180501152,
+        0.28
+      ]
+    ],
+    "color": "#d80623",
+    "marker": {
+      "symbol": "triangle"
+    }
+  },
+  {
+    "name": "MANIQA",
+    "data": [
+      [
+        21.48054516337542,
+        0.63
+      ]
+    ],
+    "color": "#1045d1",
+    "marker": {
+      "symbol": "triangle-down"
+    }
+  },
+  {
+    "name": "META-IQA",
+    "data": [
+      [
+        58.065861839284594,
+        0.68
+      ]
+    ],
+    "color": "#0f4194",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "MDTVSFA",
+    "data": [
+      [
+        9.12,
+        0.71
+      ]
+    ],
+    "color": "#2ff8d2",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "DOVER",
+    "data": [
+      [
+        25.56,
+        0.75
+      ]
+    ],
+    "color": "#6ff151",
+    "marker": {
+      "symbol": "diamond"
+    }
+  },
+  {
+    "name": "CLIP-IQA+",
+    "data": [
+      [
+        17.79800126362327,
+        0.79
+      ]
+    ],
+    "color": "#771f54",
+    "marker": {
+      "symbol": "triangle"
+    }
+  },
+  {
+    "name": "ARNIQA",
+    "data": [
+      [
+        24.08929179664622,
+        0.81
+      ]
+    ],
+    "color": "#0d961f",
+    "marker": {
+      "symbol": "triangle-down"
+    }
+  },
+  {
+    "name": "Koncept",
+    "data": [
+      [
+        18.388584037864536,
+        0.82
+      ]
+    ],
+    "color": "#65ce0c",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "LINEARITY",
+    "data": [
+      [
+        7.792098722827141,
+        0.86
+      ]
+    ],
+    "color": "#d6cb4d",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "TOPIQ",
+    "data": [
+      [
+        16.17164888214512,
+        0.87
+      ]
+    ],
+    "color": "#70dd97",
+    "marker": {
+      "symbol": "diamond"
+    }
+  },
+  {
+    "name": "CONTRIQUE",
+    "data": [
+      [
+        11.057529237012124,
+        0.88
+      ]
+    ],
+    "color": "#e5feba",
+    "marker": {
+      "symbol": "triangle"
+    }
+  },
+  {
+    "name": "DBCNN",
+    "data": [
+      [
+        17.310069311946123,
+        0.9
+      ]
+    ],
+    "color": "#8e6f03",
+    "marker": {
+      "symbol": "triangle-down"
+    }
+  },
+  {
+    "name": "LIQE",
+    "data": [
+      [
+        29.255255435511987,
+        0.94
+      ]
+    ],
+    "color": "#0353ce",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "ASIQE",
+    "data": [
+      [
+        6.23,
+        0.87
+      ]
+    ],
+    "color": "#51bedd",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "SIQE",
+    "data": [
+      [
+        6.25,
+        0.87
+      ]
+    ],
+    "color": "#d860ea",
+    "marker": {
+      "symbol": "diamond"
+    }
+  },
+  {
+    "name": "FSIM",
+    "data": [
+      [
+        10.34,
+        0.03
+      ]
+    ],
+    "color": "#ae3550",
+    "marker": {
+      "symbol": "triangle"
+    }
+  },
+  {
+    "name": "IW-SSIM",
+    "data": [
+      [
+        26.488812,
+        0.14
+      ]
+    ],
+    "color": "#8e4527",
+    "marker": {
+      "symbol": "triangle-down"
+    }
+  },
+  {
+    "name": "SSIM",
+    "data": [
+      [
+        22.68546653678275,
+        0.35
+      ]
+    ],
+    "color": "#4f9b02",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "PSNR",
+    "data": [
+      [
+        371.959,
+        0.37
+      ]
+    ],
+    "color": "#6e3d9a",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "VMAF",
+    "data": [
+      [
+        56.622,
+        0.55
+      ]
+    ],
+    "color": "#ac561e",
+    "marker": {
+      "symbol": "diamond"
+    }
+  },
+  {
+    "name": "LPIPS",
+    "data": [
+      [
+        3.2,
+        0.81
+      ]
+    ],
+    "color": "#3454e7",
+    "marker": {
+      "symbol": "triangle"
+    }
+  },
+  {
+    "name": "DISTS",
+    "data": [
+      [
+        13.45630999038668,
+        0.93
+      ]
+    ],
+    "color": "#2f7c62",
+    "marker": {
+      "symbol": "triangle-down"
+    }
+  },
+  {
+    "name": "GFM",
+    "data": [
+      [
+        6.872701,
+        0.25
+      ]
+    ],
+    "color": "#c285d4",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "SIQM",
+    "data": [
+      [
+        9.753572,
+        0.27
+      ]
+    ],
+    "color": "#3184cf",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "ESIM",
+    "data": [
+      [
+        8.65997,
+        0.38
+      ]
+    ],
+    "color": "#b7cc25",
+    "marker": {
+      "symbol": "diamond"
+    }
+  },
+  {
+    "name": "MSEA",
+    "data": [
+      [
+        7.993292,
+        0.44
+      ]
+    ],
+    "color": "#b01af6",
+    "marker": {
+      "symbol": "triangle"
+    }
+  },
+  {
+    "name": "VSG",
+    "data": [
+      [
+        5.780093,
+        0.47
+      ]
+    ],
+    "color": "#876f47",
+    "marker": {
+      "symbol": "triangle-down"
+    }
+  },
+  {
+    "name": "SQMS",
+    "data": [
+      [
+        5.779973,
+        0.62
+      ]
+    ],
+    "color": "#163f22",
+    "marker": {
+      "symbol": "circle"
+    }
+  },
+  {
+    "name": "RWQMS",
+    "data": [
+      [
+        5.290418,
+        0.64
+      ]
+    ],
+    "color": "#eb39bc",
+    "marker": {
+      "symbol": "square"
+    }
+  },
+  {
+    "name": "SVQI",
+    "data": [
+      [
+        9.330881,
+        0.64
+      ]
+    ],
+    "color": "#3fe936",
+    "marker": {
+      "symbol": "diamond"
+    }
+  }
+]
 };
 
 const tickLabels = [1, 2, 4, 8, 16, 32, 64, 128, 256];
@@ -268,11 +1248,20 @@ renderScatter('spearman');
 
 Comparison of metrics shift on natural videos on the images below. We compare metrics performance on proposed screen content dataset and CVQAD dataset containing natural professional and UGC videos compressed with different types of encoders.
 
-<div style="display: flex; justify-content: space-between; gap: 10px;">
-  <img src="/assets/img/benchmarks/itm/scsp.pdf" alt="Image 1" style="width: 32%; border: 1px solid #ccc;">
-  <img src="/assets/img/benchmarks/itm/scpr.pdf" alt="Image 2" style="width: 32%; border: 1px solid #ccc;">
-  <img src="/assets/img/benchmarks/itm/sckd.pdf" alt="Image 3" style="width: 32%; border: 1px solid #ccc;">
-</div>
+<table>
+  <tr>
+    <td>
+      <iframe src="/assets/img/benchmarks/itm/scsp.pdf" width="100%" height="200px" style="border: 1px solid #ccc;"></iframe>
+    </td>
+    <td>
+      <iframe src="/assets/img/benchmarks/itm/scpr.pdf" width="100%" height="200px" style="border: 1px solid #ccc;"></iframe>
+    </td>
+    <td>
+      <iframe src="/assets/img/benchmarks/itm/sckd.pdf" width="100%" height="200px" style="border: 1px solid #ccc;"></iframe>
+    </td>
+  </tr>
+</table>
+
 
 
 ## Methodology
@@ -319,7 +1308,7 @@ To calculate correlation measure subjective scores and metric's output we chose 
 <!-- As the most robust methods to measure correlation between subjective score of videos and metric's output Spearman’s Rank Correlation Coefficient ([SRCC](https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient)), Kendall’s Rank Correlation Coefficient ([KRCC](https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient)) have been chosen.  -->Both measure the prediction monotonicity (the limit, to which the quality scores of a metric agree with the relative magnitude of the subjective scores).
 
 <p align="center">
-    <img src = "/assets/img/benchmarks/frm/corr.png" style="width: 50%;"/>
+    <img src = "/assets/img/benchmarks/itm/corr.png" style="width: 50%;"/>
 </p>
 
 ### Speed perfomance
@@ -340,5 +1329,101 @@ For questions, propositions please contact authors: <nikolay.safonov@graphics.cs
 
 ## Metrics
 
-<div id='participants_id' style='width: 70%; margin-left: 15%'><table id='participants_table' class='datatable display' style='background-color: #d4d4d4'><thead><tr style='font-size: large; background-color: #3d6f96'>     <th style='background-color: #3d6f96'> Name</th>     <th style='background-color: #3d6f96'> Iqa/Vqa</th>     <th style='background-color: #3d6f96'> Type</th>     <th style='background-color: #3d6f96'> Implementation</th>     <th style='background-color: #3d6f96'> Added By</th>     <th style='background-color: #3d6f96'> Year</th></tr></thead><tbody><tr class='item'><td>A-DISTS [<a href=\"A-DISTS\">1</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/dingkeyan93/A-DISTS>Link</a></td><td>MSU (2024)</td><td>2021</td></tr><tr class='item'><td>AHIQ [<a href=\"AHIQ\">2</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/IIGROUP/AHIQ>Link</a></td><td>MSU (2023)</td><td>2022</td></tr><tr class='item'><td>ARNIQA [<a href=\"ARNIQA\">3</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch/>Link</a></td><td>MSU (2024)</td><td> 2023</td></tr><tr class='item'><td>ASNA-MACS [<a href=\"ASNA-MACS\">4</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/AliRoyat/NTIRE2021-IQA-MACS-Pytorch>Link</a></td><td>MSU (2024)</td><td>2021</td></tr><tr class='item'><td>AVQT</td><td>VQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://developer.apple.com/videos/play/wwdc2021/10145/>Link</a></td><td>MSU (2022)</td><td>2021</td></tr><tr class='item'><td>BRISQUE [<a href=\"BRISQUE\">5</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch>Link</a></td><td>MSU (2024)</td><td>2012</td></tr><tr class='item'><td>CKDN [<a href=\"CKDN\">6</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch>Link</a></td><td>MSU (2024)</td><td>2021</td></tr><tr class='item'><td>CLIP IQA [<a href=\"CLIP IQA\">7</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/IceClear/CLIP-IQA>Link</a></td><td>MSU (2024)</td><td>2022</td></tr><tr class='item'><td>CLIP-IQA+ [<a href=\"CLIP-IQA+\">8</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch>Link</a></td><td>MSU (2024)</td><td>2023</td></tr><tr class='item'><td>COMPRESSED VQA [<a href=\"COMPRESSED VQA\">9</a>]</td><td>VQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/sunwei925/CompressedVQA>Link</a></td><td>MSU (2024)</td><td>2021</td></tr><tr class='item'><td>COMPRESSED VQA [<a href=\"COMPRESSED VQA\">10</a>]</td><td>VQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/sunwei925/CompressedVQA>Link</a></td><td>MSU (2024)</td><td>2021</td></tr><tr class='item'><td>CONFORMER BNS [<a href=\"CONFORMER BNS\">11</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/mv-lab/IQA-Conformer-BNS>Link</a></td><td>MSU (2024)</td><td>2022</td></tr><tr class='item'><td>CONTRIQUE [<a href=\"CONTRIQUE\">12</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/pavancm/CONTRIQUE>Link</a></td><td>MSU (2024)</td><td>2021</td></tr><tr class='item'><td>COVER [<a href=\"COVER\">13</a>]</td><td>VQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/vztu/COVER>Link</a></td><td>MSU (2024)</td><td>2024</td></tr><tr class='item'><td>CVRKD [<a href=\"CVRKD\">14</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/guanghaoyin/CVRKD-IQA>Link</a></td><td>MSU (2024)</td><td>2022</td></tr><tr class='item'><td>DBCNN [<a href=\"DBCNN\">15</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/zwx8981/DBCNN-PyTorch>Link</a></td><td>Submit (2023)</td><td>2019</td></tr><tr class='item'><td>DISTS [<a href=\"DISTS\">16</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/dingkeyan93/IQA-optimization>Link</a></td><td>MSU (2022)</td><td>2020</td></tr><tr class='item'><td>DOVER [<a href=\"DOVER\">17</a>]</td><td>VQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/teowu/DOVER-Dev>Link</a></td><td>Submit (2023)</td><td>2022</td></tr><tr class='item'><td>DSS [<a href=\"DSS\">18</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/photosynthesis-team/piq>Link</a></td><td>MSU (2023)</td><td>2015</td></tr><tr class='item'><td>DreamSIM [<a href=\"DreamSIM\">19</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/ssundaram21/dreamsim>Link</a></td><td>MSU (2024)</td><td>2023</td></tr><tr class='item'><td>E-LPIPS [<a href=\"E-LPIPS\">20</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch/tree/main>Link</a></td><td>MSU (2024)</td><td>2019</td></tr><tr class='item'><td>EONSS [<a href=\"EONSS\">21</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/icbcbicc/EONSS-demo>Link</a></td><td>MSU (2024)</td><td>2020</td></tr><tr class='item'><td>EONSS [<a href=\"EONSS\">22</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/icbcbicc/EONSS-demo>Link</a></td><td>MSU (2024)</td><td>2019</td></tr><tr class='item'><td>FAST-VQA [<a href=\"FAST-VQA\">23</a>]</td><td>VQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/teowu/FAST-VQA-and-FasterVQA>Link</a></td><td>Submit (2023)</td><td>2022</td></tr><tr class='item'><td>FPR [<a href=\"FPR\">24</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/Baoliang93/FPR>Link</a></td><td>MSU (2024)</td><td>2022</td></tr><tr class='item'><td>FSIM [<a href=\"FSIM\">25</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/photosynthesis-team/piq>Link</a></td><td>MSU (2023)</td><td>2011</td></tr><tr class='item'><td>FasterVQA [<a href=\"FasterVQA\">26</a>]</td><td>VQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/teowu/FAST-VQA-and-FasterVQA>Link</a></td><td>Submit (2023)</td><td>2022</td></tr><tr class='item'><td>FovVideoVDP [<a href=\"FovVideoVDP\">27</a>]</td><td>VQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/gfxdisp/FovVideoVDP>Link</a></td><td>MSU (2022)</td><td>2021</td></tr><tr class='item'><td>GMSD [<a href=\"GMSD\">28</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/photosynthesis-team/piq>Link</a></td><td>MSU (2023)</td><td>2013</td></tr><tr class='item'><td>GVSP-UGCVQA-FR [<a href=\"GVSP-UGCVQA-FR\">29</a>]</td><td>VQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/sunwei925/CompressedVQA>Link</a></td><td>Submit (2023)</td><td>2021</td></tr><tr class='item'><td>GVSP-UGCVQA-NR [<a href=\"GVSP-UGCVQA-NR\">30</a>]</td><td>VQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/sunwei925/CompressedVQA>Link</a></td><td>Submit (2023)</td><td>2021</td></tr><tr class='item'><td>HaarPSI [<a href=\"HaarPSI\">31</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/photosynthesis-team/piq>Link</a></td><td>MSU (2024)</td><td>2016</td></tr><tr class='item'><td>HyperIQA [<a href=\"HyperIQA\">32</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/SSL92/hyperIQA>Link</a></td><td>MSU (2024)</td><td>2020</td></tr><tr class='item'><td>IW-SSIM [<a href=\"IW-SSIM\">33</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/photosynthesis-team/piq>Link</a></td><td>MSU (2024)</td><td>2011</td></tr><tr class='item'><td>KonCept512 [<a href=\"KonCept512\">34</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/ZhengyuZhao/koniq-PyTorch>Link</a></td><td>MSU (2022)</td><td>2020</td></tr><tr class='item'><td>Koncept [<a href=\"Koncept\">35</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/subpic/koniq>Link</a></td><td>MSU (2024)</td><td>2020</td></tr><tr class='item'><td>LINEARITY [<a href=\"LINEARITY\">36</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/lidq92/LinearityIQA>Link</a></td><td>MSU (2022)</td><td>2020</td></tr><tr class='item'><td>LIQE [<a href=\"LIQE\">37</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/zwx8981/LIQE>Link</a></td><td>MSU (2024)</td><td>2023</td></tr><tr class='item'><td>LPIPS [<a href=\"LPIPS\">38</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/richzhang/PerceptualSimilarity>Link</a></td><td>MSU (2022)</td><td>2018</td></tr><tr class='item'><td>LPIPS+ [<a href=\"LPIPS+\">39</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch/>Link</a></td><td>MSU (2024)</td><td> 2024</td></tr><tr class='item'><td>LPIPS-VGG+ [<a href=\"LPIPS-VGG+\">40</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch/>Link</a></td><td>MSU (2024)</td><td> 2024</td></tr><tr class='item'><td>Li2022 [<a href=\"Li2022\">41</a>]</td><td>VQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/zwx8981/TCSVT-2022-BVQA>Link</a></td><td>Submit (2023)</td><td>2022</td></tr><tr class='item'><td>LiPSIM [<a href=\"LiPSIM\">42</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/SaraGhazanfari/lipsim>Link</a></td><td>MSU (2024)</td><td>2023</td></tr><tr class='item'><td>MAD</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch/tree/main>Link</a></td><td>MSU (2024)</td><td>\u2013</td></tr><tr class='item'><td>MANIQA [<a href=\"MANIQA\">43</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/IIGROUP/MANIQA>Link</a></td><td>MSU (2024)</td><td>2022</td></tr><tr class='item'><td>MDSI [<a href=\"MDSI\">44</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/photosynthesis-team/piq>Link</a></td><td>MSU (2024)</td><td>2016</td></tr><tr class='item'><td>MDTVSFA [<a href=\"MDTVSFA\">45</a>]</td><td>VQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/lidq92/MDTVSFA>Link</a></td><td>MSU (2022)</td><td>2021</td></tr><tr class='item'><td>MEON [<a href=\"MEON\">46</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td>\u2013</td><td>MSU (2022)</td><td>2017</td></tr><tr class='item'><td>META-IQA [<a href=\"META-IQA\">47</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/zhuhancheng/MetaIQA>Link</a></td><td>MSU (2024)</td><td>2020</td></tr><tr class='item'><td>MR-Perceptual [<a href=\"MR-Perceptual\">48</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/ENSTA-U2IS/MR_perceptual>Link</a></td><td>MSU (2024)</td><td>2022</td></tr><tr class='item'><td>MS-GMSD [<a href=\"MS-GMSD\">49</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/photosynthesis-team/piq>Link</a></td><td>MSU (2024)</td><td>2017</td></tr><tr class='item'><td>MS-SSIM [<a href=\"MS-SSIM\">50</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=\u201chttps://videoprocessing.ai/vqmt/\u201c>MSU VQMT</a></td><td>MSU (2022)</td><td>2004</td></tr><tr class='item'><td>MS-SWD [<a href=\"MS-SWD\">51</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch/>Link</a></td><td>MSU (2024)</td><td> 2024</td></tr><tr class='item'><td>MUSIQ [<a href=\"MUSIQ\">52</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch>Link</a></td><td>MSU (2023)</td><td>2021</td></tr><tr class='item'><td>NIMA [<a href=\"NIMA\">53</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/idealo/image-quality-assessment>Link</a></td><td>MSU (2022)</td><td>2018</td></tr><tr class='item'><td>NIQE [<a href=\"NIQE\">54</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=\u201chttps://videoprocessing.ai/vqmt/\u201c>MSU VQMT</a></td><td>MSU (2022)</td><td>2012</td></tr><tr class='item'><td>NLPD [<a href=\"NLPD\">55</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch>Link</a></td><td>MSU (2024)</td><td>2017</td></tr><tr class='item'><td>PAQ-2-PIQ [<a href=\"PAQ-2-PIQ\">56</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/baidut/paq2piq>Link</a></td><td>MSU (2022)</td><td>2020</td></tr><tr class='item'><td>PIQE [<a href=\"PIQE\">57</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch/>Link</a></td><td>MSU (2024)</td><td> 2024</td></tr><tr class='item'><td>PSNR</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=\u201chttps://videoprocessing.ai/vqmt/\u201c>MSU VQMT</a></td><td>MSU (2022)</td><td>\u2013</td></tr><tr class='item'><td>PieAPP [<a href=\"PieAPP\">58</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch>Link</a></td><td>MSU (2024)</td><td>2018</td></tr><tr class='item'><td>R-LPIPS [<a href=\"R-LPIPS\">59</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch/tree/main>Link</a></td><td>MSU (2024)</td><td>2023</td></tr><tr class='item'><td>RankIQA [<a href=\"RankIQA\">60</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/YunanZhu/Pytorch-TestRankIQA>Link</a></td><td>MSU (2024)</td><td>2017</td></tr><tr class='item'><td>SPAQ [<a href=\"SPAQ\">61</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/h4nwei/SPAQ>Link</a></td><td>MSU (2022)</td><td>2020</td></tr><tr class='item'><td>SRSIM [<a href=\"SRSIM\">62</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/photosynthesis-team/piq>Link</a></td><td>MSU (2024)</td><td>2012</td></tr><tr class='item'><td>SSIM [<a href=\"SSIM\">63</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=\u201chttps://videoprocessing.ai/vqmt/\u201c>MSU VQMT</a></td><td>MSU (2022)</td><td>2003</td></tr><tr class='item'><td>SSIMULACRA 2 [<a href=\"SSIMULACRA 2\">64</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/cloudinary/ssimulacra2>Link</a></td><td>Submit (2024)</td><td>2022</td></tr><tr class='item'><td>ST-GREED [<a href=\"ST-GREED\">65</a>]</td><td>VQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/pavancm/GREED>Link</a></td><td>MSU (2022)</td><td>2021</td></tr><tr class='item'><td>STLPIPS [<a href=\"STLPIPS\">66</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/abhijay9/ShiftTolerant-LPIPS>Link</a></td><td>MSU (2024)</td><td>2021</td></tr><tr class='item'><td>SWIN-IQA [<a href=\"SWIN-IQA\">67</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/USTC-IMCL/SwinIQA>Link</a></td><td>MSU (2024)</td><td>2022</td></tr><tr class='item'><td>TLVQM [<a href=\"TLVQM\">68</a>]</td><td>VQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://paperswithcode.com/paper/two-level-approach-for-no-reference-consumer>Link</a></td><td>MSU (2022)</td><td>2019</td></tr><tr class='item'><td>TOPIQ [<a href=\"TOPIQ\">69</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch>Link</a></td><td>MSU (2024)</td><td>2023</td></tr><tr class='item'><td>TOPIQ [<a href=\"TOPIQ\">70</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch>Link</a></td><td>MSU (2024)</td><td>2023</td></tr><tr class='item'><td>TRES [<a href=\"TRES\">71</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/isalirezag/TReS>Link</a></td><td>MSU (2024)</td><td>2022</td></tr><tr class='item'><td>Tencent DVQA</td><td>VQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/Tencent/DVQA>Link</a></td><td>MSU (2022)</td><td>2020</td></tr><tr class='item'><td>UNIQUE [<a href=\"UNIQUE\">72</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/zwx8981/UNIQUE>Link</a></td><td>Submit (2023)</td><td>2020</td></tr><tr class='item'><td>VIDEVAL  [<a href=\"VIDEVAL \">73</a>]</td><td>VQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/vztu/VIDEVAL>Link</a></td><td>MSU (2022)</td><td>2021</td></tr><tr class='item'><td>VIFp [<a href=\"VIFp\">74</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/photosynthesis-team/piq>Link</a></td><td>MSU (2024)</td><td>2004</td></tr><tr class='item'><td>VMAF [<a href=\"VMAF\">75</a>]</td><td>VQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=\u201chttps://videoprocessing.ai/vqmt/\u201c>MSU VQMT</a></td><td>MSU (2022)</td><td>2017</td></tr><tr class='item'><td>VQM</td><td>VQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=\u201chttps://videoprocessing.ai/vqmt/\u201c>MSU VQMT</a></td><td>MSU (2022)</td><td>\u2013</td></tr><tr class='item'><td>VSFA [<a href=\"VSFA\">76</a>]</td><td>VQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/lidq92/VSFA>Link</a></td><td>MSU (2022)</td><td>2019</td></tr><tr class='item'><td>VSI [<a href=\"VSI\">77</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/photosynthesis-team/piq>Link</a></td><td>MSU (2024)</td><td>2014</td></tr><tr class='item'><td>VidFeat [<a href=\"VidFeat\">78</a>]</td><td>VQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td>-</td><td>Submitted (2024)</td><td> 2024</td></tr><tr class='item'><td>WSP [<a href=\"WSP\">79</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/yichengsu/ICIP2020-WSP-IQA>Link</a></td><td>MSU (2024)</td><td>2020</td></tr><tr class='item'><td>WaDIQaM [<a href=\"WaDIQaM\">80</a>]</td><td>IQA</td><td style=\"color: #2a9d8f; \"><b>FR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch>Link</a></td><td>MSU (2024)</td><td>2018</td></tr><tr class='item'><td>WaDIQaM [<a href=\"WaDIQaM\">81</a>]</td><td>IQA</td><td style=\"color: #f4a261; \"><b>NR</b></td><td><a href=https://github.com/chaofengc/IQA-PyTorch>Link</a></td><td>MSU (2024)</td><td>2018</td></tr></tbody></div>
+<!-- Participants Table -->
+<div id="participants_id" style="width: 70%; margin: 2rem auto;">
+  <table class="datatable display" id="participants_table" style="background-color: #d4d4d4">
+    <thead>
+      <tr style="font-size: large; background-color: #3d6f96">
+        <th style="background-color: #3d6f96"> Name</th>
+        <th style="background-color: #3d6f96"> Iqa/Vqa</th>
+        <th style="background-color: #3d6f96"> Type</th>
+        <th style="background-color: #3d6f96"> Implementation</th>
+        <th style="background-color: #3d6f96"> Added By</th>
+        <th style="background-color: #3d6f96"> Year</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class='item'><td>A-DISTS [<a href="A-DISTS">1</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/dingkeyan93/A-DISTS">Link</a></td><td>MSU (2024)</td><td>2021</td></tr>
+        <tr class='item'><td>AHIQ [<a href="AHIQ">2</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/IIGROUP/AHIQ">Link</a></td><td>MSU (2023)</td><td>2022</td></tr>
+        <tr class='item'><td>ARNIQA [<a href="ARNIQA">3</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch/">Link</a></td><td>MSU (2024)</td><td>2023</td></tr>
+        <tr class='item'><td>ASNA-MACS [<a href="ASNA-MACS">4</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/AliRoyat/NTIRE2021-IQA-MACS-Pytorch">Link</a></td><td>MSU (2024)</td><td>2021</td></tr>
+        <tr class='item'><td>AVQT</td><td>VQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://developer.apple.com/videos/play/wwdc2021/10145/">Link</a></td><td>MSU (2022)</td><td>2021</td></tr>
+        <tr class='item'><td>BRISQUE [<a href="BRISQUE">5</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td><td>MSU (2024)</td><td>2012</td></tr>
+        <tr class='item'><td>CKDN [<a href="CKDN">6</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td><td>MSU (2024)</td><td>2021</td></tr>
+        <tr class='item'><td>CLIP IQA [<a href="CLIP IQA">7</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/IceClear/CLIP-IQA">Link</a></td><td>MSU (2024)</td><td>2022</td></tr>
+        <tr class='item'><td>CLIP-IQA+ [<a href="CLIP-IQA+">8</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td><td>MSU (2024)</td><td>2023</td></tr>
+        <tr class='item'><td>COMPRESSED VQA [<a href="COMPRESSED VQA">9</a>]</td><td>VQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/sunwei925/CompressedVQA">Link</a></td><td>MSU (2024)</td><td>2021</td></tr>
+        <tr class='item'><td>COMPRESSED VQA [<a href="COMPRESSED VQA">10</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/sunwei925/CompressedVQA">Link</a></td><td>MSU (2024)</td><td>2021</td></tr>
+        <tr class='item'><td>CONFORMER BNS [<a href="CONFORMER BNS">11</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/mv-lab/IQA-Conformer-BNS">Link</a></td><td>MSU (2024)</td><td>2022</td></tr>
+        <tr class='item'><td>CONTRIQUE [<a href="CONTRIQUE">12</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/pavancm/CONTRIQUE">Link</a></td><td>MSU (2024)</td><td>2021</td></tr>
+        <tr class='item'><td>COVER [<a href="COVER">13</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/vztu/COVER">Link</a></td><td>MSU (2024)</td><td>2024</td></tr>
+        <tr class='item'><td>CVRKD [<a href="CVRKD">14</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/guanghaoyin/CVRKD-IQA">Link</a></td><td>MSU (2024)</td><td>2022</td></tr>
+        <tr class='item'><td>DBCNN [<a href="DBCNN">15</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/zwx8981/DBCNN-PyTorch">Link</a></td><td>Submit (2023)</td><td>2019</td></tr>
+        <tr class='item'><td>DISTS [<a href="DISTS">16</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/dingkeyan93/IQA-optimization">Link</a></td><td>MSU (2022)</td><td>2020</td></tr>
+        <tr class='item'><td>DOVER [<a href="DOVER">17</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/teowu/DOVER-Dev">Link</a></td><td>Submit (2023)</td><td>2022</td></tr>
+        <tr class='item'><td>DSS [<a href="DSS">18</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/photosynthesis-team/piq">Link</a></td><td>MSU (2023)</td><td>2015</td></tr>
+        <tr class='item'><td>DreamSIM [<a href="DreamSIM">19</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/ssundaram21/dreamsim">Link</a></td><td>MSU (2024)</td><td>2023</td></tr>
+        <tr class='item'><td>E-LPIPS [<a href="E-LPIPS">20</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch/tree/main">Link</a></td><td>MSU (2024)</td><td>2019</td></tr>
+        <tr class='item'><td>EONSS [<a href="EONSS">21</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/icbcbicc/EONSS-demo">Link</a></td><td>MSU (2024)</td><td>2020</td></tr>
+        <tr class='item'><td>EONSS [<a href="EONSS">22</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/icbcbicc/EONSS-demo">Link</a></td><td>MSU (2024)</td><td>2019</td></tr>
+        <tr class='item'><td>FAST-VQA [<a href="FAST-VQA">23</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/teowu/FAST-VQA-and-FasterVQA">Link</a></td><td>Submit (2023)</td><td>2022</td></tr>
+        <tr class='item'><td>FPR [<a href="FPR">24</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/Baoliang93/FPR">Link</a></td><td>MSU (2024)</td><td>2022</td></tr>
+        <tr class='item'><td>FSIM [<a href="FSIM">25</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/photosynthesis-team/piq">Link</a></td><td>MSU (2023)</td><td>2011</td></tr>
+        <tr class='item'><td>FasterVQA [<a href="FasterVQA">26</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/teowu/FAST-VQA-and-FasterVQA">Link</a></td><td>Submit (2023)</td><td>2022</td></tr>
+        <tr class='item'><td>FovVideoVDP [<a href="FovVideoVDP">27</a>]</td><td>VQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/gfxdisp/FovVideoVDP">Link</a></td><td>MSU (2022)</td><td>2021</td></tr>
+        <tr class='item'><td>GMSD [<a href="GMSD">28</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/photosynthesis-team/piq">Link</a></td><td>MSU (2023)</td><td>2013</td></tr>
+        <tr class='item'><td>GVSP-UGCVQA-FR [<a href="GVSP-UGCVQA-FR">29</a>]</td><td>VQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/sunwei925/CompressedVQA">Link</a></td><td>Submit (2023)</td><td>2021</td></tr>
+        <tr class='item'><td>GVSP-UGCVQA-NR [<a href="GVSP-UGCVQA-NR">30</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/sunwei925/CompressedVQA">Link</a></td><td>Submit (2023)</td><td>2021</td></tr>
+        <tr class='item'><td>HaarPSI [<a href="HaarPSI">31</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/photosynthesis-team/piq">Link</a></td><td>MSU (2024)</td><td>2016</td></tr>
+        <tr class='item'><td>HyperIQA [<a href="HyperIQA">32</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/SSL92/hyperIQA">Link</a></td><td>MSU (2024)</td><td>2020</td></tr>
+        <tr class='item'><td>IW-SSIM [<a href="IW-SSIM">33</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/photosynthesis-team/piq">Link</a></td><td>MSU (2024)</td><td>2011</td></tr>
+        <tr class='item'><td>KonCept512 [<a href="KonCept512">34</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/ZhengyuZhao/koniq-PyTorch">Link</a></td><td>MSU (2022)</td><td>2020</td></tr>
+        <tr class='item'><td>Koncept [<a href="Koncept">35</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/subpic/koniq">Link</a></td><td>MSU (2024)</td><td>2020</td></tr>
+        <tr class='item'><td>LINEARITY [<a href="LINEARITY">36</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/lidq92/LinearityIQA">Link</a></td><td>MSU (2022)</td><td>2020</td></tr>
+        <tr class='item'><td>LIQE [<a href="LIQE">37</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/zwx8981/LIQE">Link</a></td><td>MSU (2024)</td><td>2023</td></tr>
+        <tr class='item'><td>LPIPS [<a href="LPIPS">38</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/richzhang/PerceptualSimilarity">Link</a></td><td>MSU (2022)</td><td>2018</td></tr>
+        <tr class='item'><td>LPIPS+ [<a href="LPIPS+">39</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch/">Link</a></td><td>MSU (2024)</td><td>2024</td></tr>
+        <tr class='item'><td>LPIPS-VGG+ [<a href="LPIPS-VGG+">40</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch/">Link</a></td><td>MSU (2024)</td><td>2024</td></tr>
+        <tr class='item'><td>Li2022 [<a href="Li2022">41</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/zwx8981/TCSVT-2022-BVQA">Link</a></td><td>Submit (2023)</td><td>2022</td></tr>
+        <tr class='item'><td>LiPSIM [<a href="LiPSIM">42</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/SaraGhazanfari/lipsim">Link</a></td><td>MSU (2024)</td><td>2023</td></tr>
+        <tr class='item'><td>MAD</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch/tree/main">Link</a></td><td>MSU (2024)</td><td>–</td></tr>
+        <tr class='item'><td>MANIQA [<a href="MANIQA">43</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/IIGROUP/MANIQA">Link</a></td><td>MSU (2024)</td><td>2022</td></tr>
+        <tr class='item'><td>MDSI [<a href="MDSI">44</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/photosynthesis-team/piq">Link</a></td><td>MSU (2024)</td><td>2016</td></tr>
+        <tr class='item'><td>MDTVSFA [<a href="MDTVSFA">45</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/lidq92/MDTVSFA">Link</a></td><td>MSU (2022)</td><td>2021</td></tr>
+        <tr class='item'><td>MEON [<a href="MEON">46</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td>–</td><td>MSU (2022)</td><td>2017</td></tr>
+        <tr class='item'><td>META-IQA [<a href="META-IQA">47</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/zhuhancheng/MetaIQA">Link</a></td><td>MSU (2024)</td><td>2020</td></tr>
+        <tr class='item'><td>MR-Perceptual [<a href="MR-Perceptual">48</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/ENSTA-U2IS/MR_perceptual">Link</a></td><td>MSU (2024)</td><td>2022</td></tr>
+        <tr class='item'><td>MS-GMSD [<a href="MS-GMSD">49</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/photosynthesis-team/piq">Link</a></td><td>MSU (2024)</td><td>2017</td></tr>
+        <tr class='item'><td>MS-SSIM [<a href="MS-SSIM">50</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://videoprocessing.ai/vqmt/">MSU VQMT</a></td><td>MSU (2022)</td><td>2004</td></tr>
+        <tr class='item'><td>MS-SWD [<a href="MS-SWD">51</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch/">Link</a></td><td>MSU (2024)</td><td>2024</td></tr>
+        <tr class='item'><td>MUSIQ [<a href="MUSIQ">52</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td><td>MSU (2023)</td><td>2021</td></tr>
+        <tr class='item'><td>NIMA [<a href="NIMA">53</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/idealo/image-quality-assessment">Link</a></td><td>MSU (2022)</td><td>2018</td></tr>
+        <tr class='item'><td>NIQE [<a href="NIQE">54</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://videoprocessing.ai/vqmt/">MSU VQMT</a></td><td>MSU (2022)</td><td>2012</td></tr>
+        <tr class='item'><td>NLPD [<a href="NLPD">55</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td><td>MSU (2024)</td><td>2017</td></tr>
+        <tr class='item'><td>PAQ-2-PIQ [<a href="PAQ-2-PIQ">56</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/baidut/paq2piq">Link</a></td><td>MSU (2022)</td><td>2020</td></tr>
+        <tr class='item'><td>PIQE [<a href="PIQE">57</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch/">Link</a></td><td>MSU (2024)</td><td>2024</td></tr>
+        <tr class='item'><td>PSNR</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://videoprocessing.ai/vqmt/">MSU VQMT</a></td><td>MSU (2022)</td><td>–</td></tr>
+        <tr class='item'><td>PieAPP [<a href="PieAPP">58</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td><td>MSU (2024)</td><td>2018</td></tr>
+        <tr class='item'><td>R-LPIPS [<a href="R-LPIPS">59</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch/tree/main">Link</a></td><td>MSU (2024)</td><td>2023</td></tr>
+        <tr class='item'><td>RankIQA [<a href="RankIQA">60</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/YunanZhu/Pytorch-TestRankIQA">Link</a></td><td>MSU (2024)</td><td>2017</td></tr>
+        <tr class='item'><td>SPAQ [<a href="SPAQ">61</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/h4nwei/SPAQ">Link</a></td><td>MSU (2022)</td><td>2020</td></tr>
+        <tr class='item'><td>SRSIM [<a href="SRSIM">62</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/photosynthesis-team/piq">Link</a></td><td>MSU (2024)</td><td>2012</td></tr>
+        <tr class='item'><td>SSIM [<a href="SSIM">63</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://videoprocessing.ai/vqmt/">MSU VQMT</a></td><td>MSU (2022)</td><td>2003</td></tr>
+        <tr class='item'><td>SSIMULACRA 2 [<a href="SSIMULACRA 2">64</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/cloudinary/ssimulacra2">Link</a></td><td>Submit (2024)</td><td>2022</td></tr>
+        <tr class='item'><td>ST-GREED [<a href="ST-GREED">65</a>]</td><td>VQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/pavancm/GREED">Link</a></td><td>MSU (2022)</td><td>2021</td></tr>
+        <tr class='item'><td>STLPIPS [<a href="STLPIPS">66</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/abhijay9/ShiftTolerant-LPIPS">Link</a></td><td>MSU (2024)</td><td>2021</td></tr>
+        <tr class='item'><td>SWIN-IQA [<a href="SWIN-IQA">67</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/USTC-IMCL/SwinIQA">Link</a></td><td>MSU (2024)</td><td>2022</td></tr>
+        <tr class='item'><td>TLVQM [<a href="TLVQM">68</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://paperswithcode.com/paper/two-level-approach-for-no-reference-consumer">Link</a></td><td>MSU (2022)</td><td>2019</td></tr>
+        <tr class='item'><td>TOPIQ [<a href="TOPIQ">69</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td><td>MSU (2024)</td><td>2023</td></tr>
+        <tr class='item'><td>TOPIQ [<a href="TOPIQ">70</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/chaofengc/IQA-PyTorch">Link</a></td><td>MSU (2024)</td><td>2023</td></tr>
+        <tr class='item'><td>TRES [<a href="TRES">71</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/isalirezag/TReS">Link</a></td><td>MSU (2024)</td><td>2022</td></tr>
+        <tr class='item'><td>Tencent DVQA</td><td>VQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/Tencent/DVQA">Link</a></td><td>MSU (2022)</td><td>2020</td></tr>
+        <tr class='item'><td>UNIQUE [<a href="UNIQUE">72</a>]</td><td>IQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/zwx8981/UNIQUE">Link</a></td><td>Submit (2023)</td><td>2020</td></tr>
+        <tr class='item'><td>VIDEVAL [<a href="VIDEVAL">73</a>]</td><td>VQA</td><td style="color: #f4a261;"><b>NR</b></td><td><a href="https://github.com/vztu/VIDEVAL">Link</a></td><td>MSU (2022)</td><td>2021</td></tr>
+        <tr class='item'><td>VIFp [<a href="VIFp">74</a>]</td><td>IQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://github.com/photosynthesis-team/piq">Link</a></td><td>MSU (2024)</td><td>2004</td></tr>
+        <tr class='item'><td>VMAF [<a href="VMAF">75</a>]</td><td>VQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://videoprocessing.ai/vqmt/">MSU VQMT</a></td><td>MSU (2022)</td><td>2017</td></tr>
+        <tr class='item'><td>VQM</td><td>VQA</td><td style="color: #2a9d8f;"><b>FR</b></td><td><a href="https://videoprocessing.ai/vqmt/">MSU VQMT</a></td><td>MSU (2022)</td><td>–</td></tr>
 
+    </tbody>
+  </table>
+</div>
