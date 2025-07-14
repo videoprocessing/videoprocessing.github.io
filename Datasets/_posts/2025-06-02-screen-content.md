@@ -7,8 +7,6 @@ features:
   - 8,000+ assessors
 ---
 
-### N. Safonov, M. Rakhmanov, D. Vatolin
-
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -51,7 +49,7 @@ features:
 
 
 ## Screen Content Dataset 
-Screen sharing is a common feature in video conferencing applications, especially for remote work and presentations. However, internet conditions such as limited bandwidth, packet loss, and compression can significantly reduce the visual quality of shared screen content. Most existing video quality metrics are designed for natural scenes and were not benchmarked on screen content. In this work, we present a large-scale subjective dataset of screen content videos captured from video conferencing apps. The dataset includes 1,600 distorted videos with corresponding subjective quality scores. Subjective scores were collected using crowdsourced pairwise comparisons. The dataset provides a valuable resource for developing and benchmarking video quality metrics tailored to screen content. The evaluation of objective metrics revealed that several generalpurpose quality metrics outperform both full-reference and noreference metrics. 
+Screen sharing is a common feature in video conferencing applications, especially for remote work and presentations. However, internet conditions such as limited bandwidth, packet loss, and compression can significantly reduce the visual quality of shared screen content. Most existing video quality metrics are designed for natural scenes and were not benchmarked on screen content. In this work, we present a large-scale subjective dataset of screen content videos captured from video conferencing apps. The dataset includes 1,600 distorted videos with corresponding subjective quality scores. Subjective scores were collected using crowdsourced pairwise comparisons. The dataset provides a valuable resource for developing and benchmarking video quality metrics tailored to screen content. The evaluation of objective metrics revealed that several generalpurpose quality metrics outperform both full-reference and no-reference metrics. 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
