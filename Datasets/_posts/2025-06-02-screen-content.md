@@ -59,7 +59,7 @@ Screen sharing is a common feature in video conferencing applications, especiall
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div>
-<button class="download-button" role="button" onclick="window.open('https://titan.gml-team.ru:5003/sharing/5gBwOteQ6')"> <!-- Insert link here-->
+<button class="download-button" role="button" onclick="window.open('https://titan.gml-team.ru:5003/sharing/ZRRL8sqQh')"> <!-- Insert link here-->
     <i class="fa fa-download"></i>
     Download
 </button>
@@ -69,6 +69,20 @@ Screen sharing is a common feature in video conferencing applications, especiall
 
 {% highlight BibTeX %}
 {% endhighlight %} -->
+
+## <span id="cite"></span> Cite us
+
+{% highlight BibTeX %}
+@inproceedings{scvqa2025,
+  author    = {Nikolai Safonov and Mikhail Rakhmanov and Dmitriy Vatolin},
+  title     = {Screen Content Video Dataset and Benchmark},
+  booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia (MM '25)},
+  year      = {2025},
+  publisher = {Association for Computing Machinery},а
+  doi       = {10.1145/3746027.3758306},
+  isbn      = {979-8-4007-2035-2/2025/10}
+}
+{% endhighlight %}
 
 ## Benchmark
 ### Leaderboard
