@@ -1,0 +1,11 @@
+screen_content:
+  dataset_name: "Screen Content Video Dataset"
+  url: "https://forms.gle/6sRASmKQY8kR5Ryz9"
+
+nvc:
+  dataset_name: "Neural Video Compression Dataset"
+  url: "https://forms.gle/n5tyChehdBnpi5827"
+
+mobile_device_vqa:
+  dataset_name: "Mobile Device VQA Dataset"
+  url: "https://forms.gle/eea6Xy3axT7sb24N7"

@@ -35,8 +35,6 @@ features:
 </style>
 
 
-## Mobile Device Video Quality Assessment Dataset
-
 Video quality assessment (VQA) plays a critical role in optimizing video delivery systems. Perceived quality strongly depends on viewing conditions and display characteristics — factors such as ambient lighting, display brightness, and resolution significantly influence the visibility of distortions.
 
 We address multi-screen quality assessment on mobile devices, an area that remains largely under-covered. We introduce the **first large-scale subjective dataset** collected across more than **300 different Android devices**, accompanied by metadata on viewing conditions and display properties. We propose a strategy for aggregated score extraction and adaptation of VQA models to device-specific quality estimation.
@@ -52,11 +50,9 @@ Our results demonstrate that incorporating device and context information enable
     <i class="fa fa-external-link"></i>
     ICML 2026
 </button>
-<button class="download-button" role="button" disabled style="opacity: 0.5; cursor: default;">
-    <i class="fa fa-database"></i>
-    Dataset <span style="font-size: 11px; font-weight: normal;">to be published</span>
-</button>
 </div>
+
+{% include dataset_access_request.html dataset_name=site.data.dataset_access_forms.mobile_device_vqa.dataset_name form_url=site.data.dataset_access_forms.mobile_device_vqa.url %}
 
 
 

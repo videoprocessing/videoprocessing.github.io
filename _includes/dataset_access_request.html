@@ -1,0 +1,29 @@
+{% assign form_url = include.form_url %}
+{% assign dataset_name = include.dataset_name %}
+{% assign form_is_placeholder = false %}
+{% if form_url == nil %}
+{% assign form_is_placeholder = true %}
+{% endif %}
+{% if form_url == "" %}
+{% assign form_is_placeholder = true %}
+{% endif %}
+{% if form_url contains "TODO_REPLACE_WITH" %}
+{% assign form_is_placeholder = true %}
+{% endif %}
+
+<div class="dataset-access">
+  <p class="dataset-access__text">
+    Access to the {{ dataset_name }} is provided by request. Please fill in the form, and we will contact you with access details.
+  </p>
+  {% unless form_is_placeholder %}
+  <button class="download-button dataset-access__button" role="button" onclick="window.open('{{ form_url }}', '_blank')">
+    <i class="fa fa-pencil-square-o"></i>
+    Request access to dataset
+  </button>
+  {% else %}
+  <button class="download-button dataset-access__button" role="button" disabled>
+    <i class="fa fa-pencil-square-o"></i>
+    Request access to dataset
+  </button>
+  {% endunless %}
+</div>

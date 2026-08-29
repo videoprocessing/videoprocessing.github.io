@@ -57,13 +57,7 @@ Screen sharing is a common feature in video conferencing applications, especiall
     <source src="/assets/videos/datasets/sc_dataset_compr.webm" type='video/webm'>
 </video>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div>
-<button class="download-button" role="button" onclick="window.open('https://titan.gml-team.ru:5003/sharing/ZRRL8sqQh')"> <!-- Insert link here-->
-    <i class="fa fa-download"></i>
-    Download
-</button>
-</div>
+{% include dataset_access_request.html dataset_name=site.data.dataset_access_forms.screen_content.dataset_name form_url=site.data.dataset_access_forms.screen_content.url %}
 
 <!-- ## <span id="cite"></span> Cite us
 
